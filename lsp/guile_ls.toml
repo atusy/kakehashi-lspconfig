@@ -1,0 +1,4 @@
+[languageServers.guile_ls]
+cmd = ["guile-lsp-server"]
+languages = ["scheme.guile"]
+rootMarkers = ["guix.scm", ".git"]

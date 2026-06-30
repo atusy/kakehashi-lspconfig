@@ -1,0 +1,6 @@
+[languageServers.solargraph]
+cmd = ["solargraph", "stdio"]
+languages = ["ruby"]
+rootMarkers = ["Gemfile", ".git"]
+initializationOptions = { formatting = true }
+settings = { solargraph = { diagnostics = true } }

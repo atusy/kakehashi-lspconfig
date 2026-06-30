@@ -1,0 +1,4 @@
+[languageServers.m68k]
+cmd = ["m68k-lsp-server", "--stdio"]
+languages = ["asm68k"]
+rootMarkers = ["Makefile", ".git"]

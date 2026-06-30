@@ -1,0 +1,4 @@
+[languageServers.opencl_ls]
+cmd = ["opencl-language-server"]
+languages = ["opencl"]
+rootMarkers = [".git"]

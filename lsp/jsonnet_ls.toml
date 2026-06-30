@@ -1,0 +1,4 @@
+[languageServers.jsonnet_ls]
+cmd = ["jsonnet-language-server"]
+languages = ["jsonnet", "libsonnet"]
+rootMarkers = ["jsonnetfile.json", ".git"]

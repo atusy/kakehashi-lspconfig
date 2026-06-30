@@ -1,0 +1,4 @@
+[languageServers.aiken]
+cmd = ["aiken", "lsp"]
+languages = ["aiken"]
+rootMarkers = ["aiken.toml", ".git"]

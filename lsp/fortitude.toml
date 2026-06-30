@@ -1,0 +1,4 @@
+[languageServers.fortitude]
+cmd = ["fortitude", "server"]
+languages = ["fortran"]
+rootMarkers = ["fpm.toml", "fortitude.toml", ".fortitude.toml", ".git"]

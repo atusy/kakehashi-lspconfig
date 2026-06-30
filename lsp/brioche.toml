@@ -1,0 +1,4 @@
+[languageServers.brioche]
+cmd = ["brioche", "lsp"]
+languages = ["brioche"]
+rootMarkers = ["project.bri"]

@@ -1,0 +1,4 @@
+# WARN: no `cmd` in source; set `cmd` manually or kakehashi will skip this server
+[languageServers.bsl_ls]
+languages = ["bsl", "os"]
+rootMarkers = [".git"]

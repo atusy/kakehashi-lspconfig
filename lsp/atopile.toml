@@ -1,0 +1,4 @@
+[languageServers.atopile]
+cmd = ["ato", "lsp", "start"]
+languages = ["ato"]
+rootMarkers = ["ato.yaml", ".ato", ".git"]

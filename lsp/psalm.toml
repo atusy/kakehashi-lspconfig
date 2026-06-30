@@ -1,0 +1,4 @@
+[languageServers.psalm]
+cmd = ["psalm", "--language-server"]
+languages = ["php"]
+rootMarkers = ["psalm.xml", "psalm.xml.dist"]

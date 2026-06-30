@@ -1,0 +1,6 @@
+# WARN: get_language_id (Lua function) was dropped
+[languageServers.ltex]
+cmd = ["ltex-ls"]
+languages = ["bib", "gitcommit", "markdown", "org", "plaintex", "rst", "rnoweb", "tex", "pandoc", "quarto", "rmd", "context", "html", "xhtml", "mail", "text"]
+rootMarkers = [".git"]
+settings = { ltex = { enabled = ["bibtex", "gitcommit", "markdown", "org", "tex", "restructuredtext", "rsweave", "latex", "quarto", "rmd", "context", "html", "xhtml", "mail", "plaintext"] } }

@@ -1,0 +1,4 @@
+[languageServers.selene3p_ls]
+cmd = ["selene-3p-language-server"]
+languages = ["lua"]
+rootMarkers = ["selene.toml"]

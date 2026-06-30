@@ -1,0 +1,4 @@
+[languageServers.djls]
+cmd = ["djls", "serve"]
+languages = ["htmldjango", "html", "python"]
+rootMarkers = ["manage.py", "pyproject.toml", ".git"]

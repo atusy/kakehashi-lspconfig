@@ -1,0 +1,4 @@
+[languageServers.buddy_ls]
+cmd = ["buddy-lsp-server"]
+languages = ["mlir"]
+rootMarkers = [".git"]

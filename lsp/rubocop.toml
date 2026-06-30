@@ -1,0 +1,4 @@
+[languageServers.rubocop]
+cmd = ["rubocop", "--lsp"]
+languages = ["ruby"]
+rootMarkers = ["Gemfile", ".git"]

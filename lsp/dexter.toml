@@ -1,0 +1,5 @@
+[languageServers.dexter]
+cmd = ["dexter", "lsp"]
+languages = ["elixir", "eelixir", "heex"]
+rootMarkers = [".dexter/dexter.db", ".dexter.db", ".git", "mix.exs"]
+initializationOptions = { followDelegates = true }

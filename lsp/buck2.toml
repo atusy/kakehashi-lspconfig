@@ -1,0 +1,4 @@
+[languageServers.buck2]
+cmd = ["buck2", "lsp"]
+languages = ["bzl"]
+rootMarkers = [".buckconfig"]

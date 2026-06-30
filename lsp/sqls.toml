@@ -1,0 +1,4 @@
+[languageServers.sqls]
+cmd = ["sqls"]
+languages = ["sql", "mysql"]
+rootMarkers = ["config.yml"]

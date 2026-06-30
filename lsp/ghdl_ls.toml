@@ -1,0 +1,4 @@
+[languageServers.ghdl_ls]
+cmd = ["ghdl-ls"]
+languages = ["vhdl"]
+rootMarkers = ["hdl-prj.json", ".git"]

@@ -1,0 +1,4 @@
+[languageServers.pest_ls]
+cmd = ["pest-language-server"]
+languages = ["pest"]
+rootMarkers = [".git"]

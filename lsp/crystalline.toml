@@ -1,0 +1,4 @@
+[languageServers.crystalline]
+cmd = ["crystalline"]
+languages = ["crystal"]
+rootMarkers = ["shard.yml", ".git"]

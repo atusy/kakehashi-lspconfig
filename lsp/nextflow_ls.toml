@@ -1,0 +1,5 @@
+[languageServers.nextflow_ls]
+cmd = ["nextflow-language-server"]
+languages = ["nextflow"]
+rootMarkers = ["nextflow.config", ".git"]
+settings = { nextflow = { files = { exclude = [".git", ".nf-test", "work"] } } }

@@ -1,0 +1,4 @@
+[languageServers.tvm_ffi_navigator]
+cmd = ["python", "-m", "ffi_navigator.langserver"]
+languages = ["python", "cpp"]
+rootMarkers = ["pyproject.toml", ".git"]

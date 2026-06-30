@@ -1,0 +1,7 @@
+# WARN: offset_encoding was dropped; kakehashi manages offset encoding
+# WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
+# WARN: workspace_required was dropped; not applicable to kakehashi
+[languageServers.ccls]
+cmd = ["ccls"]
+languages = ["c", "cpp", "objc", "objcpp", "cuda"]
+rootMarkers = ["compile_commands.json", ".ccls", ".git"]

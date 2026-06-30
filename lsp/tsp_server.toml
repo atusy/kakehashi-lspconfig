@@ -1,0 +1,4 @@
+[languageServers.tsp_server]
+cmd = ["tsp-server", "--stdio"]
+languages = ["typespec"]
+rootMarkers = ["tspconfig.yaml", ".git"]

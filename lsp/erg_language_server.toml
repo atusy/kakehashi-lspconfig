@@ -1,0 +1,4 @@
+[languageServers.erg_language_server]
+cmd = ["erg", "--language-server"]
+languages = ["erg"]
+rootMarkers = ["package.er", ".git"]

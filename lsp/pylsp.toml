@@ -1,0 +1,4 @@
+[languageServers.pylsp]
+cmd = ["pylsp"]
+languages = ["python"]
+rootMarkers = ["pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]

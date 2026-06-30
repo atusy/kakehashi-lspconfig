@@ -1,0 +1,4 @@
+[languageServers.thriftls]
+cmd = ["thriftls"]
+languages = ["thrift"]
+rootMarkers = [".thrift"]

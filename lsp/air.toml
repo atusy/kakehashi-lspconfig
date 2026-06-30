@@ -1,0 +1,4 @@
+[languageServers.air]
+cmd = ["air", "language-server"]
+languages = ["r"]
+rootMarkers = ["air.toml", ".air.toml", ".git"]

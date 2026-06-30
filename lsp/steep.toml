@@ -1,0 +1,4 @@
+[languageServers.steep]
+cmd = ["steep", "langserver"]
+languages = ["ruby", "eruby"]
+rootMarkers = ["Steepfile", ".git"]

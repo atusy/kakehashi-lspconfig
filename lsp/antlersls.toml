@@ -1,0 +1,4 @@
+[languageServers.antlersls]
+cmd = ["antlersls", "--stdio"]
+languages = ["html", "antlers"]
+rootMarkers = ["composer.json"]

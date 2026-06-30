@@ -1,0 +1,4 @@
+# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+[languageServers.rome]
+languages = ["javascript", "javascriptreact", "json", "typescript", "typescriptreact"]
+rootMarkers = ["package.json", "node_modules", ".git"]

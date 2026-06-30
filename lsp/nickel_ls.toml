@@ -1,0 +1,4 @@
+[languageServers.nickel_ls]
+cmd = ["nls"]
+languages = ["ncl", "nickel"]
+rootMarkers = [".git"]

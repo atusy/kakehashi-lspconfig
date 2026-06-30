@@ -1,0 +1,5 @@
+[languageServers.prismals]
+cmd = ["prisma-language-server", "--stdio"]
+languages = ["prisma"]
+rootMarkers = [".git", "package.json"]
+settings = { prisma = { prismaFmtBinPath = "" } }

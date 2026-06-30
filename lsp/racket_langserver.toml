@@ -1,0 +1,4 @@
+[languageServers.racket_langserver]
+cmd = ["racket", "--lib", "racket-langserver"]
+languages = ["racket", "scheme"]
+rootMarkers = [".git"]

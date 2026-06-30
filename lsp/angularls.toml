@@ -1,0 +1,4 @@
+# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+[languageServers.angularls]
+languages = ["typescript", "html", "typescriptreact", "htmlangular"]
+rootMarkers = ["angular.json", "nx.json"]

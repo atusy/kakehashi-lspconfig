@@ -1,0 +1,4 @@
+[languageServers.nextls]
+cmd = ["nextls", "--stdio"]
+languages = ["elixir", "eelixir", "heex", "surface"]
+rootMarkers = ["mix.exs", ".git"]

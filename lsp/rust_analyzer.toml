@@ -1,0 +1,8 @@
+# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+# WARN: before_init (editor-side hook) was dropped; not applicable to kakehashi
+# WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
+# WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.rust_analyzer]
+cmd = ["rust-analyzer"]
+languages = ["rust"]
+settings = { rust-analyzer = { lens = { debug = { enable = true }, enable = true, implementations = { enable = true }, references = { adt = { enable = true }, enumVariant = { enable = true }, method = { enable = true }, trait = { enable = true } }, run = { enable = true }, updateTest = { enable = true } } } }

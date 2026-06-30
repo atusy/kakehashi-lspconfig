@@ -1,0 +1,4 @@
+[languageServers.digestif]
+cmd = ["digestif"]
+languages = ["tex", "plaintex", "context"]
+rootMarkers = [".git"]

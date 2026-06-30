@@ -1,0 +1,4 @@
+[languageServers.tflint]
+cmd = ["tflint", "--langserver"]
+languages = ["terraform"]
+rootMarkers = [".terraform", ".git", ".tflint.hcl"]

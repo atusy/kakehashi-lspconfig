@@ -1,0 +1,4 @@
+[languageServers.openscad_lsp]
+cmd = ["openscad-lsp", "--stdio"]
+languages = ["openscad"]
+rootMarkers = [".git"]

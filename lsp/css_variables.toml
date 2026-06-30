@@ -1,0 +1,5 @@
+# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+[languageServers.css_variables]
+cmd = ["css-variables-language-server", "--stdio"]
+languages = ["css", "scss", "less"]
+settings = { cssVariables = { blacklistFolders = ["**/.cache", "**/.DS_Store", "**/.git", "**/.hg", "**/.next", "**/.svn", "**/bower_components", "**/CVS", "**/dist", "**/node_modules", "**/tests", "**/tmp"], lookupFiles = ["**/*.less", "**/*.scss", "**/*.sass", "**/*.css"] } }

@@ -1,0 +1,4 @@
+[languageServers.flux_lsp]
+cmd = ["flux-lsp"]
+languages = ["flux"]
+rootMarkers = [".git"]

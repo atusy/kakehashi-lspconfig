@@ -1,0 +1,4 @@
+# WARN: cmd was empty in source; set `cmd` manually or kakehashi will skip this server
+[languageServers.raku_navigator]
+languages = ["raku"]
+rootMarkers = [".git"]

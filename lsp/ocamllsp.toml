@@ -1,0 +1,6 @@
+# WARN: get_language_id (Lua function) was dropped
+# WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.ocamllsp]
+cmd = ["ocamllsp"]
+languages = ["ocaml", "menhir", "ocamlinterface", "ocamllex", "reason", "dune"]
+rootMarkers = [["dune-project", "dune-workspace"], ["*.opam", "opam", "esy.json", "package.json"], ".git"]

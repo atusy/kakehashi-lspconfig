@@ -1,0 +1,4 @@
+[languageServers.teal_ls]
+cmd = ["teal-language-server"]
+languages = ["teal"]
+rootMarkers = ["tlconfig.lua"]

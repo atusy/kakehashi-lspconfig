@@ -1,0 +1,4 @@
+[languageServers.djlsp]
+cmd = ["djlsp"]
+languages = ["html", "htmldjango"]
+rootMarkers = [".git"]

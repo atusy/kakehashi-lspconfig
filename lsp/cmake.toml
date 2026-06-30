@@ -1,0 +1,5 @@
+[languageServers.cmake]
+cmd = ["cmake-language-server"]
+languages = ["cmake"]
+rootMarkers = ["CMakePresets.json", "CTestConfig.cmake", ".git", "build", "cmake"]
+initializationOptions = { buildDirectory = "build" }

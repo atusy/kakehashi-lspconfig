@@ -1,0 +1,5 @@
+# WARN: workspace_required was dropped; not applicable to kakehashi
+[languageServers.postgres_lsp]
+cmd = ["postgres-language-server", "lsp-proxy"]
+languages = ["sql"]
+rootMarkers = ["postgres-language-server.jsonc"]

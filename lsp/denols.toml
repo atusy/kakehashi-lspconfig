@@ -1,0 +1,8 @@
+# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+# WARN: cmd_env was dropped; kakehashi has no per-server environment option
+# WARN: handlers (client-side LSP handlers) were dropped
+# WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.denols]
+cmd = ["deno", "lsp"]
+languages = ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+settings = { deno = { enable = true, suggest = { imports = { hosts = { "https://deno.land" = true } } } } }

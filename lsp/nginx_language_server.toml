@@ -1,0 +1,4 @@
+[languageServers.nginx_language_server]
+cmd = ["nginx-language-server"]
+languages = ["nginx"]
+rootMarkers = ["nginx.conf", ".git"]

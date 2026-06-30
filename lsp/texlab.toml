@@ -1,0 +1,6 @@
+# WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.texlab]
+cmd = ["texlab"]
+languages = ["tex", "plaintex", "bib"]
+rootMarkers = [".git", ".latexmkrc", "latexmkrc", ".texlabroot", "texlabroot", "Tectonic.toml"]
+settings = { texlab = { bibtexFormatter = "texlab", build = { args = ["-pdf", "-interaction=nonstopmode", "-synctex=1", "%f"], executable = "latexmk", forwardSearchAfter = false, onSave = false }, chktex = { onEdit = false, onOpenAndSave = false }, diagnosticsDelay = 300, formatterLineLength = 80, forwardSearch = { args = {} }, latexFormatter = "latexindent", latexindent = { modifyLineBreaks = false } } }

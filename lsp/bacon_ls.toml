@@ -1,0 +1,4 @@
+[languageServers.bacon_ls]
+cmd = ["bacon-ls"]
+languages = ["rust"]
+rootMarkers = [".bacon-locations", "Cargo.toml"]

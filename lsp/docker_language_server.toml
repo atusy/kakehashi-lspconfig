@@ -1,0 +1,5 @@
+# WARN: get_language_id (Lua function) was dropped
+[languageServers.docker_language_server]
+cmd = ["docker-language-server", "start", "--stdio"]
+languages = ["dockerfile", "yaml.docker-compose"]
+rootMarkers = ["Dockerfile", "docker-compose.yaml", "docker-compose.yml", "compose.yaml", "compose.yml", "docker-bake.json", "docker-bake.hcl", "docker-bake.override.json", "docker-bake.override.hcl"]

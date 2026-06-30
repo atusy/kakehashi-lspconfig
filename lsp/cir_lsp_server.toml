@@ -1,0 +1,4 @@
+[languageServers.cir_lsp_server]
+cmd = ["cir-lsp-server"]
+languages = ["cir"]
+rootMarkers = [".git"]

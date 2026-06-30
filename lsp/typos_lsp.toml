@@ -1,0 +1,4 @@
+# WARN: no `filetypes` in source; set `languages` manually or this server never matches
+[languageServers.typos_lsp]
+cmd = ["typos-lsp"]
+rootMarkers = ["typos.toml", "_typos.toml", ".typos.toml", "pyproject.toml", "Cargo.toml"]

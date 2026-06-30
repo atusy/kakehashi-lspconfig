@@ -1,0 +1,4 @@
+[languageServers.solidity_ls]
+cmd = ["vscode-solidity-server", "--stdio"]
+languages = ["solidity"]
+rootMarkers = ["hardhat.config.js", "hardhat.config.ts", "foundry.toml", "remappings.txt", "truffle.js", "truffle-config.js", "ape-config.yaml", ".git", "package.json"]

@@ -1,0 +1,6 @@
+# WARN: before_init (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.mdx_analyzer]
+cmd = ["mdx-language-server", "--stdio"]
+languages = ["mdx"]
+rootMarkers = ["package.json"]
+initializationOptions = { typescript = {} }

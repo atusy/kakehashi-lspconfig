@@ -1,0 +1,4 @@
+[languageServers.clarinet]
+cmd = ["clarinet", "lsp"]
+languages = ["clar", "clarity"]
+rootMarkers = ["Clarinet.toml"]

@@ -1,0 +1,4 @@
+[languageServers.pact_ls]
+cmd = ["pact-lsp"]
+languages = ["pact"]
+rootMarkers = [".git"]

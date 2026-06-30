@@ -1,0 +1,5 @@
+# WARN: workspace_required was dropped; not applicable to kakehashi
+[languageServers.vimdoc_ls]
+cmd = ["vimdoc-language-server"]
+languages = ["help"]
+rootMarkers = ["doc", ".git"]

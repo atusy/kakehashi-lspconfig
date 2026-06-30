@@ -1,0 +1,4 @@
+[languageServers.standardrb]
+cmd = ["standardrb", "--lsp"]
+languages = ["ruby"]
+rootMarkers = ["Gemfile", ".git"]

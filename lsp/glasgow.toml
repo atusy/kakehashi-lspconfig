@@ -1,0 +1,4 @@
+[languageServers.glasgow]
+cmd = ["glasgow"]
+languages = ["wgsl"]
+rootMarkers = [".git"]

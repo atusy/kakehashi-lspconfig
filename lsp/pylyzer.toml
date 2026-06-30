@@ -1,0 +1,6 @@
+# WARN: cmd_env was dropped; kakehashi has no per-server environment option
+[languageServers.pylyzer]
+cmd = ["pylyzer", "--server"]
+languages = ["python"]
+rootMarkers = ["setup.py", "tox.ini", "requirements.txt", "Pipfile", "pyproject.toml", ".git"]
+settings = { python = { checkOnType = false, diagnostics = true, inlayHints = true, smartCompletion = true } }

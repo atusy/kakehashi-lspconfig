@@ -1,0 +1,4 @@
+[languageServers.salt_ls]
+cmd = ["salt_lsp_server"]
+languages = ["sls"]
+rootMarkers = [".git"]

@@ -1,0 +1,4 @@
+[languageServers.taplo]
+cmd = ["taplo", "lsp", "stdio"]
+languages = ["toml"]
+rootMarkers = [".taplo.toml", "taplo.toml", ".git"]

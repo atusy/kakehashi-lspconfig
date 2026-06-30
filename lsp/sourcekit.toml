@@ -1,0 +1,6 @@
+# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+# WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
+# WARN: get_language_id (Lua function) was dropped
+[languageServers.sourcekit]
+cmd = ["sourcekit-lsp"]
+languages = ["swift", "objc", "objcpp", "c", "cpp"]

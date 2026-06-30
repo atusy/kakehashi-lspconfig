@@ -1,0 +1,4 @@
+[languageServers.hie]
+cmd = ["hie-wrapper", "--lsp"]
+languages = ["haskell"]
+rootMarkers = ["stack.yaml", "package.yaml", ".git"]

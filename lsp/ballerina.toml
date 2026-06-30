@@ -1,0 +1,4 @@
+[languageServers.ballerina]
+cmd = ["bal", "start-language-server"]
+languages = ["ballerina"]
+rootMarkers = ["Ballerina.toml"]

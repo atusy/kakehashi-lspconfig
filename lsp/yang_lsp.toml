@@ -1,0 +1,4 @@
+[languageServers.yang_lsp]
+cmd = ["yang-language-server"]
+languages = ["yang"]
+rootMarkers = [".git"]

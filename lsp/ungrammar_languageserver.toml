@@ -1,0 +1,5 @@
+[languageServers.ungrammar_languageserver]
+cmd = ["ungrammar-languageserver", "--stdio"]
+languages = ["ungrammar"]
+rootMarkers = [".git"]
+settings = { ungrammar = { format = { enable = true }, validate = { enable = true } } }

@@ -1,0 +1,4 @@
+[languageServers.dagger]
+cmd = ["cuelsp"]
+languages = ["cue"]
+rootMarkers = ["cue.mod", ".git"]

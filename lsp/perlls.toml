@@ -1,0 +1,5 @@
+[languageServers.perlls]
+cmd = ["perl", "-MPerl::LanguageServer", "-e", "Perl::LanguageServer::run", "--", "--port 13603", "--nostdio 0"]
+languages = ["perl"]
+rootMarkers = [".git"]
+settings = { perl = { fileFilter = [".pm", ".pl"], ignoreDirs = ".git", perlCmd = "perl", perlInc = " " } }

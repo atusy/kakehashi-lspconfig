@@ -1,0 +1,4 @@
+[languageServers.remark_ls]
+cmd = ["remark-language-server", "--stdio"]
+languages = ["markdown"]
+rootMarkers = [".remarkrc", ".remarkrc.json", ".remarkrc.js", ".remarkrc.cjs", ".remarkrc.mjs", ".remarkrc.yml", ".remarkrc.yaml", ".remarkignore"]

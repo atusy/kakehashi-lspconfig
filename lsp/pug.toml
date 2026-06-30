@@ -1,0 +1,4 @@
+[languageServers.pug]
+cmd = ["pug-lsp"]
+languages = ["pug"]
+rootMarkers = ["package.json"]

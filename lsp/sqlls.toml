@@ -1,0 +1,4 @@
+[languageServers.sqlls]
+cmd = ["sql-language-server", "up", "--method", "stdio"]
+languages = ["sql", "mysql"]
+rootMarkers = [".sqllsrc.json"]

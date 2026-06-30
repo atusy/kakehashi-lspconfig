@@ -1,0 +1,4 @@
+[languageServers.spyglassmc_language_server]
+cmd = ["spyglassmc-language-server", "--stdio"]
+languages = ["mcfunction"]
+rootMarkers = ["pack.mcmeta"]

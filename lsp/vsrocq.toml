@@ -1,0 +1,4 @@
+[languageServers.vsrocq]
+cmd = ["vsrocqtop"]
+languages = ["coq"]
+rootMarkers = ["_RocqProject", "_CoqProject", ".git"]

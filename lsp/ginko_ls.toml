@@ -1,0 +1,4 @@
+[languageServers.ginko_ls]
+cmd = ["ginko_ls"]
+languages = ["dts"]
+rootMarkers = [".git"]

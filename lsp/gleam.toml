@@ -1,0 +1,4 @@
+[languageServers.gleam]
+cmd = ["gleam", "lsp"]
+languages = ["gleam"]
+rootMarkers = ["gleam.toml", ".git"]

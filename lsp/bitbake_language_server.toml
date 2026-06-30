@@ -1,0 +1,4 @@
+[languageServers.bitbake_language_server]
+cmd = ["bitbake-language-server"]
+languages = ["bitbake"]
+rootMarkers = [".git"]

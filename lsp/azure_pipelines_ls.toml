@@ -1,0 +1,4 @@
+[languageServers.azure_pipelines_ls]
+cmd = ["azure-pipelines-language-server", "--stdio"]
+languages = ["yaml"]
+rootMarkers = ["azure-pipelines.yml"]

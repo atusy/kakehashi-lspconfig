@@ -1,0 +1,4 @@
+[languageServers.bright_script]
+cmd = ["bsc", "--lsp", "--stdio"]
+languages = ["brs"]
+rootMarkers = ["makefile", "Makefile", ".git"]

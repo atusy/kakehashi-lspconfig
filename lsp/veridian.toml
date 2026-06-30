@@ -1,0 +1,4 @@
+[languageServers.veridian]
+cmd = ["veridian"]
+languages = ["systemverilog", "verilog"]
+rootMarkers = [".git"]

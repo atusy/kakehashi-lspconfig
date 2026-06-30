@@ -1,0 +1,4 @@
+[languageServers.fennel_language_server]
+cmd = ["fennel-language-server"]
+languages = ["fennel"]
+rootMarkers = [".git"]

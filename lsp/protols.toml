@@ -1,0 +1,4 @@
+[languageServers.protols]
+cmd = ["protols"]
+languages = ["proto"]
+rootMarkers = [".git"]

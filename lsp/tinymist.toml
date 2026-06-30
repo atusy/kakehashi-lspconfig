@@ -1,0 +1,5 @@
+# WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.tinymist]
+cmd = ["tinymist"]
+languages = ["typst"]
+rootMarkers = [".git"]

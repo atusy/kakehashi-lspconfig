@@ -1,0 +1,4 @@
+[languageServers.bazelrc_lsp]
+cmd = ["bazelrc-lsp", "lsp"]
+languages = ["bazelrc"]
+rootMarkers = ["WORKSPACE", "WORKSPACE.bazel", "MODULE.bazel"]

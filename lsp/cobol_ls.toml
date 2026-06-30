@@ -1,0 +1,4 @@
+[languageServers.cobol_ls]
+cmd = ["cobol-language-support"]
+languages = ["cobol"]
+rootMarkers = [".git"]

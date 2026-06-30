@@ -1,0 +1,6 @@
+# WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
+[languageServers.metals]
+cmd = ["metals"]
+languages = ["scala"]
+rootMarkers = ["build.sbt", "build.sc", ["build.gradle", "build.gradle.kts"], "pom.xml"]
+initializationOptions = { compilerOptions = { snippetAutoIndent = false }, isHttpEnabled = true, statusBarProvider = "show-message" }

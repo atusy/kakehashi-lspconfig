@@ -1,0 +1,5 @@
+# WARN: cmd_env was dropped; kakehashi has no per-server environment option
+[languageServers.blueprint_ls]
+cmd = ["blueprint-compiler", "lsp"]
+languages = ["blueprint"]
+rootMarkers = [".git"]

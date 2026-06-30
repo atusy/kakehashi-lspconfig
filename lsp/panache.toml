@@ -1,0 +1,4 @@
+[languageServers.panache]
+cmd = ["panache", "lsp"]
+languages = ["markdown", "quarto", "rmd"]
+rootMarkers = [".panache.toml", "panache.toml", "_quarto.yml", "_bookdown.yml", ".git"]

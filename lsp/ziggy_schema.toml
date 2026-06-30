@@ -1,0 +1,4 @@
+[languageServers.ziggy_schema]
+cmd = ["ziggy", "lsp", "--schema"]
+languages = ["ziggy_schema"]
+rootMarkers = [".git"]

@@ -1,0 +1,4 @@
+[languageServers.fish_lsp]
+cmd = ["fish-lsp", "start"]
+languages = ["fish"]
+rootMarkers = ["config.fish", ".git"]

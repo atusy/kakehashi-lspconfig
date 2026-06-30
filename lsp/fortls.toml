@@ -1,0 +1,4 @@
+[languageServers.fortls]
+cmd = ["fortls", "--notify_init", "--hover_signature", "--hover_language=fortran", "--use_signature_help"]
+languages = ["fortran"]
+rootMarkers = [".fortls", ".fortlsrc", ".fortls.json", ".git"]

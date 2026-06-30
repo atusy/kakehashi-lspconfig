@@ -1,0 +1,4 @@
+[languageServers.jqls]
+cmd = ["jq-lsp"]
+languages = ["jq"]
+rootMarkers = [".git"]

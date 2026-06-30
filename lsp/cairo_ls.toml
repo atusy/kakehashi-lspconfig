@@ -1,0 +1,5 @@
+[languageServers.cairo_ls]
+cmd = ["scarb", "cairo-language-server", "/C", "--node-ipc"]
+languages = ["cairo"]
+rootMarkers = ["Scarb.toml", "cairo_project.toml", ".git"]
+initializationOptions = { hostInfo = "neovim" }

@@ -1,0 +1,4 @@
+[languageServers.mlir_pdll_lsp_server]
+cmd = ["mlir-pdll-lsp-server"]
+languages = ["pdll"]
+rootMarkers = ["pdll_compile_commands.yml", ".git"]

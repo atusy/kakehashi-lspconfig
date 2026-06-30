@@ -1,0 +1,5 @@
+[languageServers.perlpls]
+cmd = ["pls"]
+languages = ["perl"]
+rootMarkers = [".git"]
+settings = { perl = { perlcritic = { enabled = false }, syntax = { enabled = true } } }

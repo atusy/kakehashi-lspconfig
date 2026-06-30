@@ -1,0 +1,4 @@
+[languageServers.cue]
+cmd = ["cue", "lsp"]
+languages = ["cue"]
+rootMarkers = ["cue.mod", ".git"]

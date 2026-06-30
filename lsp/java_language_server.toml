@@ -1,0 +1,4 @@
+[languageServers.java_language_server]
+cmd = ["java-language-server"]
+languages = ["java"]
+rootMarkers = ["build.gradle", "build.gradle.kts", "pom.xml", ".git"]

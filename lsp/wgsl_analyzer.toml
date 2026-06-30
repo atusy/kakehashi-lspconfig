@@ -1,0 +1,4 @@
+[languageServers.wgsl_analyzer]
+cmd = ["wgsl-analyzer"]
+languages = ["wgsl"]
+rootMarkers = [".git"]

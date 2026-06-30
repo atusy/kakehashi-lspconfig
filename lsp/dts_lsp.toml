@@ -1,0 +1,4 @@
+[languageServers.dts_lsp]
+cmd = ["dts-lsp"]
+languages = ["dts", "dtsi", "overlay"]
+rootMarkers = [".git"]

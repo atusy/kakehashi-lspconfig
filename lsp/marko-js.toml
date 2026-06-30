@@ -1,0 +1,4 @@
+[languageServers.marko-js]
+cmd = ["marko-language-server", "--stdio"]
+languages = ["marko"]
+rootMarkers = [".git"]

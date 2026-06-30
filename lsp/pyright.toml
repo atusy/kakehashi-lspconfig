@@ -1,0 +1,6 @@
+# WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.pyright]
+cmd = ["pyright-langserver", "--stdio"]
+languages = ["python"]
+rootMarkers = ["pyrightconfig.json", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]
+settings = { python = { analysis = { autoSearchPaths = true, diagnosticMode = "openFilesOnly", useLibraryCodeForTypes = true } } }

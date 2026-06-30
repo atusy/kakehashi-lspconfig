@@ -1,0 +1,4 @@
+[languageServers.gn_language_server]
+cmd = ["gn-language-server", "--stdio"]
+languages = ["gn"]
+rootMarkers = [".gn", ".git"]

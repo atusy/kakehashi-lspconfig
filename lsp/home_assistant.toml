@@ -1,0 +1,4 @@
+[languageServers.home_assistant]
+cmd = ["vscode-home-assistant", "--stdio"]
+languages = ["yaml"]
+rootMarkers = ["configuration.yaml", "configuration.yml"]

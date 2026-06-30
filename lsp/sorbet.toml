@@ -1,0 +1,4 @@
+[languageServers.sorbet]
+cmd = ["srb", "tc", "--lsp"]
+languages = ["ruby"]
+rootMarkers = ["Gemfile", ".git"]

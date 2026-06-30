@@ -1,0 +1,4 @@
+[languageServers.tblgen_lsp_server]
+cmd = ["tblgen-lsp-server"]
+languages = ["tablegen"]
+rootMarkers = ["tablegen_compile_commands.yml", ".git"]

@@ -1,0 +1,4 @@
+[languageServers.ecsact]
+cmd = ["ecsact_lsp_server", "--stdio"]
+languages = ["ecsact"]
+rootMarkers = [".git"]

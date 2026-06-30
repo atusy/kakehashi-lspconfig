@@ -1,0 +1,4 @@
+[languageServers.nxls]
+cmd = ["nxls", "--stdio"]
+languages = ["json", "jsonc"]
+rootMarkers = ["nx.json", ".git"]

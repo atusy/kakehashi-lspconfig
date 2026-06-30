@@ -1,0 +1,3 @@
+[languageServers.systemd_lsp]
+cmd = ["systemd-lsp"]
+languages = ["systemd"]

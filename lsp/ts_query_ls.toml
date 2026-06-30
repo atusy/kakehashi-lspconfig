@@ -1,0 +1,6 @@
+# WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.ts_query_ls]
+cmd = ["ts_query_ls"]
+languages = ["query"]
+rootMarkers = [".tsqueryrc.json", ".git"]
+initializationOptions = { parser_aliases = { ecma = "javascript", jsx = "javascript", php_only = "php" }, parser_install_directories = ["/Users/atusy/.local/share/nvim/site/parser"] }

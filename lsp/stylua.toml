@@ -1,0 +1,4 @@
+[languageServers.stylua]
+cmd = ["stylua", "--lsp"]
+languages = ["lua"]
+rootMarkers = [".stylua.toml", "stylua.toml", ".editorconfig"]

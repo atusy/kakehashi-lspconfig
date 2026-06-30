@@ -1,0 +1,4 @@
+# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+[languageServers.msbuild_project_tools_server]
+cmd = ["dotnet", "MSBuildProjectTools.LanguageServer.Host.dll"]
+languages = ["msbuild"]

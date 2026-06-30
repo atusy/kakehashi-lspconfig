@@ -1,0 +1,4 @@
+[languageServers.scry]
+cmd = ["scry"]
+languages = ["crystal"]
+rootMarkers = ["shard.yml", ".git"]

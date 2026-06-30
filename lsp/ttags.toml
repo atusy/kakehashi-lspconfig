@@ -1,0 +1,4 @@
+[languageServers.ttags]
+cmd = ["ttags", "lsp"]
+languages = ["ruby", "rust", "javascript", "haskell"]
+rootMarkers = [".git"]

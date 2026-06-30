@@ -1,0 +1,7 @@
+# WARN: no `filetypes` in source; set `languages` manually or this server never matches
+# WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.copilot]
+cmd = ["copilot-language-server", "--stdio"]
+rootMarkers = [".git"]
+initializationOptions = { editorInfo = { name = "Neovim", version = "0.13.0-dev" }, editorPluginInfo = { name = "Neovim", version = "0.13.0-dev" } }
+settings = { telemetry = { telemetryLevel = "all" } }

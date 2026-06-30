@@ -1,0 +1,4 @@
+[languageServers.bzl]
+cmd = ["bzl", "lsp", "serve"]
+languages = ["bzl"]
+rootMarkers = ["WORKSPACE", "WORKSPACE.bazel"]

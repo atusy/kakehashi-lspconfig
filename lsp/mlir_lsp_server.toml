@@ -1,0 +1,4 @@
+[languageServers.mlir_lsp_server]
+cmd = ["mlir-lsp-server"]
+languages = ["mlir"]
+rootMarkers = [".git"]

@@ -1,0 +1,6 @@
+# WARN: workspace_required was dropped; not applicable to kakehashi
+[languageServers.emmylua_ls]
+cmd = ["emmylua_ls"]
+languages = ["lua"]
+rootMarkers = [[".emmyrc.json", ".emmyrc.lua", ".luarc.json", ".luarc.jsonc"], [".luacheckrc", ".stylua.toml", "stylua.toml", "selene.toml", "selene.yml"], ".git"]
+settings = { emmylua = { codeLens = { enable = true }, hint = { enable = true } } }

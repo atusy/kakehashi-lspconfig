@@ -1,0 +1,4 @@
+# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+[languageServers.pico8_ls]
+cmd = ["pico8-ls", "--stdio"]
+languages = ["p8"]

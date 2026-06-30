@@ -1,0 +1,5 @@
+# WARN: workspace_required was dropped; not applicable to kakehashi
+[languageServers.hare_lsp]
+cmd = ["hare-lsp", "-S"]
+languages = ["hare"]
+rootMarkers = [".git"]

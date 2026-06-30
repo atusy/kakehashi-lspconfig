@@ -1,0 +1,5 @@
+# WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
+[languageServers.glslls]
+cmd = ["glslls", "--stdin"]
+languages = ["glsl", "vert", "tesc", "tese", "frag", "geom", "comp"]
+rootMarkers = [".git"]

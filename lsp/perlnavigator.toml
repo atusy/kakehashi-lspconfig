@@ -1,0 +1,4 @@
+[languageServers.perlnavigator]
+cmd = ["perlnavigator"]
+languages = ["perl"]
+rootMarkers = [".git"]

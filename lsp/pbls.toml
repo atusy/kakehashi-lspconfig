@@ -1,0 +1,4 @@
+[languageServers.pbls]
+cmd = ["pbls"]
+languages = ["proto"]
+rootMarkers = [".pbls.toml", ".git"]

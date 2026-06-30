@@ -1,0 +1,4 @@
+[languageServers.terraform_lsp]
+cmd = ["terraform-lsp"]
+languages = ["terraform", "hcl"]
+rootMarkers = [".terraform", ".git"]

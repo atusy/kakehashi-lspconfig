@@ -1,0 +1,5 @@
+[languageServers.motoko_lsp]
+cmd = ["motoko-lsp", "--stdio"]
+languages = ["motoko"]
+rootMarkers = ["dfx.json", ".git"]
+initializationOptions = { formatter = "auto" }

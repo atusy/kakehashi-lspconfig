@@ -1,0 +1,5 @@
+# WARN: reuse_client was dropped; not applicable to kakehashi
+[languageServers.buf_ls]
+cmd = ["buf", "lsp", "serve", "--log-format=text"]
+languages = ["proto", "buf-config"]
+rootMarkers = ["buf.yaml", ".git"]

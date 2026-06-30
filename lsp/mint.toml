@@ -1,0 +1,4 @@
+[languageServers.mint]
+cmd = ["mint", "ls"]
+languages = ["mint"]
+rootMarkers = ["mint.json", ".git"]

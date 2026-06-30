@@ -1,0 +1,4 @@
+[languageServers.svls]
+cmd = ["svls"]
+languages = ["verilog", "systemverilog"]
+rootMarkers = [".git"]

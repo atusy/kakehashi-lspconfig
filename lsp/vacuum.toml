@@ -1,0 +1,4 @@
+[languageServers.vacuum]
+cmd = ["vacuum", "language-server"]
+languages = ["yaml.openapi", "json.openapi"]
+rootMarkers = [".git"]

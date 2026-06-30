@@ -1,0 +1,4 @@
+[languageServers.syntax_tree]
+cmd = ["stree", "lsp"]
+languages = ["ruby"]
+rootMarkers = [".streerc", "Gemfile", ".git"]

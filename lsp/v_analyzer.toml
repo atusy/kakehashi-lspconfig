@@ -1,0 +1,4 @@
+[languageServers.v_analyzer]
+cmd = ["v-analyzer"]
+languages = ["v", "vsh", "vv"]
+rootMarkers = ["v.mod", ".git"]

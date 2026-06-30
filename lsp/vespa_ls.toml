@@ -1,0 +1,4 @@
+[languageServers.vespa_ls]
+cmd = ["java", "-jar", "vespa-language-server.jar"]
+languages = ["sd", "profile", "yql"]
+rootMarkers = [".git"]

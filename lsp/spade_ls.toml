@@ -1,0 +1,4 @@
+[languageServers.spade_ls]
+cmd = ["spade-language-server"]
+languages = ["spade"]
+rootMarkers = ["swim.toml"]

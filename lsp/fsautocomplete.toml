@@ -1,0 +1,6 @@
+# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+[languageServers.fsautocomplete]
+cmd = ["fsautocomplete", "--adaptive-lsp-server-enabled"]
+languages = ["fsharp"]
+initializationOptions = { AutomaticWorkspaceInit = true }
+settings = { FSharp = { EnableReferenceCodeLens = true, ExternalAutocomplete = false, InterfaceStubGeneration = true, InterfaceStubGenerationMethodBody = "failwith \"Not Implemented\"", InterfaceStubGenerationObjectIdentifier = "this", Linter = true, RecordStubGeneration = true, RecordStubGenerationBody = "failwith \"Not Implemented\"", ResolveNamespaces = true, SimplifyNameAnalyzer = true, UnionCaseStubGeneration = true, UnionCaseStubGenerationBody = "failwith \"Not Implemented\"", UnusedDeclarationsAnalyzer = true, UnusedOpensAnalyzer = true, UseSdkScripts = true, keywordsAutocomplete = true } }

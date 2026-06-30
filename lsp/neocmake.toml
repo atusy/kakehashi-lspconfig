@@ -1,0 +1,4 @@
+[languageServers.neocmake]
+cmd = ["neocmakelsp", "stdio"]
+languages = ["cmake"]
+rootMarkers = [".neocmake.toml", ".git", "build", "cmake"]

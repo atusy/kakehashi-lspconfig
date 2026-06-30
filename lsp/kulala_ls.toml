@@ -1,0 +1,4 @@
+[languageServers.kulala_ls]
+cmd = ["kulala-ls", "--stdio"]
+languages = ["http"]
+rootMarkers = [".git"]

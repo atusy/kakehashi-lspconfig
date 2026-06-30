@@ -1,0 +1,4 @@
+[languageServers.openscad_ls]
+cmd = ["openscad-language-server"]
+languages = ["openscad"]
+rootMarkers = [".git"]

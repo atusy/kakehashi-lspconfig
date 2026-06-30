@@ -1,0 +1,4 @@
+[languageServers.jinja_lsp]
+cmd = ["jinja-lsp"]
+languages = ["jinja"]
+rootMarkers = [".git"]

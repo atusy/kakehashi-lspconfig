@@ -1,0 +1,4 @@
+[languageServers.nil_ls]
+cmd = ["nil"]
+languages = ["nix"]
+rootMarkers = ["flake.nix", ".git"]

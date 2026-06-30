@@ -1,0 +1,5 @@
+[languageServers.cds_lsp]
+cmd = ["cds-lsp", "--stdio"]
+languages = ["cds"]
+rootMarkers = ["package.json", "db", "srv"]
+settings = { cds = { validate = true } }

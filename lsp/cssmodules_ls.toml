@@ -1,0 +1,4 @@
+[languageServers.cssmodules_ls]
+cmd = ["cssmodules-language-server"]
+languages = ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+rootMarkers = ["package.json"]

@@ -1,0 +1,4 @@
+[languageServers.reason_ls]
+cmd = ["reason-language-server"]
+languages = ["reason"]
+rootMarkers = ["bsconfig.json", ".git"]

@@ -1,0 +1,5 @@
+[languageServers.bashls]
+cmd = ["bash-language-server", "start"]
+languages = ["bash", "sh"]
+rootMarkers = [".git"]
+settings = { bashIde = { globPattern = "*@(.sh|.inc|.bash|.command)" } }

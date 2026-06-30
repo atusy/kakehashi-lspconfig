@@ -1,0 +1,4 @@
+# WARN: filetypes was empty in source; set `languages` manually or this server never matches
+[languageServers.tabby_ml]
+cmd = ["tabby-agent", "--lsp", "--stdio"]
+rootMarkers = [".git"]

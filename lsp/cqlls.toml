@@ -1,0 +1,4 @@
+[languageServers.cqlls]
+cmd = ["cqlls"]
+languages = ["cql", "cqlang"]
+rootMarkers = [".cqlls", ".git"]

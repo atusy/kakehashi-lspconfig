@@ -1,0 +1,3 @@
+[languageServers.awk_ls]
+cmd = ["awk-language-server"]
+languages = ["awk"]

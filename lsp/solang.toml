@@ -1,0 +1,4 @@
+[languageServers.solang]
+cmd = ["solang", "language-server", "--target", "evm"]
+languages = ["solidity"]
+rootMarkers = [".git"]

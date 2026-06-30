@@ -1,0 +1,4 @@
+[languageServers.turtle_ls]
+cmd = ["node"]
+languages = ["turtle", "ttl"]
+rootMarkers = [".git"]

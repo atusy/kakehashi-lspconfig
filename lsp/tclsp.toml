@@ -1,0 +1,4 @@
+[languageServers.tclsp]
+cmd = ["tclsp"]
+languages = ["tcl", "sdc", "xdc", "upf"]
+rootMarkers = ["tclint.toml", ".tclint", "pyproject.toml", ".git"]

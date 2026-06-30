@@ -1,0 +1,5 @@
+[languageServers.textlsp]
+cmd = ["textlsp"]
+languages = ["text", "tex", "org"]
+rootMarkers = [".git"]
+settings = { textLSP = { analysers = { languagetool = { check_text = { on_change = false, on_open = true, on_save = true }, enabled = true } }, documents = { org = { org_todo_keywords = ["TODO", "IN_PROGRESS", "DONE"] } } } }

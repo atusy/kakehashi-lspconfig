@@ -1,0 +1,5 @@
+# WARN: workspace_required was dropped; not applicable to kakehashi
+[languageServers.phpactor]
+cmd = ["phpactor", "language-server"]
+languages = ["php"]
+rootMarkers = [".git", "composer.json", ".phpactor.json", ".phpactor.yml"]

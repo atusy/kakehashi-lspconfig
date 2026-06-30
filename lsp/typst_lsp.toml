@@ -1,0 +1,4 @@
+[languageServers.typst_lsp]
+cmd = ["typst-lsp"]
+languages = ["typst"]
+rootMarkers = [".git"]

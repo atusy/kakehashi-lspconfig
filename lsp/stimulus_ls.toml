@@ -1,0 +1,4 @@
+[languageServers.stimulus_ls]
+cmd = ["stimulus-language-server", "--stdio"]
+languages = ["html", "ruby", "eruby", "blade", "php"]
+rootMarkers = ["Gemfile", ".git"]

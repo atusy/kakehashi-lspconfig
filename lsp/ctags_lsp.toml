@@ -1,0 +1,4 @@
+# WARN: no `filetypes` in source; set `languages` manually or this server never matches
+[languageServers.ctags_lsp]
+cmd = ["ctags-lsp"]
+rootMarkers = ["tags", ".tags", ".git"]

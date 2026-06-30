@@ -1,0 +1,4 @@
+[languageServers.mm0_ls]
+cmd = ["mm0-rs", "server"]
+languages = ["metamath-zero"]
+rootMarkers = [".git"]

@@ -1,0 +1,3 @@
+[languageServers.sixtyfps]
+cmd = ["sixtyfps-lsp"]
+languages = ["sixtyfps"]

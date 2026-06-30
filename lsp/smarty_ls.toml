@@ -1,0 +1,6 @@
+# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+# WARN: initializationOptions.storageDir (userdata) could not be represented and was omitted
+[languageServers.smarty_ls]
+cmd = ["smarty-language-server", "--stdio"]
+languages = ["smarty"]
+settings = { css = { validate = true }, smarty = { pluginDirs = {} } }

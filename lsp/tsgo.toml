@@ -1,0 +1,5 @@
+# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+[languageServers.tsgo]
+languages = ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+settings = { typescript = { inlayHints = { enumMemberValues = { enabled = true }, functionLikeReturnTypes = { enabled = true }, parameterNames = { enabled = "literals", suppressWhenArgumentMatchesName = true }, parameterTypes = { enabled = true }, propertyDeclarationTypes = { enabled = true }, variableTypes = { enabled = true } } } }

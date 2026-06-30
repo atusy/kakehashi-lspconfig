@@ -1,0 +1,5 @@
+# WARN: no `cmd` in source; set `cmd` manually or kakehashi will skip this server
+[languageServers.visualforce_ls]
+languages = ["visualforce"]
+rootMarkers = ["sfdx-project.json"]
+initializationOptions = { embeddedLanguages = { css = true, javascript = true } }

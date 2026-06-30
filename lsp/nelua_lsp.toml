@@ -1,0 +1,4 @@
+# WARN: no `cmd` in source; set `cmd` manually or kakehashi will skip this server
+[languageServers.nelua_lsp]
+languages = ["nelua"]
+rootMarkers = ["Makefile", ".git", "*.nelua"]

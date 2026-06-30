@@ -1,0 +1,4 @@
+[languageServers.uiua]
+cmd = ["uiua", "lsp"]
+languages = ["uiua"]
+rootMarkers = ["main.ua", ".fmt.ua", ".git"]

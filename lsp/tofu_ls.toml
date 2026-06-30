@@ -1,0 +1,4 @@
+[languageServers.tofu_ls]
+cmd = ["tofu-ls", "serve"]
+languages = ["opentofu", "opentofu-vars", "terraform"]
+rootMarkers = [".terraform", ".git"]

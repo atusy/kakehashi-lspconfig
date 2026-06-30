@@ -1,0 +1,4 @@
+[languageServers.snakeskin_ls]
+cmd = ["snakeskin-cli", "lsp", "--stdio"]
+languages = ["ss"]
+rootMarkers = ["package.json"]

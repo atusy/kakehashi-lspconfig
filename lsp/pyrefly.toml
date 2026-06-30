@@ -1,0 +1,5 @@
+# WARN: on_exit (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.pyrefly]
+cmd = ["pyrefly", "lsp"]
+languages = ["python"]
+rootMarkers = ["pyrefly.toml", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]

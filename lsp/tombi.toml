@@ -1,0 +1,4 @@
+[languageServers.tombi]
+cmd = ["tombi", "lsp"]
+languages = ["toml"]
+rootMarkers = ["tombi.toml", "pyproject.toml", ".git"]

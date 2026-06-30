@@ -1,0 +1,4 @@
+[languageServers.shuck]
+cmd = ["shuck", "server"]
+languages = ["bash", "sh", "zsh"]
+rootMarkers = [".shuck.toml", ".git"]

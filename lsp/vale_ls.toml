@@ -1,0 +1,4 @@
+[languageServers.vale_ls]
+cmd = ["vale-ls"]
+languages = ["asciidoc", "markdown", "text", "tex", "rst", "html", "xml"]
+rootMarkers = [".vale.ini"]

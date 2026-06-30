@@ -1,0 +1,4 @@
+[languageServers.mutt_ls]
+cmd = ["mutt-language-server"]
+languages = ["muttrc", "neomuttrc"]
+rootMarkers = [".git"]

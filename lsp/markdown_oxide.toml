@@ -1,0 +1,5 @@
+# WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.markdown_oxide]
+cmd = ["markdown-oxide"]
+languages = ["markdown"]
+rootMarkers = [".git", ".obsidian", ".moxide.toml"]

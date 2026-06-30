@@ -1,0 +1,5 @@
+[languageServers.lua_ls]
+cmd = ["lua-language-server"]
+languages = ["lua"]
+rootMarkers = [[".emmyrc.json", ".luarc.json", ".luarc.jsonc"], [".luacheckrc", ".stylua.toml", "stylua.toml", "selene.toml", "selene.yml"], ".git"]
+settings = { Lua = { codeLens = { enable = true }, hint = { enable = true, semicolon = "Disable" } } }

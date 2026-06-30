@@ -1,0 +1,10 @@
+kakehashi-lspconfig
+Copyright 2026 atusy
+
+This product includes configurations derived from nvim-lspconfig
+(https://github.com/neovim/nvim-lspconfig), Copyright the Neovim
+contributors, licensed under the Apache License, Version 2.0.
+
+The TOML configurations under lsp/ were mechanically converted from the
+nvim-lspconfig `lsp/*.lua` server definitions and are distributed under
+the same Apache License, Version 2.0 (see the LICENSE file).

@@ -1,0 +1,5 @@
+[languageServers.solidity]
+cmd = ["solidity-ls", "--stdio"]
+languages = ["solidity"]
+rootMarkers = [".git", "package.json"]
+settings = { solidity = { includePath = "", remapping = {} } }

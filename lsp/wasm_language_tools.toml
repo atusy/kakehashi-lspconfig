@@ -1,0 +1,3 @@
+[languageServers.wasm_language_tools]
+cmd = ["wat_server"]
+languages = ["wat"]

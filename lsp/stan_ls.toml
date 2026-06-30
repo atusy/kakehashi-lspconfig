@@ -1,0 +1,4 @@
+[languageServers.stan_ls]
+cmd = ["stan-language-server", "--stdio"]
+languages = ["stan"]
+rootMarkers = [".git"]

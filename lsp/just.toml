@@ -1,0 +1,4 @@
+[languageServers.just]
+cmd = ["just-lsp"]
+languages = ["just"]
+rootMarkers = [".git"]

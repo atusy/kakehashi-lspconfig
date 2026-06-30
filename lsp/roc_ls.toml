@@ -1,0 +1,4 @@
+[languageServers.roc_ls]
+cmd = ["roc_language_server"]
+languages = ["roc"]
+rootMarkers = [".git"]

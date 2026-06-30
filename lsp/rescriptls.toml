@@ -1,0 +1,5 @@
+[languageServers.rescriptls]
+cmd = ["rescript-language-server", "--stdio"]
+languages = ["rescript"]
+rootMarkers = ["bsconfig.json", "rescript.json", ".git"]
+initializationOptions = { extensionConfiguration = { allowBuiltInFormatter = true, askToStartBuild = false, cache = { projectConfig = { enabled = true } }, codeLens = true, incrementalTypechecking = { acrossFiles = true, enable = true }, inlayHints = { enable = true } } }

@@ -1,0 +1,4 @@
+[languageServers.fstar]
+cmd = ["fstar.exe", "--lsp"]
+languages = ["fstar"]
+rootMarkers = [".git"]

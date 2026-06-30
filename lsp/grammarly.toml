@@ -1,0 +1,6 @@
+# WARN: handlers (client-side LSP handlers) were dropped
+[languageServers.grammarly]
+cmd = ["grammarly-languageserver", "--stdio"]
+languages = ["markdown"]
+rootMarkers = [".git"]
+initializationOptions = { clientId = "client_BaDkMgx4X19X9UxxYRCXZo" }

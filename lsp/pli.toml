@@ -1,0 +1,4 @@
+[languageServers.pli]
+cmd = ["pli_language_server"]
+languages = ["pli"]
+rootMarkers = [".pliplugin"]

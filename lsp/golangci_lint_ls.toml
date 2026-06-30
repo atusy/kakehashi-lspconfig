@@ -1,0 +1,6 @@
+# WARN: before_init (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.golangci_lint_ls]
+cmd = ["golangci-lint-langserver"]
+languages = ["go", "gomod"]
+rootMarkers = [".golangci.yml", ".golangci.yaml", ".golangci.toml", ".golangci.json", "go.work", "go.mod", ".git"]
+initializationOptions = { command = ["golangci-lint", "run", "--output.text.path=", "--output.tab.path=", "--output.html.path=", "--output.checkstyle.path=", "--output.junit-xml.path=", "--output.teamcity.path=", "--output.sarif.path=", "--show-stats=false", "--output.json.path=stdout"] }

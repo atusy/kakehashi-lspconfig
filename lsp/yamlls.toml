@@ -1,0 +1,6 @@
+# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: on_init (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.yamlls]
+languages = ["yaml", "yaml.docker-compose", "yaml.gitlab", "yaml.helm-values"]
+rootMarkers = [".git"]
+settings = { redhat = { telemetry = { enabled = false } }, yaml = { format = { enable = true } } }

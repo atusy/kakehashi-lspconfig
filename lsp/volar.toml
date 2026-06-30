@@ -1,0 +1,5 @@
+# WARN: on_init (editor-side hook) was dropped; not applicable to kakehashi
+[languageServers.volar]
+cmd = ["vue-language-server", "--stdio"]
+languages = ["vue"]
+rootMarkers = ["package.json"]

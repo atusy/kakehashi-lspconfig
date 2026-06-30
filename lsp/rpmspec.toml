@@ -1,0 +1,4 @@
+[languageServers.rpmspec]
+cmd = ["rpm_lsp_server", "--stdio"]
+languages = ["spec"]
+rootMarkers = [".git"]

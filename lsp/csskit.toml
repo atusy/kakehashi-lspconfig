@@ -1,0 +1,4 @@
+[languageServers.csskit]
+cmd = ["csskit", "lsp"]
+languages = ["css"]
+rootMarkers = ["package.json", ".git"]
