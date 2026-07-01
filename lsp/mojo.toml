@@ -1,4 +1,5 @@
 [languageServers.mojo]
+enabled = false
 cmd = ["mojo-lsp-server"]
 languages = ["mojo"]
 rootMarkers = [".git"]

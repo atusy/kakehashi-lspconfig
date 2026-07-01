@@ -1,4 +1,5 @@
 [languageServers.slint_lsp]
+enabled = false
 cmd = ["slint-lsp"]
 languages = ["slint"]
 rootMarkers = [".git"]

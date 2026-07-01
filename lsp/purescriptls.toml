@@ -1,4 +1,5 @@
 [languageServers.purescriptls]
+enabled = false
 cmd = ["purescript-language-server", "--stdio"]
 languages = ["purescript"]
 rootMarkers = ["bower.json", "flake.nix", "psc-package.json", "shell.nix", "spago.dhall", "spago.yaml"]

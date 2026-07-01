@@ -1,5 +1,6 @@
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.svlangserver]
+enabled = false
 cmd = ["svlangserver"]
 languages = ["verilog", "systemverilog"]
 rootMarkers = [".svlangserver", ".git"]

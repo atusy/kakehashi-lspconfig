@@ -1,4 +1,5 @@
 [languageServers.coffeesense]
+enabled = false
 cmd = ["coffeesense-language-server", "--stdio"]
 languages = ["coffee"]
 rootMarkers = ["package.json"]

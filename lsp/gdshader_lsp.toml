@@ -1,4 +1,5 @@
 [languageServers.gdshader_lsp]
+enabled = false
 cmd = ["gdshader-lsp", "--stdio"]
 languages = ["gdshader", "gdshaderinc"]
 rootMarkers = ["project.godot"]

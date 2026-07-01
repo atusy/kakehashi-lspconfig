@@ -1,4 +1,5 @@
 [languageServers.microcad_lsp]
+enabled = false
 cmd = ["microcad-lsp", "--stdio"]
 languages = ["microcad"]
 rootMarkers = [".git"]

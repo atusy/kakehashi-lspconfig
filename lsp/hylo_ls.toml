@@ -1,4 +1,5 @@
 [languageServers.hylo_ls]
+enabled = false
 cmd = ["hylo-language-server", "--stdio"]
 languages = ["hylo"]
 rootMarkers = [".git"]

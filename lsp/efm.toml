@@ -1,4 +1,5 @@
 # WARN: no `filetypes` in source; set `languages` manually or this server never matches
 [languageServers.efm]
+enabled = false
 cmd = ["efm-langserver"]
 rootMarkers = [".git"]

@@ -1,4 +1,5 @@
 [languageServers.beancount]
+enabled = false
 cmd = ["beancount-language-server", "--stdio"]
 languages = ["beancount", "bean"]
 rootMarkers = [".git"]

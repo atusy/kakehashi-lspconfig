@@ -2,4 +2,5 @@
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 # WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.biome]
+enabled = false
 languages = ["astro", "css", "graphql", "html", "javascript", "javascriptreact", "json", "jsonc", "svelte", "typescript", "typescriptreact", "vue"]

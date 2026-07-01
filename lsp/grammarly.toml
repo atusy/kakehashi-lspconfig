@@ -1,5 +1,6 @@
 # WARN: handlers (client-side LSP handlers) were dropped
 [languageServers.grammarly]
+enabled = false
 cmd = ["grammarly-languageserver", "--stdio"]
 languages = ["markdown"]
 rootMarkers = [".git"]

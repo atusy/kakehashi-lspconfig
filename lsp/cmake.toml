@@ -1,4 +1,5 @@
 [languageServers.cmake]
+enabled = false
 cmd = ["cmake-language-server"]
 languages = ["cmake"]
 rootMarkers = ["CMakePresets.json", "CTestConfig.cmake", ".git", "build", "cmake"]

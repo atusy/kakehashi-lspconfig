@@ -1,4 +1,5 @@
 [languageServers.gradle_ls]
+enabled = false
 cmd = ["gradle-language-server"]
 languages = ["groovy"]
 rootMarkers = ["settings.gradle", "build.gradle"]

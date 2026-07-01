@@ -1,4 +1,5 @@
 [languageServers.ziggy]
+enabled = false
 cmd = ["ziggy", "lsp"]
 languages = ["ziggy"]
 rootMarkers = [".git"]

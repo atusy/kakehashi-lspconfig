@@ -1,4 +1,5 @@
 [languageServers.vhdl_ls]
+enabled = false
 cmd = ["vhdl_ls"]
 languages = ["vhd", "vhdl"]
 rootMarkers = ["vhdl_ls.toml", ".vhdl_ls.toml"]

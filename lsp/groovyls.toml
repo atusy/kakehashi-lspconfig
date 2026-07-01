@@ -1,4 +1,5 @@
 [languageServers.groovyls]
+enabled = false
 cmd = ["groovy-language-server"]
 languages = ["groovy"]
 rootMarkers = ["Jenkinsfile", ".git"]

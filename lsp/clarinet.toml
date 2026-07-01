@@ -1,4 +1,5 @@
 [languageServers.clarinet]
+enabled = false
 cmd = ["clarinet", "lsp"]
 languages = ["clar", "clarity"]
 rootMarkers = ["Clarinet.toml"]

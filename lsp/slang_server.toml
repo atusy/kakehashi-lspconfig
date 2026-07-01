@@ -1,4 +1,5 @@
 [languageServers.slang_server]
+enabled = false
 cmd = ["slang-server"]
 languages = ["systemverilog", "verilog"]
 rootMarkers = [".git", ".slang"]

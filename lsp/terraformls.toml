@@ -1,6 +1,7 @@
 # WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.terraformls]
+enabled = false
 cmd = ["terraform-ls", "serve"]
 languages = ["terraform", "terraform-vars"]
 rootMarkers = [".terraform", ".git"]

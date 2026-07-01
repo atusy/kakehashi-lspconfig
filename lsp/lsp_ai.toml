@@ -1,4 +1,5 @@
 # WARN: filetypes was empty in source; set `languages` manually or this server never matches
 [languageServers.lsp_ai]
+enabled = false
 cmd = ["lsp-ai"]
 initializationOptions = { memory = { file_store = {} }, models = {} }

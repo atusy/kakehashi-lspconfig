@@ -1,4 +1,5 @@
 [languageServers.mm0_ls]
+enabled = false
 cmd = ["mm0-rs", "server"]
 languages = ["metamath-zero"]
 rootMarkers = [".git"]

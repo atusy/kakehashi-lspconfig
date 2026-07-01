@@ -1,4 +1,5 @@
 [languageServers.marksman]
+enabled = false
 cmd = ["marksman", "server"]
 languages = ["markdown", "markdown.mdx"]
 rootMarkers = [".marksman.toml", ".git"]

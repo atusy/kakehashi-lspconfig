@@ -1,4 +1,5 @@
 [languageServers.kcl]
+enabled = false
 cmd = ["kcl-language-server"]
 languages = ["kcl"]
 rootMarkers = [".git"]

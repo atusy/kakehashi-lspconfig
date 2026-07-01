@@ -1,4 +1,5 @@
 [languageServers.intelephense]
+enabled = false
 cmd = ["intelephense", "--stdio"]
 languages = ["php"]
 rootMarkers = [".git", "composer.json"]

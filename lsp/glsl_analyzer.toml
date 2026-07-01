@@ -1,5 +1,6 @@
 # WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
 [languageServers.glsl_analyzer]
+enabled = false
 cmd = ["glsl_analyzer"]
 languages = ["glsl", "vert", "tesc", "tese", "frag", "geom", "comp"]
 rootMarkers = [".git"]

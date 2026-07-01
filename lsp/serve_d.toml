@@ -1,4 +1,5 @@
 [languageServers.serve_d]
+enabled = false
 cmd = ["serve-d"]
 languages = ["d"]
 rootMarkers = ["dub.json", "dub.sdl", ".git"]

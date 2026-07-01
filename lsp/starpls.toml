@@ -1,4 +1,5 @@
 [languageServers.starpls]
+enabled = false
 cmd = ["starpls"]
 languages = ["bzl"]
 rootMarkers = ["WORKSPACE", "WORKSPACE.bazel", "MODULE.bazel"]

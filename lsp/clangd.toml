@@ -3,6 +3,7 @@
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 # WARN: on_init (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.clangd]
+enabled = false
 cmd = ["clangd"]
 languages = ["c", "c.doxygen", "cpp", "cpp.doxygen", "objc", "objcpp", "cuda"]
 rootMarkers = [".clangd", ".clang-tidy", ".clang-format", "compile_commands.json", "compile_flags.txt", "configure.ac", ".git"]

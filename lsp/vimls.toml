@@ -1,4 +1,5 @@
 [languageServers.vimls]
+enabled = false
 cmd = ["vim-language-server", "--stdio"]
 languages = ["vim"]
 rootMarkers = [".git"]

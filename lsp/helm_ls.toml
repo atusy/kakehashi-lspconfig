@@ -1,5 +1,6 @@
 # WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
 [languageServers.helm_ls]
+enabled = false
 cmd = ["helm_ls", "serve"]
 languages = ["helm", "yaml.helm-values"]
 rootMarkers = ["Chart.yaml"]

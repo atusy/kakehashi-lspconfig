@@ -1,4 +1,5 @@
 [languageServers.shopify_theme_ls]
+enabled = false
 cmd = ["shopify", "theme", "language-server"]
 languages = ["liquid"]
 rootMarkers = [".shopifyignore", ".theme-check.yml", ".theme-check.yaml", "shopify.theme.toml"]

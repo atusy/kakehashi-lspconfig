@@ -1,4 +1,5 @@
 [languageServers.turtle_ls]
+enabled = false
 cmd = ["node"]
 languages = ["turtle", "ttl"]
 rootMarkers = [".git"]

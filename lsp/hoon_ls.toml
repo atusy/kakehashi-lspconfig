@@ -1,4 +1,5 @@
 [languageServers.hoon_ls]
+enabled = false
 cmd = ["hoon-language-server"]
 languages = ["hoon"]
 rootMarkers = [".git"]

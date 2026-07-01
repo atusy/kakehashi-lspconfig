@@ -1,4 +1,5 @@
 [languageServers.asm_lsp]
+enabled = false
 cmd = ["asm-lsp"]
 languages = ["asm", "vmasm"]
 rootMarkers = [".asm-lsp.toml", ".git"]

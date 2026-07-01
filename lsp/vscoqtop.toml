@@ -1,5 +1,6 @@
 # WARN: on_init (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.vscoqtop]
+enabled = false
 cmd = ["vsrocqtop"]
 languages = ["coq"]
 rootMarkers = ["_RocqProject", "_CoqProject", ".git"]

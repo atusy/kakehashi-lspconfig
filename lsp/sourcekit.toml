@@ -2,5 +2,6 @@
 # WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
 # WARN: get_language_id (Lua function) was dropped
 [languageServers.sourcekit]
+enabled = false
 cmd = ["sourcekit-lsp"]
 languages = ["swift", "objc", "objcpp", "c", "cpp"]

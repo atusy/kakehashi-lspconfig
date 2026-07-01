@@ -1,4 +1,5 @@
 [languageServers.ntt]
+enabled = false
 cmd = ["ntt", "langserver"]
 languages = ["ttcn"]
 rootMarkers = [".git"]

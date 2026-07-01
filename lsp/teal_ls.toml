@@ -1,4 +1,5 @@
 [languageServers.teal_ls]
+enabled = false
 cmd = ["teal-language-server"]
 languages = ["teal"]
 rootMarkers = ["tlconfig.lua"]

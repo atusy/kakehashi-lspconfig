@@ -1,4 +1,5 @@
 [languageServers.mutt_ls]
+enabled = false
 cmd = ["mutt-language-server"]
 languages = ["muttrc", "neomuttrc"]
 rootMarkers = [".git"]

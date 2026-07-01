@@ -1,4 +1,5 @@
 [languageServers.m68k]
+enabled = false
 cmd = ["m68k-lsp-server", "--stdio"]
 languages = ["asm68k"]
 rootMarkers = ["Makefile", ".git"]

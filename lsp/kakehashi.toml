@@ -1,4 +1,5 @@
 # WARN: no `filetypes` in source; set `languages` manually or this server never matches
 [languageServers.kakehashi]
+enabled = false
 cmd = ["kakehashi"]
 rootMarkers = ["kakehashi.toml", ".git"]

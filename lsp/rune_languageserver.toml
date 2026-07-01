@@ -1,4 +1,5 @@
 [languageServers.rune_languageserver]
+enabled = false
 cmd = ["rune-languageserver"]
 languages = ["rune"]
 rootMarkers = [".git"]

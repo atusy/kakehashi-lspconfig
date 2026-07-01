@@ -1,4 +1,5 @@
 [languageServers.please]
+enabled = false
 cmd = ["plz", "tool", "lps"]
 languages = ["bzl"]
 rootMarkers = [".plzconfig"]

@@ -1,4 +1,5 @@
 [languageServers.cue]
+enabled = false
 cmd = ["cue", "lsp"]
 languages = ["cue"]
 rootMarkers = ["cue.mod", ".git"]

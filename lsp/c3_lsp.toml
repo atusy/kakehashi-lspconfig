@@ -1,4 +1,5 @@
 [languageServers.c3_lsp]
+enabled = false
 cmd = ["c3lsp"]
 languages = ["c3", "c3i"]
 rootMarkers = ["project.json", "manifest.json", ".git"]

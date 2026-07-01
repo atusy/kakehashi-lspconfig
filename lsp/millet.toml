@@ -1,4 +1,5 @@
 [languageServers.millet]
+enabled = false
 cmd = ["millet"]
 languages = ["sml"]
 rootMarkers = ["millet.toml"]

@@ -1,4 +1,5 @@
 [languageServers.pbls]
+enabled = false
 cmd = ["pbls"]
 languages = ["proto"]
 rootMarkers = [".pbls.toml", ".git"]

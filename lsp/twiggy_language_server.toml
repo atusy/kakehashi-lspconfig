@@ -1,4 +1,5 @@
 [languageServers.twiggy_language_server]
+enabled = false
 cmd = ["twiggy-language-server", "--stdio"]
 languages = ["twig"]
 rootMarkers = ["composer.json", ".git"]

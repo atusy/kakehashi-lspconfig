@@ -1,4 +1,5 @@
 [languageServers.ruff_lsp]
+enabled = false
 cmd = ["ruff-lsp"]
 languages = ["python"]
 rootMarkers = ["pyproject.toml", "ruff.toml", ".git"]

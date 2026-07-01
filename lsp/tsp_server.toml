@@ -1,4 +1,5 @@
 [languageServers.tsp_server]
+enabled = false
 cmd = ["tsp-server", "--stdio"]
 languages = ["typespec"]
 rootMarkers = ["tspconfig.yaml", ".git"]

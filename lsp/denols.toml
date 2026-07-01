@@ -3,6 +3,7 @@
 # WARN: handlers (client-side LSP handlers) were dropped
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.denols]
+enabled = false
 cmd = ["deno", "lsp"]
 languages = ["javascript", "javascriptreact", "typescript", "typescriptreact"]
 settings = { deno = { enable = true, suggest = { imports = { hosts = { "https://deno.land" = true } } } } }

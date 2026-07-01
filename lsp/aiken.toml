@@ -1,4 +1,5 @@
 [languageServers.aiken]
+enabled = false
 cmd = ["aiken", "lsp"]
 languages = ["aiken"]
 rootMarkers = ["aiken.toml", ".git"]

@@ -1,4 +1,5 @@
 [languageServers.vls]
+enabled = false
 cmd = ["v", "ls"]
 languages = ["v", "vlang"]
 rootMarkers = ["v.mod", ".git"]

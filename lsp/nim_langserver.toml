@@ -1,4 +1,5 @@
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 [languageServers.nim_langserver]
+enabled = false
 cmd = ["nimlangserver"]
 languages = ["nim"]

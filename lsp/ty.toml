@@ -1,4 +1,5 @@
 [languageServers.ty]
+enabled = false
 cmd = ["ty", "server"]
 languages = ["python"]
 rootMarkers = ["ty.toml", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", ".git"]

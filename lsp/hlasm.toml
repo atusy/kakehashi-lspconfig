@@ -1,4 +1,5 @@
 [languageServers.hlasm]
+enabled = false
 cmd = ["hlasm_language_server"]
 languages = ["hlasm"]
 rootMarkers = [".hlasmplugin"]

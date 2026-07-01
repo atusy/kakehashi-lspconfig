@@ -1,4 +1,5 @@
 [languageServers.hyprls]
+enabled = false
 cmd = ["hyprls", "--stdio"]
 languages = ["hyprlang"]
 rootMarkers = [".git"]

@@ -1,4 +1,5 @@
 [languageServers.bashls]
+enabled = false
 cmd = ["bash-language-server", "start"]
 languages = ["bash", "sh"]
 rootMarkers = [".git"]

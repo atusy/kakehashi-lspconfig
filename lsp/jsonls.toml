@@ -1,5 +1,6 @@
 # WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
 [languageServers.jsonls]
+enabled = false
 languages = ["json", "jsonc"]
 rootMarkers = [".git"]
 initializationOptions = { provideFormatter = true }

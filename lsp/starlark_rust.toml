@@ -1,4 +1,5 @@
 [languageServers.starlark_rust]
+enabled = false
 cmd = ["starlark", "--lsp"]
 languages = ["star", "bzl", "BUILD.bazel"]
 rootMarkers = [".git"]

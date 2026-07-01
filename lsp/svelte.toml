@@ -1,6 +1,7 @@
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.svelte]
+enabled = false
 cmd = ["svelteserver", "--stdio"]
 languages = ["svelte"]
 settings = { typescript = { inlayHints = { enumMemberValues = { enabled = true }, functionLikeReturnTypes = { enabled = true }, parameterNames = { enabled = "literals", suppressWhenArgumentMatchesName = true }, parameterTypes = { enabled = true }, propertyDeclarationTypes = { enabled = true }, variableTypes = { enabled = true } } } }

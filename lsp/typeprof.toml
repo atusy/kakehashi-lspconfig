@@ -1,4 +1,5 @@
 [languageServers.typeprof]
+enabled = false
 cmd = ["typeprof", "--lsp", "--stdio"]
 languages = ["ruby", "eruby"]
 rootMarkers = ["Gemfile", ".git"]

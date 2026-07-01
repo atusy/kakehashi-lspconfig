@@ -1,4 +1,5 @@
 [languageServers.roc_ls]
+enabled = false
 cmd = ["roc_language_server"]
 languages = ["roc"]
 rootMarkers = [".git"]

@@ -1,4 +1,5 @@
 [languageServers.dockerls]
+enabled = false
 cmd = ["docker-langserver", "--stdio"]
 languages = ["dockerfile"]
 rootMarkers = ["Dockerfile"]

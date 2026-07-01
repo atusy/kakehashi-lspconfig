@@ -1,4 +1,5 @@
 [languageServers.templ]
+enabled = false
 cmd = ["templ", "lsp"]
 languages = ["templ"]
 rootMarkers = ["go.work", "go.mod", ".git"]

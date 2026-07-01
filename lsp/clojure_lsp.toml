@@ -1,4 +1,5 @@
 [languageServers.clojure_lsp]
+enabled = false
 cmd = ["clojure-lsp"]
 languages = ["clojure", "edn"]
 rootMarkers = ["project.clj", "deps.edn", "build.boot", "shadow-cljs.edn", ".git", "bb.edn"]

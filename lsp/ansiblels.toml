@@ -1,4 +1,5 @@
 [languageServers.ansiblels]
+enabled = false
 cmd = ["ansible-language-server", "--stdio"]
 languages = ["yaml.ansible"]
 rootMarkers = ["ansible.cfg", ".ansible-lint"]

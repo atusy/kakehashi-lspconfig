@@ -1,4 +1,5 @@
 [languageServers.ungrammar_languageserver]
+enabled = false
 cmd = ["ungrammar-languageserver", "--stdio"]
 languages = ["ungrammar"]
 rootMarkers = [".git"]

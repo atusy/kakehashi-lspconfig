@@ -1,4 +1,5 @@
 [languageServers.turbo_ls]
+enabled = false
 cmd = ["turbo-language-server", "--stdio"]
 languages = ["html", "ruby", "eruby", "blade", "php"]
 rootMarkers = ["Gemfile", ".git"]

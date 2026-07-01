@@ -1,4 +1,5 @@
 [languageServers.earthlyls]
+enabled = false
 cmd = ["earthlyls"]
 languages = ["earthfile"]
 rootMarkers = ["Earthfile"]

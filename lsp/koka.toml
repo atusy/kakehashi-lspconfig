@@ -1,4 +1,5 @@
 [languageServers.koka]
+enabled = false
 cmd = ["koka", "--language-server", "--lsstdio"]
 languages = ["koka"]
 rootMarkers = [".git"]

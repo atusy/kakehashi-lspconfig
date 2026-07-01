@@ -1,4 +1,5 @@
 [languageServers.dotls]
+enabled = false
 cmd = ["dot-language-server", "--stdio"]
 languages = ["dot"]
 rootMarkers = [".git"]

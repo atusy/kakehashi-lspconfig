@@ -1,4 +1,5 @@
 [languageServers.erg_language_server]
+enabled = false
 cmd = ["erg", "--language-server"]
 languages = ["erg"]
 rootMarkers = ["package.er", ".git"]

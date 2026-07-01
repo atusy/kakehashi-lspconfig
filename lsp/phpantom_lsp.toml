@@ -1,4 +1,5 @@
 [languageServers.phpantom_lsp]
+enabled = false
 cmd = ["phpantom_lsp"]
 languages = ["php"]
 rootMarkers = [".phpantom.toml", ".git", "composer.json"]

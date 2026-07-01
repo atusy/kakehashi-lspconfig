@@ -1,4 +1,5 @@
 [languageServers.lwc_ls]
+enabled = false
 cmd = ["lwc-language-server", "--stdio"]
 languages = ["javascript", "html"]
 rootMarkers = ["sfdx-project.json"]

@@ -1,4 +1,5 @@
 [languageServers.yang_lsp]
+enabled = false
 cmd = ["yang-language-server"]
 languages = ["yang"]
 rootMarkers = [".git"]

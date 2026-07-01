@@ -1,5 +1,6 @@
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 [languageServers.gitlab_ci_ls]
+enabled = false
 cmd = ["gitlab-ci-ls"]
 languages = ["yaml.gitlab"]
 initializationOptions = { cache_path = "/Users/atusy/.cache/gitlab-ci-ls/", log_path = "/Users/atusy/.cache/gitlab-ci-ls//log/gitlab-ci-ls.log" }

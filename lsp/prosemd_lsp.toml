@@ -1,4 +1,5 @@
 [languageServers.prosemd_lsp]
+enabled = false
 cmd = ["prosemd-lsp", "--stdio"]
 languages = ["markdown"]
 rootMarkers = [".git"]

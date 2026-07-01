@@ -1,4 +1,5 @@
 [languageServers.gnls]
+enabled = false
 cmd = ["gnls", "--stdio"]
 languages = ["gn"]
 rootMarkers = [".gn", ".git"]

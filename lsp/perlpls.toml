@@ -1,4 +1,5 @@
 [languageServers.perlpls]
+enabled = false
 cmd = ["pls"]
 languages = ["perl"]
 rootMarkers = [".git"]

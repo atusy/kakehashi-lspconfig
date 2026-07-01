@@ -1,4 +1,5 @@
 [languageServers.yls]
+enabled = false
 cmd = ["yls", "-vv"]
 languages = ["yar", "yara"]
 rootMarkers = [".git"]

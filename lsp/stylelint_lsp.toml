@@ -1,6 +1,7 @@
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.stylelint_lsp]
+enabled = false
 cmd = ["stylelint-language-server", "--stdio"]
 languages = ["astro", "css", "html", "less", "scss", "vue"]
 settings = { stylelint = { snippet = ["css", "postcss"], validate = ["css", "postcss"] } }

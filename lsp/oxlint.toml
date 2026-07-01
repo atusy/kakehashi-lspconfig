@@ -4,4 +4,5 @@
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 # WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.oxlint]
+enabled = false
 languages = ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte", "astro"]

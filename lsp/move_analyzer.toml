@@ -1,4 +1,5 @@
 [languageServers.move_analyzer]
+enabled = false
 cmd = ["move-analyzer"]
 languages = ["move"]
 rootMarkers = ["Move.toml"]

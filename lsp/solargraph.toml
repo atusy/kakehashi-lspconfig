@@ -1,4 +1,5 @@
 [languageServers.solargraph]
+enabled = false
 cmd = ["solargraph", "stdio"]
 languages = ["ruby"]
 rootMarkers = ["Gemfile", ".git"]

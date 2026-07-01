@@ -1,4 +1,5 @@
 [languageServers.dhall_lsp_server]
+enabled = false
 cmd = ["dhall-lsp-server"]
 languages = ["dhall"]
 rootMarkers = [".git"]

@@ -1,4 +1,5 @@
 [languageServers.laravel_ls]
+enabled = false
 cmd = ["laravel-ls"]
 languages = ["php", "blade"]
 rootMarkers = ["artisan"]

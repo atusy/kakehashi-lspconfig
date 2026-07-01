@@ -1,4 +1,5 @@
 [languageServers.ruff]
+enabled = false
 cmd = ["ruff", "server"]
 languages = ["python"]
 rootMarkers = ["pyproject.toml", "ruff.toml", ".ruff.toml", ".git"]

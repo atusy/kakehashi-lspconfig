@@ -1,4 +1,5 @@
 [languageServers.futhark_lsp]
+enabled = false
 cmd = ["futhark", "lsp"]
 languages = ["futhark", "fut"]
 rootMarkers = [".git"]

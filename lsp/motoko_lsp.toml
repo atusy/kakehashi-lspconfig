@@ -1,4 +1,5 @@
 [languageServers.motoko_lsp]
+enabled = false
 cmd = ["motoko-lsp", "--stdio"]
 languages = ["motoko"]
 rootMarkers = ["dfx.json", ".git"]

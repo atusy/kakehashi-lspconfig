@@ -1,5 +1,6 @@
 # WARN: before_init (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.golangci_lint_ls]
+enabled = false
 cmd = ["golangci-lint-langserver"]
 languages = ["go", "gomod"]
 rootMarkers = [".golangci.yml", ".golangci.yaml", ".golangci.toml", ".golangci.json", "go.work", "go.mod", ".git"]

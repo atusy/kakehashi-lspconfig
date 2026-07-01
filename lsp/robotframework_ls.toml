@@ -1,4 +1,5 @@
 [languageServers.robotframework_ls]
+enabled = false
 cmd = ["robotframework_ls"]
 languages = ["robot"]
 rootMarkers = ["robotidy.toml", "pyproject.toml", "conda.yaml", "robot.yaml", ".git"]

@@ -1,4 +1,5 @@
 [languageServers.emmet_ls]
+enabled = false
 cmd = ["emmet-ls", "--stdio"]
 languages = ["astro", "css", "eruby", "html", "htmlangular", "htmldjango", "javascriptreact", "less", "pug", "sass", "scss", "svelte", "templ", "typescriptreact", "vue"]
 rootMarkers = [".git"]

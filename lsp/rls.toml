@@ -1,4 +1,5 @@
 [languageServers.rls]
+enabled = false
 cmd = ["rls"]
 languages = ["rust"]
 rootMarkers = ["Cargo.toml"]

@@ -1,4 +1,5 @@
 [languageServers.herb_ls]
+enabled = false
 cmd = ["herb-language-server", "--stdio"]
 languages = ["html", "eruby"]
 rootMarkers = ["Gemfile", ".git"]

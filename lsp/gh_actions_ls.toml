@@ -2,5 +2,6 @@
 # WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
 # WARN: handlers (client-side LSP handlers) were dropped
 [languageServers.gh_actions_ls]
+enabled = false
 cmd = ["gh-actions-language-server", "--stdio"]
 languages = ["yaml"]

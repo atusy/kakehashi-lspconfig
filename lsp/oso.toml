@@ -1,3 +1,4 @@
 [languageServers.oso]
+enabled = false
 cmd = ["oso-cloud", "lsp"]
 languages = ["polar"]

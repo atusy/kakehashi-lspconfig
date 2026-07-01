@@ -1,4 +1,5 @@
 [languageServers.elp]
+enabled = false
 cmd = ["elp", "server"]
 languages = ["erlang"]
 rootMarkers = ["rebar.config", "erlang.mk", ".git"]

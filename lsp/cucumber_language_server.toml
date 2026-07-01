@@ -1,4 +1,5 @@
 [languageServers.cucumber_language_server]
+enabled = false
 cmd = ["cucumber-language-server", "--stdio"]
 languages = ["cucumber"]
 rootMarkers = [".git"]

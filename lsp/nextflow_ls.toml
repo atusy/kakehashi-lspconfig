@@ -1,4 +1,5 @@
 [languageServers.nextflow_ls]
+enabled = false
 cmd = ["nextflow-language-server"]
 languages = ["nextflow"]
 rootMarkers = ["nextflow.config", ".git"]

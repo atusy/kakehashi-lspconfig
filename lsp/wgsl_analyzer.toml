@@ -1,4 +1,5 @@
 [languageServers.wgsl_analyzer]
+enabled = false
 cmd = ["wgsl-analyzer"]
 languages = ["wgsl"]
 rootMarkers = [".git"]

@@ -1,4 +1,5 @@
 [languageServers.dafny]
+enabled = false
 cmd = ["dafny", "server"]
 languages = ["dfy", "dafny"]
 rootMarkers = [".git"]

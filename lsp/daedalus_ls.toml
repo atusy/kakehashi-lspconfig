@@ -1,4 +1,5 @@
 [languageServers.daedalus_ls]
+enabled = false
 cmd = ["DaedalusLanguageServer"]
 languages = ["d"]
 rootMarkers = ["Gothic.src", "Camera.src", "Menu.src", "Music.src", "ParticleFX.src", "SFX.src", "VisualFX.src"]

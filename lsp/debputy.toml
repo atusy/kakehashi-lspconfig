@@ -1,4 +1,5 @@
 [languageServers.debputy]
+enabled = false
 cmd = ["debputy", "lsp", "server"]
 languages = ["debcontrol", "debcopyright", "debchangelog", "autopkgtest", "make", "yaml"]
 rootMarkers = ["debian"]

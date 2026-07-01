@@ -1,4 +1,5 @@
 [languageServers.lemminx]
+enabled = false
 cmd = ["lemminx"]
 languages = ["xml", "xsd", "xsl", "xslt", "svg"]
 rootMarkers = [".git"]

@@ -1,5 +1,6 @@
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.mpls]
+enabled = false
 cmd = ["mpls", "--theme", "dark", "--enable-emoji", "--enable-footnotes", "--no-auto"]
 languages = ["markdown"]
 rootMarkers = [".marksman.toml", ".git"]

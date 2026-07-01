@@ -1,4 +1,5 @@
 [languageServers.qmlls]
+enabled = false
 cmd = ["qmlls"]
 languages = ["qml", "qmljs"]
 rootMarkers = [".git"]

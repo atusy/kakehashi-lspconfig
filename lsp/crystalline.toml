@@ -1,4 +1,5 @@
 [languageServers.crystalline]
+enabled = false
 cmd = ["crystalline"]
 languages = ["crystal"]
 rootMarkers = ["shard.yml", ".git"]

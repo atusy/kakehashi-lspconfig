@@ -1,5 +1,6 @@
 # WARN: unhandled field `message_level` (number) was dropped
 [languageServers.smithy_ls]
+enabled = false
 cmd = ["cs", "launch", "--contrib", "smithy-language-server:0.8.0"]
 languages = ["smithy"]
 rootMarkers = ["smithy-build.json", "build.gradle", "build.gradle.kts", ".git"]

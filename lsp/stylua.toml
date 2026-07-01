@@ -1,4 +1,5 @@
 [languageServers.stylua]
+enabled = false
 cmd = ["stylua", "--lsp"]
 languages = ["lua"]
 rootMarkers = [".stylua.toml", "stylua.toml", ".editorconfig"]

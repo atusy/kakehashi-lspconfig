@@ -1,4 +1,5 @@
 [languageServers.facility_language_server]
+enabled = false
 cmd = ["facility-language-server"]
 languages = ["fsd"]
 rootMarkers = [".git"]

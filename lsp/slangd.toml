@@ -1,4 +1,5 @@
 [languageServers.slangd]
+enabled = false
 cmd = ["slangd"]
 languages = ["hlsl", "shaderslang"]
 rootMarkers = ["slangdconfig.json", ".clang-format", ".git"]

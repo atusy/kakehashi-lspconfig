@@ -1,4 +1,5 @@
 [languageServers.lexical]
+enabled = false
 cmd = ["lexical"]
 languages = ["elixir", "eelixir", "heex", "surface"]
 rootMarkers = ["mix.exs", ".git"]

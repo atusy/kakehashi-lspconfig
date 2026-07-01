@@ -1,4 +1,5 @@
 [languageServers.rescriptls]
+enabled = false
 cmd = ["rescript-language-server", "--stdio"]
 languages = ["rescript"]
 rootMarkers = ["bsconfig.json", "rescript.json", ".git"]

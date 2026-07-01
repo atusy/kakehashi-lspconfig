@@ -1,5 +1,6 @@
 # WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.zls]
+enabled = false
 cmd = ["zls"]
 languages = ["zig", "zir"]
 rootMarkers = ["zls.json", "build.zig", ".git"]

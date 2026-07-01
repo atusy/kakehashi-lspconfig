@@ -1,4 +1,5 @@
 [languageServers.cairo_ls]
+enabled = false
 cmd = ["scarb", "cairo-language-server", "/C", "--node-ipc"]
 languages = ["cairo"]
 rootMarkers = ["Scarb.toml", "cairo_project.toml", ".git"]

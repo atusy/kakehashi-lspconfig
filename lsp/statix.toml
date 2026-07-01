@@ -1,4 +1,5 @@
 [languageServers.statix]
+enabled = false
 cmd = ["statix", "check", "--stdin"]
 languages = ["nix"]
 rootMarkers = ["flake.nix", ".git"]

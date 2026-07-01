@@ -1,5 +1,6 @@
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 # WARN: offset_encoding was dropped; kakehashi manages offset encoding
 [languageServers.lean3ls]
+enabled = false
 cmd = ["lean-language-server", "--stdio", "--", "-M", "4096", "-T", "100000"]
 languages = ["lean3"]

@@ -1,3 +1,4 @@
 [languageServers.wasm_language_tools]
+enabled = false
 cmd = ["wat_server"]
 languages = ["wat"]

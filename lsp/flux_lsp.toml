@@ -1,4 +1,5 @@
 [languageServers.flux_lsp]
+enabled = false
 cmd = ["flux-lsp"]
 languages = ["flux"]
 rootMarkers = [".git"]

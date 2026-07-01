@@ -1,3 +1,4 @@
 [languageServers.systemd_lsp]
+enabled = false
 cmd = ["systemd-lsp"]
 languages = ["systemd"]

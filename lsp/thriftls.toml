@@ -1,4 +1,5 @@
 [languageServers.thriftls]
+enabled = false
 cmd = ["thriftls"]
 languages = ["thrift"]
 rootMarkers = [".thrift"]

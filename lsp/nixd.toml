@@ -1,4 +1,5 @@
 [languageServers.nixd]
+enabled = false
 cmd = ["nixd"]
 languages = ["nix"]
 rootMarkers = ["flake.nix", ".git"]

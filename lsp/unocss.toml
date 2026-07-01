@@ -1,5 +1,6 @@
 # WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.unocss]
+enabled = false
 cmd = ["unocss-language-server", "--stdio"]
 languages = ["erb", "haml", "hbs", "html", "css", "postcss", "javascript", "javascriptreact", "markdown", "ejs", "php", "svelte", "typescript", "typescriptreact", "vue-html", "vue", "sass", "scss", "less", "stylus", "astro", "rescript", "rust"]
 rootMarkers = ["unocss.config.js", "unocss.config.ts", "uno.config.js", "uno.config.ts"]

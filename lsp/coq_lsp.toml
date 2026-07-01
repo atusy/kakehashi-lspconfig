@@ -1,4 +1,5 @@
 [languageServers.coq_lsp]
+enabled = false
 cmd = ["coq-lsp"]
 languages = ["coq"]
 rootMarkers = ["_CoqProject", ".git"]

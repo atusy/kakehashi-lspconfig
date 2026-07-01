@@ -1,5 +1,6 @@
 # WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
 [languageServers.metals]
+enabled = false
 cmd = ["metals"]
 languages = ["scala"]
 rootMarkers = ["build.sbt", "build.sc", ["build.gradle", "build.gradle.kts"], "pom.xml"]

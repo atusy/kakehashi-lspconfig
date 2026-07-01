@@ -1,4 +1,5 @@
 [languageServers.azure_pipelines_ls]
+enabled = false
 cmd = ["azure-pipelines-language-server", "--stdio"]
 languages = ["yaml"]
 rootMarkers = ["azure-pipelines.yml"]

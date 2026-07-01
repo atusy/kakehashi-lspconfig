@@ -1,4 +1,5 @@
 [languageServers.solidity_ls_nomicfoundation]
+enabled = false
 cmd = ["nomicfoundation-solidity-language-server", "--stdio"]
 languages = ["solidity"]
 rootMarkers = ["hardhat.config.js", "hardhat.config.ts", "foundry.toml", "remappings.txt", "truffle.js", "truffle-config.js", "ape-config.yaml", ".git", "package.json"]

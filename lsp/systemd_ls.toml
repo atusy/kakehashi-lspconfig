@@ -1,4 +1,5 @@
 # WARN: on_init (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.systemd_ls]
+enabled = false
 cmd = ["systemd-lsp"]
 languages = ["systemd"]

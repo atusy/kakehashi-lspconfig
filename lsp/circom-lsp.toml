@@ -1,4 +1,5 @@
 [languageServers.circom-lsp]
+enabled = false
 cmd = ["circom-lsp"]
 languages = ["circom"]
 rootMarkers = [".git"]

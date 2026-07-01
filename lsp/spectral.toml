@@ -1,4 +1,5 @@
 [languageServers.spectral]
+enabled = false
 cmd = ["spectral-language-server", "--stdio"]
 languages = ["yaml", "json", "yml"]
 rootMarkers = [".spectral.yaml", ".spectral.yml", ".spectral.json", ".spectral.js"]

@@ -1,4 +1,5 @@
 [languageServers.alloy_ls]
+enabled = false
 cmd = ["alloy", "lsp"]
 languages = ["alloy"]
 rootMarkers = [".git"]

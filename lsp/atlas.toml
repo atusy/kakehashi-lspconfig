@@ -1,4 +1,5 @@
 [languageServers.atlas]
+enabled = false
 cmd = ["atlas", "tool", "lsp", "--stdio"]
 languages = ["atlas-*"]
 rootMarkers = ["atlas.hcl"]

@@ -1,5 +1,6 @@
 # WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
 [languageServers.cssls]
+enabled = false
 languages = ["css", "scss", "less"]
 rootMarkers = ["package.json", ".git"]
 initializationOptions = { provideFormatter = true }

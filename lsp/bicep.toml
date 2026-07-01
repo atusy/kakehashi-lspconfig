@@ -1,4 +1,5 @@
 # WARN: no `cmd` in source; set `cmd` manually or kakehashi will skip this server
 [languageServers.bicep]
+enabled = false
 languages = ["bicep", "bicep-params"]
 rootMarkers = [".git"]

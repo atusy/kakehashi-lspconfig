@@ -1,4 +1,5 @@
 [languageServers.veryl_ls]
+enabled = false
 cmd = ["veryl-ls"]
 languages = ["veryl"]
 rootMarkers = [".git"]

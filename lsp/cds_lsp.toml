@@ -1,4 +1,5 @@
 [languageServers.cds_lsp]
+enabled = false
 cmd = ["cds-lsp", "--stdio"]
 languages = ["cds"]
 rootMarkers = ["package.json", "db", "srv"]

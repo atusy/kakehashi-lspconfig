@@ -1,5 +1,6 @@
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 [languageServers.gopls]
+enabled = false
 cmd = ["gopls"]
 languages = ["go", "gomod", "gowork", "gotmpl"]
 settings = { gopls = { semanticTokens = true } }

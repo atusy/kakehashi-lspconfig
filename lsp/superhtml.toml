@@ -1,4 +1,5 @@
 [languageServers.superhtml]
+enabled = false
 cmd = ["superhtml", "lsp"]
 languages = ["superhtml", "html"]
 rootMarkers = [".git"]

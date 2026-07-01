@@ -1,4 +1,5 @@
 [languageServers.cypher_ls]
+enabled = false
 cmd = ["cypher-language-server", "--stdio"]
 languages = ["cypher"]
 rootMarkers = [".git"]

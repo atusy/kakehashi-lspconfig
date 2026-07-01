@@ -1,4 +1,5 @@
 [languageServers.hdl_checker]
+enabled = false
 cmd = ["hdl_checker", "--lsp"]
 languages = ["vhdl", "verilog", "systemverilog"]
 rootMarkers = [".git"]

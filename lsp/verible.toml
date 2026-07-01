@@ -1,4 +1,5 @@
 [languageServers.verible]
+enabled = false
 cmd = ["verible-verilog-ls"]
 languages = ["systemverilog", "verilog"]
 rootMarkers = [".git"]

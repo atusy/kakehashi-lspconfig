@@ -1,5 +1,6 @@
 # WARN: no `filetypes` in source; set `languages` manually or this server never matches
 [languageServers.custom_elements_ls]
+enabled = false
 cmd = ["custom-elements-languageserver", "--stdio"]
 rootMarkers = ["tsconfig.json", "package.json", "jsconfig.json", ".git"]
 initializationOptions = { hostInfo = "neovim" }

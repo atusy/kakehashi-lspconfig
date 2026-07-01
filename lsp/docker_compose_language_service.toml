@@ -1,4 +1,5 @@
 [languageServers.docker_compose_language_service]
+enabled = false
 cmd = ["docker-compose-langserver", "--stdio"]
 languages = ["yaml.docker-compose"]
 rootMarkers = ["docker-compose.yaml", "docker-compose.yml", "compose.yaml", "compose.yml"]

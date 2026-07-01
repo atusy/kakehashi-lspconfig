@@ -1,4 +1,5 @@
 [languageServers.csskit]
+enabled = false
 cmd = ["csskit", "lsp"]
 languages = ["css"]
 rootMarkers = ["package.json", ".git"]

@@ -2,4 +2,5 @@
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 # WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.oxfmt]
+enabled = false
 languages = ["javascript", "javascriptreact", "typescript", "typescriptreact", "toml", "json", "jsonc", "json5", "yaml", "html", "vue", "handlebars", "css", "scss", "less", "graphql", "markdown"]

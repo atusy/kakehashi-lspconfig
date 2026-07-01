@@ -1,6 +1,7 @@
 # WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
 # WARN: reuse_client was dropped; not applicable to kakehashi
 [languageServers.ruby_lsp]
+enabled = false
 languages = ["ruby", "eruby"]
 rootMarkers = ["Gemfile", ".git"]
 initializationOptions = { formatter = "auto" }

@@ -1,4 +1,5 @@
 [languageServers.bqls]
+enabled = false
 cmd = ["bqls"]
 languages = ["sql"]
 rootMarkers = [".git"]

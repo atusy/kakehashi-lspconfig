@@ -1,4 +1,5 @@
 [languageServers.solidity]
+enabled = false
 cmd = ["solidity-ls", "--stdio"]
 languages = ["solidity"]
 rootMarkers = [".git", "package.json"]

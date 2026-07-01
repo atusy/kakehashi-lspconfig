@@ -1,4 +1,5 @@
 [languageServers.theme_check]
+enabled = false
 cmd = ["theme-check-language-server", "--stdio"]
 languages = ["liquid"]
 rootMarkers = [".theme-check.yml"]

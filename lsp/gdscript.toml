@@ -1,4 +1,5 @@
 # WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
 [languageServers.gdscript]
+enabled = false
 languages = ["gdscript"]
 rootMarkers = ["project.godot", ".git"]

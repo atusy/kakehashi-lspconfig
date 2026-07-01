@@ -1,5 +1,6 @@
 # WARN: get_language_id (Lua function) was dropped
 [languageServers.ltex_plus]
+enabled = false
 cmd = ["ltex-ls-plus"]
 languages = ["asciidoc", "bib", "context", "gitcommit", "html", "markdown", "org", "pandoc", "plaintex", "quarto", "mail", "mdx", "rmd", "rnoweb", "rst", "tex", "text", "typst", "xhtml"]
 rootMarkers = [".git"]

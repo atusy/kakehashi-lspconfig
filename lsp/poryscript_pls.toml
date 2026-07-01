@@ -1,4 +1,5 @@
 [languageServers.poryscript_pls]
+enabled = false
 cmd = ["poryscript-pls"]
 languages = ["pory"]
 rootMarkers = [".git"]

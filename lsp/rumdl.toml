@@ -1,4 +1,5 @@
 [languageServers.rumdl]
+enabled = false
 cmd = ["rumdl", "server"]
 languages = ["markdown"]
 rootMarkers = [".git"]

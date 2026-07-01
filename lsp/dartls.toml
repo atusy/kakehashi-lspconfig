@@ -1,4 +1,5 @@
 [languageServers.dartls]
+enabled = false
 cmd = ["dart", "language-server", "--protocol=lsp"]
 languages = ["dart"]
 rootMarkers = ["pubspec.yaml"]

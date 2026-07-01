@@ -2,5 +2,6 @@
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 # WARN: get_language_id (Lua function) was dropped
 [languageServers.csharp_ls]
+enabled = false
 languages = ["cs"]
 initializationOptions = { AutomaticWorkspaceInit = true }

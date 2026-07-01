@@ -1,6 +1,7 @@
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 # WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.zk]
+enabled = false
 cmd = ["zk", "lsp"]
 languages = ["markdown"]
 rootMarkers = [".zk"]

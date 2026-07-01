@@ -1,5 +1,6 @@
 # WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
 [languageServers.html]
+enabled = false
 languages = ["html"]
 rootMarkers = ["package.json", ".git"]
 initializationOptions = { configurationSection = ["html", "css", "javascript"], embeddedLanguages = { css = true, javascript = true }, provideFormatter = true }

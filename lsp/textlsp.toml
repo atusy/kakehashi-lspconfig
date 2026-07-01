@@ -1,4 +1,5 @@
 [languageServers.textlsp]
+enabled = false
 cmd = ["textlsp"]
 languages = ["text", "tex", "org"]
 rootMarkers = [".git"]

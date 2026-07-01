@@ -1,3 +1,4 @@
 [languageServers.awk_ls]
+enabled = false
 cmd = ["awk-language-server"]
 languages = ["awk"]

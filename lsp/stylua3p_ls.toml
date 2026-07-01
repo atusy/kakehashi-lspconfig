@@ -1,4 +1,5 @@
 [languageServers.stylua3p_ls]
+enabled = false
 cmd = ["stylua-3p-language-server"]
 languages = ["lua"]
 rootMarkers = [".stylua.toml", "stylua.toml"]

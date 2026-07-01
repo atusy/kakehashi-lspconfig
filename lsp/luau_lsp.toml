@@ -1,4 +1,5 @@
 [languageServers.luau_lsp]
+enabled = false
 cmd = ["luau-lsp", "lsp"]
 languages = ["luau"]
 rootMarkers = [".git"]

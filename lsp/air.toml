@@ -1,4 +1,5 @@
 [languageServers.air]
+enabled = false
 cmd = ["air", "language-server"]
 languages = ["r"]
 rootMarkers = ["air.toml", ".air.toml", ".git"]

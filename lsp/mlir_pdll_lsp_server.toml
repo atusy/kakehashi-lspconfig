@@ -1,4 +1,5 @@
 [languageServers.mlir_pdll_lsp_server]
+enabled = false
 cmd = ["mlir-pdll-lsp-server"]
 languages = ["pdll"]
 rootMarkers = ["pdll_compile_commands.yml", ".git"]

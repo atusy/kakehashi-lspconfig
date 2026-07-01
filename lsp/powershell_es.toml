@@ -1,4 +1,5 @@
 # WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
 [languageServers.powershell_es]
+enabled = false
 languages = ["ps1"]
 rootMarkers = ["PSScriptAnalyzerSettings.psd1", ".git"]

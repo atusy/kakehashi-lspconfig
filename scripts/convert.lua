@@ -12,6 +12,12 @@
 -- Note: rootMarkers KEEP `.git`. A server that sets its own rootMarkers
 -- replaces kakehashi's `[".git"]` default outright (override, not merge), so
 -- `.git` must be listed explicitly or it is dismissed as a marker entirely.
+--
+-- Note: every generated config carries `enabled = false`, since otherwise
+-- kakehashi would eagerly spawn every server matching its `languages`. Users
+-- opt in per-server with `[languageServers.<name>] enabled = true` in their
+-- own config, loaded after this one (e.g. `--config-file lsp/x.toml
+-- --config-file kakehashi.toml`).
 
 local script_path = debug.getinfo(1, 'S').source:sub(2)
 local repo_root = vim.fn.fnamemodify(script_path, ':p:h:h')
@@ -314,6 +320,7 @@ local function convert(name, cfg)
     lines[#lines + 1] = '# WARN: ' .. w
   end
   lines[#lines + 1] = '[languageServers.' .. quote_key(name) .. ']'
+  lines[#lines + 1] = 'enabled = false'
   for _, b in ipairs(body) do
     lines[#lines + 1] = b
   end
@@ -351,6 +358,7 @@ for _, file in ipairs(files) do
     fh:write('# WARN: failed to evaluate source config: ' .. tostring(cfg):gsub('\n', ' ') .. '\n')
     fh:write('# WARN: fill in cmd / languages / rootMarkers / initializationOptions manually\n')
     fh:write('[languageServers.' .. quote_key(name) .. ']\n')
+    fh:write('enabled = false\n')
     fh:close()
   end
 end

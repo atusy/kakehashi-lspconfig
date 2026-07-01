@@ -1,5 +1,6 @@
 # WARN: get_language_id (Lua function) was dropped
 [languageServers.robotcode]
+enabled = false
 cmd = ["robotcode", "language-server"]
 languages = ["robot", "resource"]
 rootMarkers = ["robot.toml", "pyproject.toml", "Pipfile", ".git"]

@@ -1,4 +1,5 @@
 [languageServers.janet_lsp]
+enabled = false
 cmd = ["janet-lsp", "--stdio"]
 languages = ["janet"]
 rootMarkers = ["project.janet", ".git"]

@@ -1,4 +1,5 @@
 # WARN: no `filetypes` in source; set `languages` manually or this server never matches
 [languageServers.basics_ls]
+enabled = false
 cmd = ["basics-language-server"]
 settings = { buffer = { enable = true, minCompletionLength = 4 }, path = { enable = true }, snippet = { enable = false, sources = {} } }

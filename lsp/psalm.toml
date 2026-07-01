@@ -1,4 +1,5 @@
 [languageServers.psalm]
+enabled = false
 cmd = ["psalm", "--language-server"]
 languages = ["php"]
 rootMarkers = ["psalm.xml", "psalm.xml.dist"]

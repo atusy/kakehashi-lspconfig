@@ -1,4 +1,5 @@
 [languageServers.perlls]
+enabled = false
 cmd = ["perl", "-MPerl::LanguageServer", "-e", "Perl::LanguageServer::run", "--", "--port 13603", "--nostdio 0"]
 languages = ["perl"]
 rootMarkers = [".git"]

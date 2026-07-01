@@ -1,4 +1,5 @@
 [languageServers.pyre]
+enabled = false
 cmd = ["pyre", "persistent"]
 languages = ["python"]
 rootMarkers = [".pyre_configuration"]

@@ -1,5 +1,6 @@
 # WARN: unhandled field `flags` (table) was dropped
 [languageServers.autohotkey_lsp]
+enabled = false
 cmd = ["autohotkey_lsp", "--stdio"]
 languages = ["autohotkey"]
 rootMarkers = ["package.json"]

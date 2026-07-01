@@ -1,4 +1,5 @@
 [languageServers.hydra_lsp]
+enabled = false
 cmd = ["hydra-lsp"]
 languages = ["yaml"]
 rootMarkers = [".git"]

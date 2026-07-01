@@ -1,4 +1,5 @@
 [languageServers.standardrb]
+enabled = false
 cmd = ["standardrb", "--lsp"]
 languages = ["ruby"]
 rootMarkers = ["Gemfile", ".git"]

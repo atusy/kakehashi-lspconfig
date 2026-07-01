@@ -1,4 +1,5 @@
 [languageServers.java_language_server]
+enabled = false
 cmd = ["java-language-server"]
 languages = ["java"]
 rootMarkers = ["build.gradle", "build.gradle.kts", "pom.xml", ".git"]

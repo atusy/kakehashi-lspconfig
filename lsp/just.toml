@@ -1,4 +1,5 @@
 [languageServers.just]
+enabled = false
 cmd = ["just-lsp"]
 languages = ["just"]
 rootMarkers = [".git"]

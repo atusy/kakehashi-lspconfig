@@ -1,4 +1,5 @@
 [languageServers.lelwel_ls]
+enabled = false
 cmd = ["lelwel-ls"]
 languages = ["llw"]
 rootMarkers = [".git"]

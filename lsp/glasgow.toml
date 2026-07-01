@@ -1,4 +1,5 @@
 [languageServers.glasgow]
+enabled = false
 cmd = ["glasgow"]
 languages = ["wgsl"]
 rootMarkers = [".git"]

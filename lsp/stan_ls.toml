@@ -1,4 +1,5 @@
 [languageServers.stan_ls]
+enabled = false
 cmd = ["stan-language-server", "--stdio"]
 languages = ["stan"]
 rootMarkers = [".git"]

@@ -1,4 +1,5 @@
 [languageServers.uvls]
+enabled = false
 cmd = ["uvls"]
 languages = ["uvl"]
 rootMarkers = [".git"]

@@ -1,4 +1,5 @@
 [languageServers.brioche]
+enabled = false
 cmd = ["brioche", "lsp"]
 languages = ["brioche"]
 rootMarkers = ["project.bri"]

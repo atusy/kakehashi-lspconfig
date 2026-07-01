@@ -4,5 +4,6 @@
 # WARN: handlers (client-side LSP handlers) were dropped
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.ts_ls]
+enabled = false
 languages = ["javascript", "javascriptreact", "typescript", "typescriptreact"]
 initializationOptions = { hostInfo = "neovim" }

@@ -1,4 +1,5 @@
 [languageServers.gn_language_server]
+enabled = false
 cmd = ["gn-language-server", "--stdio"]
 languages = ["gn"]
 rootMarkers = [".gn", ".git"]

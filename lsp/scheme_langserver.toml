@@ -1,4 +1,5 @@
 [languageServers.scheme_langserver]
+enabled = false
 cmd = ["scheme-langserver", "~/.scheme-langserver.log", "enable", "disable"]
 languages = ["scheme"]
 rootMarkers = ["Akku.manifest", ".git"]

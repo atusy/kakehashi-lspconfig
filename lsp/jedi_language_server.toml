@@ -1,4 +1,5 @@
 [languageServers.jedi_language_server]
+enabled = false
 cmd = ["jedi-language-server"]
 languages = ["python"]
 rootMarkers = ["pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]

@@ -1,4 +1,5 @@
 [languageServers.sqruff]
+enabled = false
 cmd = ["sqruff", "lsp"]
 languages = ["sql"]
 rootMarkers = [".sqruff", ".git"]

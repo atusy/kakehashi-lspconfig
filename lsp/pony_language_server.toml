@@ -1,5 +1,6 @@
 # WARN: on_init (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.pony_language_server]
+enabled = false
 cmd = ["pony-lsp"]
 languages = ["pony"]
 rootMarkers = ["corral.json", ".git"]

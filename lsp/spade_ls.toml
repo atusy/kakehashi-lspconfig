@@ -1,4 +1,5 @@
 [languageServers.spade_ls]
+enabled = false
 cmd = ["spade-language-server"]
 languages = ["spade"]
 rootMarkers = ["swim.toml"]

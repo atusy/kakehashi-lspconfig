@@ -1,4 +1,5 @@
 [languageServers.nickel_ls]
+enabled = false
 cmd = ["nls"]
 languages = ["ncl", "nickel"]
 rootMarkers = [".git"]

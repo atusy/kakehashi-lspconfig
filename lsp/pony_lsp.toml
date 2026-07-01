@@ -1,4 +1,5 @@
 [languageServers.pony_lsp]
+enabled = false
 cmd = ["pony-lsp"]
 languages = ["pony"]
 rootMarkers = ["corral.json", ".git"]

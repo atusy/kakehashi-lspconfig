@@ -1,4 +1,5 @@
 [languageServers.selene3p_ls]
+enabled = false
 cmd = ["selene-3p-language-server"]
 languages = ["lua"]
 rootMarkers = ["selene.toml"]

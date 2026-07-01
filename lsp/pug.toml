@@ -1,4 +1,5 @@
 [languageServers.pug]
+enabled = false
 cmd = ["pug-lsp"]
 languages = ["pug"]
 rootMarkers = ["package.json"]

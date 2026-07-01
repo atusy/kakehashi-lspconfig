@@ -1,4 +1,5 @@
 [languageServers.opencl_ls]
+enabled = false
 cmd = ["opencl-language-server"]
 languages = ["opencl"]
 rootMarkers = [".git"]

@@ -1,6 +1,7 @@
 # WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
 # WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.glint]
+enabled = false
 languages = ["html.handlebars", "handlebars", "typescript", "typescript.glimmer", "javascript", "javascript.glimmer"]
 rootMarkers = [".glintrc.yml", ".glintrc", ".glintrc.json", ".glintrc.js", "glint.config.js", "package.json"]
 initializationOptions = { glint = { useGlobal = false } }

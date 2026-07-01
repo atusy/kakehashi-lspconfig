@@ -1,4 +1,5 @@
 # WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
 [languageServers.apex_ls]
+enabled = false
 languages = ["apex", "apexcode"]
 rootMarkers = ["sfdx-project.json"]

@@ -1,4 +1,5 @@
 [languageServers.somesass_ls]
+enabled = false
 cmd = ["some-sass-language-server", "--stdio"]
 languages = ["scss", "sass"]
 rootMarkers = [".git", ".package.json"]

@@ -1,4 +1,5 @@
 [languageServers.atopile]
+enabled = false
 cmd = ["ato", "lsp", "start"]
 languages = ["ato"]
 rootMarkers = ["ato.yaml", ".ato", ".git"]

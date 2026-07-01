@@ -1,4 +1,5 @@
 [languageServers.tilt_ls]
+enabled = false
 cmd = ["tilt", "lsp", "start"]
 languages = ["tiltfile"]
 rootMarkers = [".git"]

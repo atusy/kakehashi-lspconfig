@@ -1,4 +1,5 @@
 [languageServers.prismals]
+enabled = false
 cmd = ["prisma-language-server", "--stdio"]
 languages = ["prisma"]
 rootMarkers = [".git", "package.json"]

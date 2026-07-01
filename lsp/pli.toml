@@ -1,4 +1,5 @@
 [languageServers.pli]
+enabled = false
 cmd = ["pli_language_server"]
 languages = ["pli"]
 rootMarkers = [".pliplugin"]
