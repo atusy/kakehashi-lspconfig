@@ -9,7 +9,7 @@
 -- Evaluates each config with the real `vim` API (so vim.fn.has, vim.list_extend,
 -- vim.env, etc. resolve correctly), then serializes the resulting table to TOML.
 --
--- Note: rootMarkers KEEP `.git`. A server that sets its own rootMarkers
+-- Note: workspaceMarkers KEEP `.git`. A server that sets its own workspaceMarkers
 -- replaces kakehashi's `[".git"]` default outright (override, not merge), so
 -- `.git` must be listed explicitly or it is dismissed as a marker entirely.
 --
@@ -164,9 +164,9 @@ local function serialize(value, path, warns)
 end
 
 -- ---------------------------------------------------------------------------
--- rootMarkers: preserve every entry (including `.git`), collapse 1-element
+-- workspaceMarkers: preserve every entry (including `.git`), collapse 1-element
 -- groups to a bare string. `.git` MUST be kept: a server that sets its own
--- rootMarkers replaces kakehashi's `[".git"]` default outright, so dropping
+-- workspaceMarkers replaces kakehashi's `[".git"]` default outright, so dropping
 -- `.git` here would dismiss it as a marker entirely.
 -- ---------------------------------------------------------------------------
 
@@ -325,15 +325,15 @@ local function convert(name, cfg)
     warns[#warns + 1] = 'no `filetypes` in source; set `languages` manually or this server never matches'
   end
 
-  -- rootMarkers (from root_markers; .git stripped). root_dir function -> warn.
+  -- workspaceMarkers (from root_markers; .git stripped). root_dir function -> warn.
   if cfg.root_markers ~= nil and type(cfg.root_markers) == 'table' then
     local entries = serialize_root_markers(cfg.root_markers)
     if #entries > 0 then
-      body[#body + 1] = 'rootMarkers = [' .. table.concat(entries, ', ') .. ']'
+      body[#body + 1] = 'workspaceMarkers = [' .. table.concat(entries, ', ') .. ']'
     end
   end
   if cfg.root_dir ~= nil then
-    warns[#warns + 1] = 'root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong'
+    warns[#warns + 1] = 'root_dir was a dynamic Lua function (dynamic root detection); approximate with `workspaceMarkers` if the default (client root) is wrong'
   end
 
   -- initializationOptions (from nvim `init_options`; consumed once at
@@ -416,7 +416,7 @@ for _, file in ipairs(files) do
     failures[#failures + 1] = name .. ': ' .. tostring(cfg)
     local fh = io.open(out_path, 'w')
     fh:write('# WARN: failed to evaluate source config: ' .. tostring(cfg):gsub('\n', ' ') .. '\n')
-    fh:write('# WARN: fill in cmd / languages / rootMarkers / initializationOptions manually\n')
+    fh:write('# WARN: fill in cmd / languages / workspaceMarkers / initializationOptions manually\n')
     fh:write('[languageServers.' .. quote_key(name) .. ']\n')
     fh:write('enabled = false\n')
     fh:close()
