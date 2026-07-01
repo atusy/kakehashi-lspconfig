@@ -1,5 +1,6 @@
+# WARN: workspaceMarkers dropped 2 glob-style marker(s) (*.lpi, *.lpk); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.pasls]
 enabled = false
 cmd = ["pasls"]
 languages = ["pascal"]
-workspaceMarkers = ["*.lpi", "*.lpk", ".git"]
+workspaceMarkers = [".git"]

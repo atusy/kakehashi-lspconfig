@@ -1,5 +1,6 @@
 # WARN: no `cmd` in source; set `cmd` manually or kakehashi will skip this server
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (*.nelua); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.nelua_lsp]
 enabled = false
 languages = ["nelua"]
-workspaceMarkers = ["Makefile", ".git", "*.nelua"]
+workspaceMarkers = ["Makefile", ".git"]

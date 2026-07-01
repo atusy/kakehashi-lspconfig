@@ -1,5 +1,6 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (*.odin); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.ols]
 enabled = false
 cmd = ["ols"]
 languages = ["odin"]
-workspaceMarkers = ["ols.json", ".git", "*.odin"]
+workspaceMarkers = ["ols.json", ".git"]

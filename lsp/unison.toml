@@ -1,5 +1,5 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (*.u); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.unison]
 enabled = false
 cmd = ["nc", "localhost", "5757"]
 languages = ["unison"]
-workspaceMarkers = ["*.u"]

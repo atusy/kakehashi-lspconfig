@@ -1,5 +1,6 @@
+# WARN: workspaceMarkers dropped 3 glob-style marker(s) (*.sln, *.slnx, *.*proj); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.msbuild_project_tools_server]
 enabled = false
 cmd = ["dotnet", "MSBuildProjectTools.LanguageServer.Host.dll"]
 languages = ["msbuild"]
-workspaceMarkers = ["*.sln", "*.slnx", "*.*proj", ".git"]
+workspaceMarkers = [".git"]

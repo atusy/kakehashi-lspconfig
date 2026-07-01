@@ -1,5 +1,5 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (*.p8); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.pico8_ls]
 enabled = false
 cmd = ["pico8-ls", "--stdio"]
 languages = ["p8"]
-workspaceMarkers = ["*.p8"]

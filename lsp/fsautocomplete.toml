@@ -1,7 +1,8 @@
+# WARN: workspaceMarkers dropped 3 glob-style marker(s) (*.sln, *.slnx, *.fsproj); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.fsautocomplete]
 enabled = false
 cmd = ["fsautocomplete", "--adaptive-lsp-server-enabled"]
 languages = ["fsharp"]
-workspaceMarkers = ["*.sln", "*.slnx", "*.fsproj", ".git"]
+workspaceMarkers = [".git"]
 initializationOptions = { AutomaticWorkspaceInit = true }
 settings = { FSharp = { EnableReferenceCodeLens = true, ExternalAutocomplete = false, InterfaceStubGeneration = true, InterfaceStubGenerationMethodBody = "failwith \"Not Implemented\"", InterfaceStubGenerationObjectIdentifier = "this", Linter = true, RecordStubGeneration = true, RecordStubGenerationBody = "failwith \"Not Implemented\"", ResolveNamespaces = true, SimplifyNameAnalyzer = true, UnionCaseStubGeneration = true, UnionCaseStubGenerationBody = "failwith \"Not Implemented\"", UnusedDeclarationsAnalyzer = true, UnusedOpensAnalyzer = true, UseSdkScripts = true, keywordsAutocomplete = true } }

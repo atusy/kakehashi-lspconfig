@@ -191,6 +191,55 @@ local function serialize_root_markers(rm)
 	return out_entries -- list of already-serialized TOML fragments
 end
 
+-- kakehashi's marker matching is a literal `dir.join(marker).exists()` check
+-- (see kakehashi's root_markers.rs) — no glob/wildcard expansion. Markers
+-- inherited from nvim-lspconfig's `util.root_pattern`/`vim.fs.find` (which DO
+-- glob-expand) would silently never match, so drop any marker containing `*`
+-- or `?` before rendering. Returns the filtered marker list plus the list of
+-- dropped (raw, unescaped) marker strings for warning purposes.
+local function strip_glob_markers(rm)
+	local out, dropped = {}, {}
+	for _, entry in ipairs(rm) do
+		if type(entry) == "table" then
+			local kept = {}
+			for _, name in ipairs(entry) do
+				if type(name) == "string" and name:find("[*?]") then
+					dropped[#dropped + 1] = name
+				else
+					kept[#kept + 1] = name
+				end
+			end
+			if #kept > 0 then
+				out[#out + 1] = kept
+			end
+		elseif type(entry) == "string" then
+			if entry:find("[*?]") then
+				dropped[#dropped + 1] = entry
+			else
+				out[#out + 1] = entry
+			end
+		end
+	end
+	return out, dropped
+end
+
+-- Renders a raw (pre-serialization) marker list to TOML entries, stripping
+-- glob-style markers first. Returns the serialized entries plus any warn
+-- string describing markers that were dropped (nil if none were dropped).
+local function render_workspace_markers(raw_markers)
+	local markers, dropped = strip_glob_markers(raw_markers)
+	local entries = serialize_root_markers(markers)
+	local warn = nil
+	if #dropped > 0 then
+		warn = string.format(
+			"workspaceMarkers dropped %d glob-style marker(s) (%s); kakehashi matches marker names exactly and does not glob-expand",
+			#dropped,
+			table.concat(dropped, ", ")
+		)
+	end
+	return entries, warn
+end
+
 -- ---------------------------------------------------------------------------
 -- Field classification for top-level keys we explicitly drop with a reason.
 -- ---------------------------------------------------------------------------
@@ -510,21 +559,28 @@ local function convert(name, cfg)
 		warns[#warns + 1] = "no `filetypes` in source; set `languages` manually or this server never matches"
 	end
 
-	-- workspaceMarkers (from root_markers; .git stripped). root_dir function -> warn.
+	-- workspaceMarkers (from root_markers; .git stripped; glob markers dropped).
+	-- root_dir function -> warn.
 	if WORKSPACE_MARKERS_OVERRIDES[name] then
 		local ov = WORKSPACE_MARKERS_OVERRIDES[name]
-		local entries = serialize_root_markers(ov.markers)
+		local entries, glob_warn = render_workspace_markers(ov.markers)
 		if #entries > 0 then
 			body[#body + 1] = "workspaceMarkers = [" .. table.concat(entries, ", ") .. "]"
 		end
 		if ov.warn then
 			warns[#warns + 1] = ov.warn
 		end
+		if glob_warn then
+			warns[#warns + 1] = glob_warn
+		end
 	else
 		if cfg.root_markers ~= nil and type(cfg.root_markers) == "table" then
-			local entries = serialize_root_markers(cfg.root_markers)
+			local entries, glob_warn = render_workspace_markers(cfg.root_markers)
 			if #entries > 0 then
 				body[#body + 1] = "workspaceMarkers = [" .. table.concat(entries, ", ") .. "]"
+			end
+			if glob_warn then
+				warns[#warns + 1] = glob_warn
 			end
 		end
 		if cfg.root_dir ~= nil then

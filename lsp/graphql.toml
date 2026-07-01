@@ -1,5 +1,5 @@
+# WARN: workspaceMarkers dropped 3 glob-style marker(s) (.graphqlrc*, .graphql.config.*, graphql.config.*); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.graphql]
 enabled = false
 cmd = ["graphql-lsp", "server", "-m", "stream"]
 languages = ["graphql", "typescriptreact", "javascriptreact"]
-workspaceMarkers = [".graphqlrc*", ".graphql.config.*", "graphql.config.*"]

@@ -1,5 +1,6 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (hardhat.config.*); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.solc]
 enabled = false
 cmd = ["solc", "--lsp"]
 languages = ["solidity"]
-workspaceMarkers = ["hardhat.config.*", ".git"]
+workspaceMarkers = [".git"]

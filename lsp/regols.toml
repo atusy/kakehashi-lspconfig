@@ -1,5 +1,6 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (*.rego); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.regols]
 enabled = false
 cmd = ["regols"]
 languages = ["rego"]
-workspaceMarkers = ["*.rego", ".git"]
+workspaceMarkers = [".git"]

@@ -1,5 +1,6 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (*.agda-lib); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.agda_ls]
 enabled = false
 cmd = ["als"]
 languages = ["agda"]
-workspaceMarkers = [".git", "*.agda-lib"]
+workspaceMarkers = [".git"]

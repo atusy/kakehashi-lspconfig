@@ -1,5 +1,5 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (*.nomad); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.nomad_lsp]
 enabled = false
 cmd = ["nomad-lsp"]
 languages = ["hcl.nomad", "nomad"]
-workspaceMarkers = ["*.nomad"]

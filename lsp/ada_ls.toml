@@ -1,5 +1,6 @@
+# WARN: workspaceMarkers dropped 2 glob-style marker(s) (*.gpr, *.adc); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.ada_ls]
 enabled = false
 cmd = ["ada_language_server"]
 languages = ["ada"]
-workspaceMarkers = ["Makefile", ".git", "alire.toml", "*.gpr", "*.adc"]
+workspaceMarkers = ["Makefile", ".git", "alire.toml"]

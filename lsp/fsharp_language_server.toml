@@ -1,6 +1,7 @@
+# WARN: workspaceMarkers dropped 2 glob-style marker(s) (*.sln, *.fsproj); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.fsharp_language_server]
 enabled = false
 cmd = ["dotnet", "FSharpLanguageServer.dll"]
 languages = ["fsharp"]
-workspaceMarkers = ["*.sln", "*.fsproj", ".git"]
+workspaceMarkers = [".git"]
 initializationOptions = { AutomaticWorkspaceInit = true }

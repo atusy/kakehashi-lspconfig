@@ -1,5 +1,6 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (*.mk); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.autotools_ls]
 enabled = false
 cmd = ["autotools-language-server"]
 languages = ["config", "automake", "make"]
-workspaceMarkers = ["configure.ac", "Makefile", "Makefile.am", "*.mk"]
+workspaceMarkers = ["configure.ac", "Makefile", "Makefile.am"]

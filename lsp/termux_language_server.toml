@@ -1,6 +1,7 @@
 # WARN: no `filetypes` in source; set `languages` manually or this server never matches
 # WARN: workspaceMarkers approximated; source additionally re-searched for `.git` starting from the matched package directory (not just upward from the buffer), which is not exactly representable
+# WARN: workspaceMarkers dropped 4 glob-style marker(s) (*.subpackage.sh, *.install, *.ebuild, *.eclass); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.termux_language_server]
 enabled = false
 cmd = ["termux-language-server"]
-workspaceMarkers = ["build.sh", "*.subpackage.sh", "PKGBUILD", "makepkg.conf", "*.install", "make.conf", "color.map", "*.ebuild", "*.eclass", ".git"]
+workspaceMarkers = ["build.sh", "PKGBUILD", "makepkg.conf", "make.conf", "color.map", ".git"]

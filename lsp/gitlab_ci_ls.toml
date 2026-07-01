@@ -1,6 +1,7 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (.gitlab*); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.gitlab_ci_ls]
 enabled = false
 cmd = ["gitlab-ci-ls"]
 languages = ["yaml.gitlab"]
-workspaceMarkers = [".git", ".gitlab*"]
+workspaceMarkers = [".git"]
 initializationOptions = { cache_path = "/Users/atusy/.cache/gitlab-ci-ls/", log_path = "/Users/atusy/.cache/gitlab-ci-ls//log/gitlab-ci-ls.log" }

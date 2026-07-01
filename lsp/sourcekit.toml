@@ -1,7 +1,8 @@
+# WARN: workspaceMarkers dropped 2 glob-style marker(s) (*.xcodeproj, *.xcworkspace); kakehashi matches marker names exactly and does not glob-expand
 # WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
 # WARN: get_language_id (Lua function) was dropped
 [languageServers.sourcekit]
 enabled = false
 cmd = ["sourcekit-lsp"]
 languages = ["swift", "objc", "objcpp", "c", "cpp"]
-workspaceMarkers = [["buildServer.json", ".bsp"], ["*.xcodeproj", "*.xcworkspace"], ["compile_commands.json", "Package.swift"], ".git"]
+workspaceMarkers = [["buildServer.json", ".bsp"], ["compile_commands.json", "Package.swift"], ".git"]

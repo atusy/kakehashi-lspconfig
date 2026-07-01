@@ -1,5 +1,5 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (*.ipkg); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.idris2_lsp]
 enabled = false
 cmd = ["idris2-lsp"]
 languages = ["idris2"]
-workspaceMarkers = ["*.ipkg"]

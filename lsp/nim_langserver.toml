@@ -1,5 +1,6 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (*.nimble); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.nim_langserver]
 enabled = false
 cmd = ["nimlangserver"]
 languages = ["nim"]
-workspaceMarkers = ["*.nimble", ".git"]
+workspaceMarkers = [".git"]

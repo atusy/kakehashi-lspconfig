@@ -1,6 +1,6 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (*.ino); kakehashi matches marker names exactly and does not glob-expand
 # WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
 [languageServers.arduino_language_server]
 enabled = false
 cmd = ["arduino-language-server"]
 languages = ["arduino"]
-workspaceMarkers = ["*.ino"]

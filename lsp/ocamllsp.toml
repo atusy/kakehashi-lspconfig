@@ -1,7 +1,8 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (*.opam); kakehashi matches marker names exactly and does not glob-expand
 # WARN: get_language_id (Lua function) was dropped
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.ocamllsp]
 enabled = false
 cmd = ["ocamllsp"]
 languages = ["ocaml", "menhir", "ocamlinterface", "ocamllex", "reason", "dune"]
-workspaceMarkers = [["dune-project", "dune-workspace"], ["*.opam", "opam", "esy.json", "package.json"], ".git"]
+workspaceMarkers = [["dune-project", "dune-workspace"], ["opam", "esy.json", "package.json"], ".git"]

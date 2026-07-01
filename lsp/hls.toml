@@ -1,6 +1,7 @@
+# WARN: workspaceMarkers dropped 1 glob-style marker(s) (*.cabal); kakehashi matches marker names exactly and does not glob-expand
 [languageServers.hls]
 enabled = false
 cmd = ["haskell-language-server-wrapper", "--lsp"]
 languages = ["haskell", "lhaskell"]
-workspaceMarkers = ["hie.yaml", "stack.yaml", "cabal.project", "*.cabal", "package.yaml"]
+workspaceMarkers = ["hie.yaml", "stack.yaml", "cabal.project", "package.yaml"]
 settings = { haskell = { cabalFormattingProvider = "cabal-fmt", formattingProvider = "ormolu" } }

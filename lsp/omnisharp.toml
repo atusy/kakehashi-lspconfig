@@ -1,8 +1,9 @@
 # WARN: workspaceMarkers approximated as a flat priority list; source tried each pattern as an independent full upward search in this order, which a flat list can only approximate
+# WARN: workspaceMarkers dropped 3 glob-style marker(s) (*.slnx, *.sln, *.csproj); kakehashi matches marker names exactly and does not glob-expand
 # WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
 [languageServers.omnisharp]
 enabled = false
 cmd = ["omnisharp", "-z", "--hostPID", "28273", "DotNet:enablePackageRestore=false", "--encoding", "utf-8", "--languageserver"]
 languages = ["cs", "vb"]
-workspaceMarkers = ["*.slnx", "*.sln", "*.csproj", "omnisharp.json", "function.json"]
+workspaceMarkers = ["omnisharp.json", "function.json"]
 settings = { FormattingOptions = { EnableEditorConfigSupport = true }, MsBuild = {}, RenameOptions = {}, RoslynExtensionsOptions = {}, Sdk = { IncludePrereleases = true } }

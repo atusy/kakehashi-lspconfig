@@ -1,8 +1,8 @@
 # WARN: cmd hardcoded to `csharp-ls`; source only added cwd/env, which kakehashi has no per-server option for
+# WARN: workspaceMarkers dropped 3 glob-style marker(s) (*.sln, *.slnx, *.csproj); kakehashi matches marker names exactly and does not glob-expand
 # WARN: get_language_id (Lua function) was dropped
 [languageServers.csharp_ls]
 enabled = false
 cmd = ["csharp-ls"]
 languages = ["cs"]
-workspaceMarkers = ["*.sln", "*.slnx", "*.csproj"]
 initializationOptions = { AutomaticWorkspaceInit = true }
