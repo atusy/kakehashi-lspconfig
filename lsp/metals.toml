@@ -3,5 +3,5 @@
 enabled = false
 cmd = ["metals"]
 languages = ["scala"]
-rootMarkers = ["build.sbt", "build.sc", ["build.gradle", "build.gradle.kts"], "pom.xml"]
+workspaceMarkers = ["build.sbt", "build.sc", ["build.gradle", "build.gradle.kts"], "pom.xml"]
 initializationOptions = { compilerOptions = { snippetAutoIndent = false }, isHttpEnabled = true, statusBarProvider = "show-message" }

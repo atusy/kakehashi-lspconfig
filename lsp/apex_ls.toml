@@ -2,4 +2,4 @@
 [languageServers.apex_ls]
 enabled = false
 languages = ["apex", "apexcode"]
-rootMarkers = ["sfdx-project.json"]
+workspaceMarkers = ["sfdx-project.json"]

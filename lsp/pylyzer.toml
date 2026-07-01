@@ -3,5 +3,5 @@
 enabled = false
 cmd = ["pylyzer", "--server"]
 languages = ["python"]
-rootMarkers = ["setup.py", "tox.ini", "requirements.txt", "Pipfile", "pyproject.toml", ".git"]
+workspaceMarkers = ["setup.py", "tox.ini", "requirements.txt", "Pipfile", "pyproject.toml", ".git"]
 settings = { python = { checkOnType = false, diagnostics = true, inlayHints = true, smartCompletion = true } }

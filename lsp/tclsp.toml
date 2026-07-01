@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["tclsp"]
 languages = ["tcl", "sdc", "xdc", "upf"]
-rootMarkers = ["tclint.toml", ".tclint", "pyproject.toml", ".git"]
+workspaceMarkers = ["tclint.toml", ".tclint", "pyproject.toml", ".git"]

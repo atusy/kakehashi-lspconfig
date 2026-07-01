@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["slint-lsp"]
 languages = ["slint"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

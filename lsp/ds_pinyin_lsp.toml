@@ -3,5 +3,5 @@
 enabled = false
 cmd = ["ds-pinyin-lsp"]
 languages = ["markdown", "org"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]
 initializationOptions = { completion_on = true, match_as_same_as_input = true, match_long_input = true, max_suggest = 15, show_symbols = true, show_symbols_by_n_times = 0, show_symbols_only_follow_by_hanzi = false }

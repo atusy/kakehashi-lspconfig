@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["shuck", "server"]
 languages = ["bash", "sh", "zsh"]
-rootMarkers = [".shuck.toml", ".git"]
+workspaceMarkers = [".shuck.toml", ".git"]

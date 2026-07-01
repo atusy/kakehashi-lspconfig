@@ -2,4 +2,4 @@
 [languageServers.raku_navigator]
 enabled = false
 languages = ["raku"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

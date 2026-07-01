@@ -2,5 +2,5 @@
 enabled = false
 cmd = ["DaedalusLanguageServer"]
 languages = ["d"]
-rootMarkers = ["Gothic.src", "Camera.src", "Menu.src", "Music.src", "ParticleFX.src", "SFX.src", "VisualFX.src"]
+workspaceMarkers = ["Gothic.src", "Camera.src", "Menu.src", "Music.src", "ParticleFX.src", "SFX.src", "VisualFX.src"]
 settings = { DaedalusLanguageServer = { fileEncoding = "Windows-1252", inlayHints = { constants = true }, loglevel = "debug", numParserThreads = 16, srcFileEncoding = "Windows-1252" } }

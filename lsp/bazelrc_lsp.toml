@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["bazelrc-lsp", "lsp"]
 languages = ["bazelrc"]
-rootMarkers = ["WORKSPACE", "WORKSPACE.bazel", "MODULE.bazel"]
+workspaceMarkers = ["WORKSPACE", "WORKSPACE.bazel", "MODULE.bazel"]

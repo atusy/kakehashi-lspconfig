@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["ember-language-server", "--stdio"]
 languages = ["handlebars", "typescript", "javascript", "typescript.glimmer", "javascript.glimmer"]
-rootMarkers = ["ember-cli-build.js", ".git"]
+workspaceMarkers = ["ember-cli-build.js", ".git"]

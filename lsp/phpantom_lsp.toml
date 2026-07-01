@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["phpantom_lsp"]
 languages = ["php"]
-rootMarkers = [".phpantom.toml", ".git", "composer.json"]
+workspaceMarkers = [".phpantom.toml", ".git", "composer.json"]

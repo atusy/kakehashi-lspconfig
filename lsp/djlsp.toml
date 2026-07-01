@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["djlsp"]
 languages = ["html", "htmldjango"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

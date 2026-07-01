@@ -1,4 +1,4 @@
-# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `workspaceMarkers` if the default (client root) is wrong
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.stylelint_lsp]
 enabled = false

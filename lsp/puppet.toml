@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["puppet-languageserver", "--stdio"]
 languages = ["puppet"]
-rootMarkers = ["manifests", ".puppet-lint.rc", "hiera.yaml", ".git"]
+workspaceMarkers = ["manifests", ".puppet-lint.rc", "hiera.yaml", ".git"]

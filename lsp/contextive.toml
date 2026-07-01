@@ -2,4 +2,4 @@
 [languageServers.contextive]
 enabled = false
 cmd = ["Contextive.LanguageServer"]
-rootMarkers = [".contextive", ".git"]
+workspaceMarkers = [".contextive", ".git"]

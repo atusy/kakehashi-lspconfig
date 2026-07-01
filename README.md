@@ -11,7 +11,7 @@ drop into kakehashi's `languageServers` configuration.
 [languageServers.lua_ls]
 cmd = ["lua-language-server"]
 languages = ["lua"]
-rootMarkers = [[".emmyrc.json", ".luarc.json", ".luarc.jsonc"], [".luacheckrc", ".stylua.toml", "stylua.toml", "selene.toml", "selene.yml"], ".git"]
+workspaceMarkers = [[".emmyrc.json", ".luarc.json", ".luarc.jsonc"], [".luacheckrc", ".stylua.toml", "stylua.toml", "selene.toml", "selene.yml"], ".git"]
 settings = { Lua = { codeLens = { enable = true }, hint = { enable = true, semicolon = "Disable" } } }
 ```
 
@@ -21,7 +21,7 @@ settings = { Lua = { codeLens = { enable = true }, hint = { enable = true, semic
 | --- | --- | --- |
 | `cmd` (table) | `cmd` | Lua-function `cmd` cannot be converted — see WARN. |
 | `filetypes` | `languages` | Direct mapping; verify against Tree-sitter grammar names. |
-| `root_markers` | `rootMarkers` | Preserved as-is, including `.git`. |
+| `root_markers` | `workspaceMarkers` | Preserved as-is, including `.git`. |
 | `settings` | `settings` | Workspace config; propagated via `didChangeConfiguration` / `workspace/configuration`. |
 | `init_options` | `initializationOptions` | Sent once at `initialize`. |
 

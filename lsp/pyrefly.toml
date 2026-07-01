@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["pyrefly", "lsp"]
 languages = ["python"]
-rootMarkers = ["pyrefly.toml", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]
+workspaceMarkers = ["pyrefly.toml", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]

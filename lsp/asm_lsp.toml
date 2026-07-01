@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["asm-lsp"]
 languages = ["asm", "vmasm"]
-rootMarkers = [".asm-lsp.toml", ".git"]
+workspaceMarkers = [".asm-lsp.toml", ".git"]

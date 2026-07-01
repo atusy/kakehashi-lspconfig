@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["cir-lsp-server"]
 languages = ["cir"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["markdown-oxide"]
 languages = ["markdown"]
-rootMarkers = [".git", ".obsidian", ".moxide.toml"]
+workspaceMarkers = [".git", ".obsidian", ".moxide.toml"]

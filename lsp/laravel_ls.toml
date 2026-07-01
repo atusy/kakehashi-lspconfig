@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["laravel-ls"]
 languages = ["php", "blade"]
-rootMarkers = ["artisan"]
+workspaceMarkers = ["artisan"]

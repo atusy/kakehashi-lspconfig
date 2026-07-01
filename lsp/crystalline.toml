@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["crystalline"]
 languages = ["crystal"]
-rootMarkers = ["shard.yml", ".git"]
+workspaceMarkers = ["shard.yml", ".git"]

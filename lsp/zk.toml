@@ -4,4 +4,4 @@
 enabled = false
 cmd = ["zk", "lsp"]
 languages = ["markdown"]
-rootMarkers = [".zk"]
+workspaceMarkers = [".zk"]

@@ -3,6 +3,6 @@
 enabled = false
 cmd = ["vscode-css-language-server", "--stdio"]
 languages = ["css", "scss", "less"]
-rootMarkers = ["package.json", ".git"]
+workspaceMarkers = ["package.json", ".git"]
 initializationOptions = { provideFormatter = true }
 settings = { css = { validate = true }, less = { validate = true }, scss = { validate = true } }

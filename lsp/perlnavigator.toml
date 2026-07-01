@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["perlnavigator"]
 languages = ["perl"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

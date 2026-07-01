@@ -4,4 +4,4 @@
 enabled = false
 cmd = ["ast-grep", "lsp"]
 languages = ["bash", "c", "cpp", "cs", "css", "elixir", "go", "haskell", "html", "java", "javascript", "javascriptreact", "json", "kotlin", "lua", "nix", "php", "python", "ruby", "rust", "scala", "solidity", "swift", "typescript", "typescriptreact", "yaml"]
-rootMarkers = ["sgconfig.yaml", "sgconfig.yml"]
+workspaceMarkers = ["sgconfig.yaml", "sgconfig.yml"]

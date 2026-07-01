@@ -3,5 +3,5 @@
 enabled = false
 cmd = ["vscode-html-language-server", "--stdio"]
 languages = ["html"]
-rootMarkers = ["package.json", ".git"]
+workspaceMarkers = ["package.json", ".git"]
 initializationOptions = { configurationSection = ["html", "css", "javascript"], embeddedLanguages = { css = true, javascript = true }, provideFormatter = true }

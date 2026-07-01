@@ -4,4 +4,4 @@
 enabled = false
 cmd = ["ocamllsp"]
 languages = ["ocaml", "menhir", "ocamlinterface", "ocamllex", "reason", "dune"]
-rootMarkers = [["dune-project", "dune-workspace"], ["*.opam", "opam", "esy.json", "package.json"], ".git"]
+workspaceMarkers = [["dune-project", "dune-workspace"], ["*.opam", "opam", "esy.json", "package.json"], ".git"]

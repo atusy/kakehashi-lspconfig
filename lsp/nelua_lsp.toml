@@ -2,4 +2,4 @@
 [languageServers.nelua_lsp]
 enabled = false
 languages = ["nelua"]
-rootMarkers = ["Makefile", ".git", "*.nelua"]
+workspaceMarkers = ["Makefile", ".git", "*.nelua"]

@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["facility-language-server"]
 languages = ["fsd"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

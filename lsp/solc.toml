@@ -1,5 +1,5 @@
-# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 [languageServers.solc]
 enabled = false
 cmd = ["solc", "--lsp"]
 languages = ["solidity"]
+workspaceMarkers = ["hardhat.config.*", ".git"]

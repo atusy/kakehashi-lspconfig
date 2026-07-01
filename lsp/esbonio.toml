@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["python3", "-m", "esbonio.server"]
 languages = ["rst"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

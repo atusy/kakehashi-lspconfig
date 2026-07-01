@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["circom-lsp"]
 languages = ["circom"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

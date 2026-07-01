@@ -2,5 +2,5 @@
 [languageServers.visualforce_ls]
 enabled = false
 languages = ["visualforce"]
-rootMarkers = ["sfdx-project.json"]
+workspaceMarkers = ["sfdx-project.json"]
 initializationOptions = { embeddedLanguages = { css = true, javascript = true } }

@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["quick-lint-js", "--lsp-server"]
 languages = ["javascript", "typescript"]
-rootMarkers = ["package.json", "jsconfig.json", ".git"]
+workspaceMarkers = ["package.json", "jsconfig.json", ".git"]

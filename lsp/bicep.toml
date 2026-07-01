@@ -2,4 +2,4 @@
 [languageServers.bicep]
 enabled = false
 languages = ["bicep", "bicep-params"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

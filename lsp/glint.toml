@@ -4,5 +4,5 @@
 enabled = false
 cmd = ["glint-language-server"]
 languages = ["html.handlebars", "handlebars", "typescript", "typescript.glimmer", "javascript", "javascript.glimmer"]
-rootMarkers = [".glintrc.yml", ".glintrc", ".glintrc.json", ".glintrc.js", "glint.config.js", "package.json"]
+workspaceMarkers = [".glintrc.yml", ".glintrc", ".glintrc.json", ".glintrc.js", "glint.config.js", "package.json"]
 initializationOptions = { glint = { useGlobal = false } }

@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["svls"]
 languages = ["verilog", "systemverilog"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

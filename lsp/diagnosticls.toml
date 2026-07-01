@@ -2,4 +2,4 @@
 [languageServers.diagnosticls]
 enabled = false
 cmd = ["diagnostic-languageserver", "--stdio"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

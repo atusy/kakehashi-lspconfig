@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["Swift-MesonLSP", "--lsp"]
 languages = ["meson"]
-rootMarkers = ["meson.build", "meson_options.txt", "meson.options", ".git"]
+workspaceMarkers = ["meson.build", "meson_options.txt", "meson.options", ".git"]

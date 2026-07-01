@@ -2,5 +2,5 @@
 enabled = false
 cmd = ["dexter", "lsp"]
 languages = ["elixir", "eelixir", "heex"]
-rootMarkers = [".dexter/dexter.db", ".dexter.db", ".git", "mix.exs"]
+workspaceMarkers = [".dexter/dexter.db", ".dexter.db", ".git", "mix.exs"]
 initializationOptions = { followDelegates = true }

@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["kotlin-language-server"]
 languages = ["kotlin"]
-rootMarkers = ["settings.gradle", "settings.gradle.kts", "build.xml", "pom.xml", "build.gradle", "build.gradle.kts"]
+workspaceMarkers = ["settings.gradle", "settings.gradle.kts", "build.xml", "pom.xml", "build.gradle", "build.gradle.kts"]

@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["guile-lsp-server"]
 languages = ["scheme.guile"]
-rootMarkers = ["guix.scm", ".git"]
+workspaceMarkers = ["guix.scm", ".git"]

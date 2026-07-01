@@ -1,5 +1,5 @@
 # WARN: cmd hardcoded to the global `oxlint`; source preferred node_modules/.bin/oxlint when present
-# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+# WARN: workspaceMarkers approximated; source only matched package.json/vite.config.ts when they actually declared an oxlint/vite-plus field, which kakehashi's workspaceMarkers can't check, so an unrelated package.json or vite.config.ts could now match
 # WARN: before_init (editor-side hook) was dropped; not applicable to kakehashi
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 # WARN: workspace_required was dropped; not applicable to kakehashi
@@ -7,3 +7,4 @@
 enabled = false
 cmd = ["oxlint", "--lsp"]
 languages = ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte", "astro"]
+workspaceMarkers = [".oxlintrc.json", ".oxlintrc.jsonc", "oxlint.config.ts", "package.json", "vite.config.ts"]

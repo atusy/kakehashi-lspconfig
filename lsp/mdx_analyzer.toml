@@ -3,5 +3,5 @@
 enabled = false
 cmd = ["mdx-language-server", "--stdio"]
 languages = ["mdx"]
-rootMarkers = ["package.json"]
+workspaceMarkers = ["package.json"]
 initializationOptions = { typescript = {} }

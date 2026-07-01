@@ -5,4 +5,4 @@
 enabled = false
 cmd = ["ccls"]
 languages = ["c", "cpp", "objc", "objcpp", "cuda"]
-rootMarkers = ["compile_commands.json", ".ccls", ".git"]
+workspaceMarkers = ["compile_commands.json", ".ccls", ".git"]

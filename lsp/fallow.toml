@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["fallow-lsp"]
 languages = ["javascript", "typescript", "javascriptreact", "typescriptreact"]
-rootMarkers = [".fallowrc.json", ".git"]
+workspaceMarkers = [".fallowrc.json", ".git"]

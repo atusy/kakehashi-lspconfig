@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["codebook-lsp", "serve"]
 languages = ["c", "css", "gitcommit", "go", "haskell", "html", "java", "javascript", "javascriptreact", "lua", "markdown", "php", "python", "ruby", "rust", "swift", "toml", "text", "typescript", "typescriptreact", "zig"]
-rootMarkers = [".git", "codebook.toml", ".codebook.toml"]
+workspaceMarkers = [".git", "codebook.toml", ".codebook.toml"]

@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["dprint", "lsp"]
 languages = ["javascript", "javascriptreact", "typescript", "typescriptreact", "json", "jsonc", "markdown", "python", "toml", "rust", "roslyn", "graphql"]
-rootMarkers = ["dprint.json", ".dprint.json", "dprint.jsonc", ".dprint.jsonc"]
+workspaceMarkers = ["dprint.json", ".dprint.json", "dprint.jsonc", ".dprint.jsonc"]

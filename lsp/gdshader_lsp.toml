@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["gdshader-lsp", "--stdio"]
 languages = ["gdshader", "gdshaderinc"]
-rootMarkers = ["project.godot"]
+workspaceMarkers = ["project.godot"]

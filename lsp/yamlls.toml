@@ -4,5 +4,5 @@
 enabled = false
 cmd = ["yaml-language-server", "--stdio"]
 languages = ["yaml", "yaml.docker-compose", "yaml.gitlab", "yaml.helm-values"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]
 settings = { redhat = { telemetry = { enabled = false } }, yaml = { format = { enable = true } } }

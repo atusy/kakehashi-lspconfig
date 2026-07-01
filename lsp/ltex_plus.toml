@@ -3,5 +3,5 @@
 enabled = false
 cmd = ["ltex-ls-plus"]
 languages = ["asciidoc", "bib", "context", "gitcommit", "html", "markdown", "org", "pandoc", "plaintex", "quarto", "mail", "mdx", "rmd", "rnoweb", "rst", "tex", "text", "typst", "xhtml"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]
 settings = { ltex = { enabled = ["asciidoc", "bib", "context", "gitcommit", "html", "markdown", "org", "pandoc", "plaintex", "quarto", "mail", "mdx", "rmd", "rnoweb", "rst", "tex", "latex", "text", "typst", "xhtml"] } }

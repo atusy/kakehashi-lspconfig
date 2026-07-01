@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["vue-language-server", "--stdio"]
 languages = ["vue"]
-rootMarkers = ["package.json"]
+workspaceMarkers = ["package.json"]

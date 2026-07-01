@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["harper-ls", "--stdio"]
 languages = ["asciidoc", "c", "cpp", "cs", "gitcommit", "go", "html", "java", "javascript", "lua", "markdown", "nix", "python", "ruby", "rust", "swift", "tex", "toml", "typescript", "typescriptreact", "haskell", "cmake", "typst", "php", "dart", "clojure", "sh"]
-rootMarkers = [".harper-dictionary.txt", ".git"]
+workspaceMarkers = [".harper-dictionary.txt", ".git"]

@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["blueprint-compiler", "lsp"]
 languages = ["blueprint"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

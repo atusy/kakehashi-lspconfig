@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["postgres-language-server", "lsp-proxy"]
 languages = ["sql"]
-rootMarkers = ["postgres-language-server.jsonc"]
+workspaceMarkers = ["postgres-language-server.jsonc"]

@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["stan-language-server", "--stdio"]
 languages = ["stan"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

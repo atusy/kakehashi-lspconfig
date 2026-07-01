@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["marko-language-server", "--stdio"]
 languages = ["marko"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

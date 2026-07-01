@@ -1,6 +1,6 @@
-# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 [languageServers.css_variables]
 enabled = false
 cmd = ["css-variables-language-server", "--stdio"]
 languages = ["css", "scss", "less"]
+workspaceMarkers = [["package-lock.json", "yarn.lock", "pnpm-lock.yaml", "bun.lockb", "bun.lock"], ".git"]
 settings = { cssVariables = { blacklistFolders = ["**/.cache", "**/.DS_Store", "**/.git", "**/.hg", "**/.next", "**/.svn", "**/bower_components", "**/CVS", "**/dist", "**/node_modules", "**/tests", "**/tmp"], lookupFiles = ["**/*.less", "**/*.scss", "**/*.sass", "**/*.css"] } }

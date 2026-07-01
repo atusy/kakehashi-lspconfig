@@ -1,5 +1,6 @@
-# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+# WARN: workspaceMarkers approximated to the nearest `mix.exs`; source preferred the higher `mix.exs` for umbrella-app layouts (2+ nested mix.exs), which is not representable
 [languageServers.expert]
 enabled = false
 cmd = ["expert", "--stdio"]
 languages = ["elixir", "eelixir", "heex", "surface"]
+workspaceMarkers = ["mix.exs"]

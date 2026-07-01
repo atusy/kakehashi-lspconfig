@@ -2,5 +2,5 @@
 enabled = false
 cmd = ["cds-lsp", "--stdio"]
 languages = ["cds"]
-rootMarkers = ["package.json", "db", "srv"]
+workspaceMarkers = ["package.json", "db", "srv"]
 settings = { cds = { validate = true } }

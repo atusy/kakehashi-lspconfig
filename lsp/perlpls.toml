@@ -2,5 +2,5 @@
 enabled = false
 cmd = ["pls"]
 languages = ["perl"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]
 settings = { perl = { perlcritic = { enabled = false }, syntax = { enabled = true } } }

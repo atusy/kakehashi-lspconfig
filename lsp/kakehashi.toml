@@ -2,4 +2,4 @@
 [languageServers.kakehashi]
 enabled = false
 cmd = ["kakehashi"]
-rootMarkers = ["kakehashi.toml", ".git"]
+workspaceMarkers = ["kakehashi.toml", ".git"]

@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["dot-language-server", "--stdio"]
 languages = ["dot"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

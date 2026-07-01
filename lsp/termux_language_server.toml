@@ -1,5 +1,6 @@
 # WARN: no `filetypes` in source; set `languages` manually or this server never matches
-# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+# WARN: workspaceMarkers approximated; source additionally re-searched for `.git` starting from the matched package directory (not just upward from the buffer), which is not exactly representable
 [languageServers.termux_language_server]
 enabled = false
 cmd = ["termux-language-server"]
+workspaceMarkers = ["build.sh", "*.subpackage.sh", "PKGBUILD", "makepkg.conf", "*.install", "make.conf", "color.map", "*.ebuild", "*.eclass", ".git"]

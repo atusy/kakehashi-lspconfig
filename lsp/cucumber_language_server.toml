@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["cucumber-language-server", "--stdio"]
 languages = ["cucumber"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["hh_client", "lsp", "--from", "neovim"]
 languages = ["php", "hack"]
-rootMarkers = [".hhconfig"]
+workspaceMarkers = [".hhconfig"]

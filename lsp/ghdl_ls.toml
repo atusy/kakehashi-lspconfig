@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["ghdl-ls"]
 languages = ["vhdl"]
-rootMarkers = ["hdl-prj.json", ".git"]
+workspaceMarkers = ["hdl-prj.json", ".git"]

@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["robotcode", "language-server"]
 languages = ["robot", "resource"]
-rootMarkers = ["robot.toml", "pyproject.toml", "Pipfile", ".git"]
+workspaceMarkers = ["robot.toml", "pyproject.toml", "Pipfile", ".git"]

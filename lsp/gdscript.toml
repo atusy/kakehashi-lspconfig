@@ -2,4 +2,4 @@
 [languageServers.gdscript]
 enabled = false
 languages = ["gdscript"]
-rootMarkers = ["project.godot", ".git"]
+workspaceMarkers = ["project.godot", ".git"]

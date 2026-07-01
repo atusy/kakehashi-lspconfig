@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["starpls"]
 languages = ["bzl"]
-rootMarkers = ["WORKSPACE", "WORKSPACE.bazel", "MODULE.bazel"]
+workspaceMarkers = ["WORKSPACE", "WORKSPACE.bazel", "MODULE.bazel"]

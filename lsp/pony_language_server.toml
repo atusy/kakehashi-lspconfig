@@ -3,5 +3,5 @@
 enabled = false
 cmd = ["pony-lsp"]
 languages = ["pony"]
-rootMarkers = ["corral.json", ".git"]
+workspaceMarkers = ["corral.json", ".git"]
 settings = { pony-lsp = { defines = {}, ponypath = {} } }

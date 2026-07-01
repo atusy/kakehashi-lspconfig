@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["nxls", "--stdio"]
 languages = ["json", "jsonc"]
-rootMarkers = ["nx.json", ".git"]
+workspaceMarkers = ["nx.json", ".git"]

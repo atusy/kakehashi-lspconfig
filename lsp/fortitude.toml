@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["fortitude", "server"]
 languages = ["fortran"]
-rootMarkers = ["fpm.toml", "fortitude.toml", ".fortitude.toml", ".git"]
+workspaceMarkers = ["fpm.toml", "fortitude.toml", ".fortitude.toml", ".git"]

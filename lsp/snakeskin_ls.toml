@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["snakeskin-cli", "lsp", "--stdio"]
 languages = ["ss"]
-rootMarkers = ["package.json"]
+workspaceMarkers = ["package.json"]

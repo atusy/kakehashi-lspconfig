@@ -4,5 +4,5 @@
 enabled = false
 cmd = ["ruby-lsp"]
 languages = ["ruby", "eruby"]
-rootMarkers = ["Gemfile", ".git"]
+workspaceMarkers = ["Gemfile", ".git"]
 initializationOptions = { formatter = "auto" }

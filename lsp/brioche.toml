@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["brioche", "lsp"]
 languages = ["brioche"]
-rootMarkers = ["project.bri"]
+workspaceMarkers = ["project.bri"]

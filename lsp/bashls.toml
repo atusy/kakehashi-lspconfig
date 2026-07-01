@@ -2,5 +2,5 @@
 enabled = false
 cmd = ["bash-language-server", "start"]
 languages = ["bash", "sh"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]
 settings = { bashIde = { globPattern = "*@(.sh|.inc|.bash|.command)" } }

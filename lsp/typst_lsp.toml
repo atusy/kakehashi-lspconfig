@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["typst-lsp"]
 languages = ["typst"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

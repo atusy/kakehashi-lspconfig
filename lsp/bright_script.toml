@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["bsc", "--lsp", "--stdio"]
 languages = ["brs"]
-rootMarkers = ["makefile", "Makefile", ".git"]
+workspaceMarkers = ["makefile", "Makefile", ".git"]

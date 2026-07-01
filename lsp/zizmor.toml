@@ -1,4 +1,4 @@
-# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `workspaceMarkers` if the default (client root) is wrong
 # WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
 [languageServers.zizmor]
 enabled = false

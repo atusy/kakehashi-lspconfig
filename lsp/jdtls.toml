@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["jdtls"]
 languages = ["java"]
-rootMarkers = [["mvnw", "gradlew", "settings.gradle", "settings.gradle.kts", ".git"], ["build.xml", "pom.xml", "build.gradle", "build.gradle.kts"]]
+workspaceMarkers = [["mvnw", "gradlew", "settings.gradle", "settings.gradle.kts", ".git"], ["build.xml", "pom.xml", "build.gradle", "build.gradle.kts"]]

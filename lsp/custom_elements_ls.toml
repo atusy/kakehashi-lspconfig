@@ -2,5 +2,5 @@
 [languageServers.custom_elements_ls]
 enabled = false
 cmd = ["custom-elements-languageserver", "--stdio"]
-rootMarkers = ["tsconfig.json", "package.json", "jsconfig.json", ".git"]
+workspaceMarkers = ["tsconfig.json", "package.json", "jsconfig.json", ".git"]
 initializationOptions = { hostInfo = "neovim" }

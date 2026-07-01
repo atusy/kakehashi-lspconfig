@@ -2,5 +2,5 @@
 enabled = false
 cmd = ["intelephense", "--stdio"]
 languages = ["php"]
-rootMarkers = [".git", "composer.json"]
+workspaceMarkers = [".git", "composer.json"]
 settings = { intelephense = { telemetry = { enabled = false } } }

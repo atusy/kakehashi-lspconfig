@@ -2,4 +2,4 @@
 [languageServers.efm]
 enabled = false
 cmd = ["efm-langserver"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["hie-wrapper", "--lsp"]
 languages = ["haskell"]
-rootMarkers = ["stack.yaml", "package.yaml", ".git"]
+workspaceMarkers = ["stack.yaml", "package.yaml", ".git"]

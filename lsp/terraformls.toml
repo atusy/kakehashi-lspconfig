@@ -4,4 +4,4 @@
 enabled = false
 cmd = ["terraform-ls", "serve"]
 languages = ["terraform", "terraform-vars"]
-rootMarkers = [".terraform", ".git"]
+workspaceMarkers = [".terraform", ".git"]

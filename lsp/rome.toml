@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["rome", "lsp-proxy"]
 languages = ["javascript", "javascriptreact", "json", "typescript", "typescriptreact"]
-rootMarkers = ["package.json", "node_modules", ".git"]
+workspaceMarkers = ["package.json", "node_modules", ".git"]

@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["nginx-language-server"]
 languages = ["nginx"]
-rootMarkers = ["nginx.conf", ".git"]
+workspaceMarkers = ["nginx.conf", ".git"]

@@ -3,5 +3,5 @@
 enabled = false
 cmd = ["vscode-json-language-server", "--stdio"]
 languages = ["json", "jsonc"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]
 initializationOptions = { provideFormatter = true }

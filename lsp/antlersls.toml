@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["antlersls", "--stdio"]
 languages = ["html", "antlers"]
-rootMarkers = ["composer.json"]
+workspaceMarkers = ["composer.json"]

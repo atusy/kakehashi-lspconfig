@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["vale-ls"]
 languages = ["asciidoc", "markdown", "text", "tex", "rst", "html", "xml"]
-rootMarkers = [".vale.ini"]
+workspaceMarkers = [".vale.ini"]

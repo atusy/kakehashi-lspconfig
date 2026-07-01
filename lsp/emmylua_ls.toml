@@ -3,5 +3,5 @@
 enabled = false
 cmd = ["emmylua_ls"]
 languages = ["lua"]
-rootMarkers = [[".emmyrc.json", ".emmyrc.lua", ".luarc.json", ".luarc.jsonc"], [".luacheckrc", ".stylua.toml", "stylua.toml", "selene.toml", "selene.yml"], ".git"]
+workspaceMarkers = [[".emmyrc.json", ".emmyrc.lua", ".luarc.json", ".luarc.jsonc"], [".luacheckrc", ".stylua.toml", "stylua.toml", "selene.toml", "selene.yml"], ".git"]
 settings = { emmylua = { codeLens = { enable = true }, hint = { enable = true } } }

@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["rls"]
 languages = ["rust"]
-rootMarkers = ["Cargo.toml"]
+workspaceMarkers = ["Cargo.toml"]

@@ -3,6 +3,6 @@
 [languageServers.copilot]
 enabled = false
 cmd = ["copilot-language-server", "--stdio"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]
 initializationOptions = { editorInfo = { name = "Neovim", version = "0.13.0-dev" }, editorPluginInfo = { name = "Neovim", version = "0.13.0-dev" } }
 settings = { telemetry = { telemetryLevel = "all" } }

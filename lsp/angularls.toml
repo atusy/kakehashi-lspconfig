@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["ngserver", "--stdio", "--tsProbeLocations", "", "--ngProbeLocations", "", "--angularCoreVersion", ""]
 languages = ["typescript", "html", "typescriptreact", "htmlangular"]
-rootMarkers = ["angular.json", "nx.json"]
+workspaceMarkers = ["angular.json", "nx.json"]

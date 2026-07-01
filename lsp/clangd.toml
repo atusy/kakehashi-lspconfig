@@ -6,4 +6,4 @@
 enabled = false
 cmd = ["clangd"]
 languages = ["c", "c.doxygen", "cpp", "cpp.doxygen", "objc", "objcpp", "cuda"]
-rootMarkers = [".clangd", ".clang-tidy", ".clang-format", "compile_commands.json", "compile_flags.txt", "configure.ac", ".git"]
+workspaceMarkers = [".clangd", ".clang-tidy", ".clang-format", "compile_commands.json", "compile_flags.txt", "configure.ac", ".git"]

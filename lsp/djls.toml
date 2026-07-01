@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["djls", "serve"]
 languages = ["htmldjango", "html", "python"]
-rootMarkers = ["manage.py", "pyproject.toml", ".git"]
+workspaceMarkers = ["manage.py", "pyproject.toml", ".git"]

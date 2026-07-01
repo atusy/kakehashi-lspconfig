@@ -2,5 +2,5 @@
 enabled = false
 cmd = ["motoko-lsp", "--stdio"]
 languages = ["motoko"]
-rootMarkers = ["dfx.json", ".git"]
+workspaceMarkers = ["dfx.json", ".git"]
 initializationOptions = { formatter = "auto" }

@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["bacon-ls"]
 languages = ["rust"]
-rootMarkers = [".bacon-locations", "Cargo.toml"]
+workspaceMarkers = [".bacon-locations", "Cargo.toml"]

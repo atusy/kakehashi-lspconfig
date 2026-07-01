@@ -3,5 +3,5 @@
 enabled = false
 cmd = ["snyk", "language-server", "-l", "info"]
 languages = ["apex", "apexcode", "c", "cpp", "cs", "dart", "dockerfile", "elixir", "eelixir", "go", "gomod", "groovy", "helm", "java", "javascript", "json", "kotlin", "objc", "objcpp", "php", "python", "requirements", "ruby", "rust", "scala", "swift", "terraform", "terraform-vars", "typescript", "yaml"]
-rootMarkers = [".git", ".snyk"]
+workspaceMarkers = [".git", ".snyk"]
 initializationOptions = { activateSnykCode = "false", activateSnykIac = "true", activateSnykOpenSource = "true", integrationName = "Neovim", integrationVersion = "0.13.0-dev", trustedFolders = {} }

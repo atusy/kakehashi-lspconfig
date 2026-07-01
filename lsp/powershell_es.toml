@@ -2,4 +2,4 @@
 [languageServers.powershell_es]
 enabled = false
 languages = ["ps1"]
-rootMarkers = ["PSScriptAnalyzerSettings.psd1", ".git"]
+workspaceMarkers = ["PSScriptAnalyzerSettings.psd1", ".git"]

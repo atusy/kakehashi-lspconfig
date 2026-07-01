@@ -1,7 +1,8 @@
-# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+# WARN: workspaceMarkers approximated; source actually attached at the editor's cwd whenever composer.json/.git was found upward (not the marker's own directory), which is not representable
 # WARN: initializationOptions.storageDir (userdata) could not be represented and was omitted
 [languageServers.smarty_ls]
 enabled = false
 cmd = ["smarty-language-server", "--stdio"]
 languages = ["smarty"]
+workspaceMarkers = ["composer.json", ".git"]
 settings = { css = { validate = true }, smarty = { pluginDirs = {} } }

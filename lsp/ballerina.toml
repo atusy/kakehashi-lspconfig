@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["bal", "start-language-server"]
 languages = ["ballerina"]
-rootMarkers = ["Ballerina.toml"]
+workspaceMarkers = ["Ballerina.toml"]

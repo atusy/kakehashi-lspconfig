@@ -211,6 +211,8 @@ local DROP_REASON = {
 	workspace_required = "workspace_required was dropped; not applicable to kakehashi",
 	offset_encoding = "offset_encoding was dropped; kakehashi manages offset encoding",
 	reuse_client = "reuse_client was dropped; not applicable to kakehashi",
+	flags = "flags (Neovim client debounce/tuning options) was dropped; not applicable to kakehashi",
+	message_level = "message_level (client-side window/logMessage threshold) was dropped; not applicable to kakehashi",
 }
 -- Keys we silently ignore (informational / handled elsewhere).
 local IGNORE = {
@@ -318,6 +320,140 @@ local CMD_OVERRIDES = {
 }
 
 -- ---------------------------------------------------------------------------
+-- workspaceMarkers overrides: hand-picked static markers for servers whose
+-- source `root_dir` is a Lua function (dynamic root detection) but which
+-- reduce to a fixed set of marker files/dirs in the common case (mirrors
+-- `util.root_pattern`/`vim.fs.root` calls in the source). `warn` is set only
+-- when part of the source's dynamic behavior is not representable and is
+-- lost by hardcoding; entries that are fully faithful omit it.
+-- ---------------------------------------------------------------------------
+
+local WORKSPACE_MARKERS_OVERRIDES = {
+	ada_ls = { markers = { "Makefile", ".git", "alire.toml", "*.gpr", "*.adc" } },
+	agda_ls = { markers = { ".git", "*.agda-lib" } },
+	arduino_language_server = { markers = { "*.ino" } },
+	autotools_ls = { markers = { "configure.ac", "Makefile", "Makefile.am", "*.mk" } },
+	gitlab_ci_ls = { markers = { ".git", ".gitlab*" } },
+	graphql = { markers = { ".graphqlrc*", ".graphql.config.*", "graphql.config.*" } },
+	hls = { markers = { "hie.yaml", "stack.yaml", "cabal.project", "*.cabal", "package.yaml" } },
+	idris2_lsp = { markers = { "*.ipkg" } },
+	ols = { markers = { "ols.json", ".git", "*.odin" } },
+	pasls = { markers = { "*.lpi", "*.lpk", ".git" } },
+	pico8_ls = { markers = { "*.p8" } },
+	solc = { markers = { "hardhat.config.*", ".git" } },
+	unison = { markers = { "*.u" } },
+	nomad_lsp = { markers = { "*.nomad" } },
+	msbuild_project_tools_server = { markers = { "*.sln", "*.slnx", "*.*proj", ".git" } },
+	fsharp_language_server = { markers = { "*.sln", "*.fsproj", ".git" } },
+	fsautocomplete = { markers = { "*.sln", "*.slnx", "*.fsproj", ".git" } },
+	["csharp_ls"] = { markers = { "*.sln", "*.slnx", "*.csproj" } },
+	vectorcode_server = { markers = { ".vectorcode", ".git" } },
+	["matlab_ls"] = { markers = { ".git" } },
+	["r_language_server"] = { markers = { ".git" } },
+	rnix = { markers = { ".git" } },
+	nushell = { markers = { ".git" } },
+	["fennel_ls"] = { markers = { "flsproject.fnl", ".git" } },
+	nim_langserver = { markers = { "*.nimble", ".git" } },
+	nimls = { markers = { "*.nimble", ".git" } },
+	regal = { markers = { "*.rego", ".git" } },
+	regols = { markers = { "*.rego", ".git" } },
+	["css_variables"] = {
+		markers = { { "package-lock.json", "yarn.lock", "pnpm-lock.yaml", "bun.lockb", "bun.lock" }, { ".git" } },
+	},
+	svelte = {
+		markers = {
+			{ "package-lock.json", "yarn.lock", "pnpm-lock.yaml", "bun.lockb", "bun.lock", "deno.lock" },
+			{ ".git" },
+		},
+	},
+	sourcekit = {
+		markers = {
+			{ "buildServer.json", ".bsp" },
+			{ "*.xcodeproj", "*.xcworkspace" },
+			{ "compile_commands.json", "Package.swift" },
+			".git",
+		},
+	},
+	lean3ls = {
+		markers = { "leanpkg.toml", "leanpkg.path", ".git" },
+		warn = "workspaceMarkers approximated; the elan stdlib special-case root (matching /lean/library in the path) is not representable and is dropped",
+	},
+	["termux_language_server"] = {
+		markers = {
+			"build.sh",
+			"*.subpackage.sh",
+			"PKGBUILD",
+			"makepkg.conf",
+			"*.install",
+			"make.conf",
+			"color.map",
+			"*.ebuild",
+			"*.eclass",
+			".git",
+		},
+		warn = "workspaceMarkers approximated; source additionally re-searched for `.git` starting from the matched package directory (not just upward from the buffer), which is not exactly representable",
+	},
+	elixirls = {
+		markers = { "mix.exs" },
+		warn = "workspaceMarkers approximated to the nearest `mix.exs`; source preferred the higher `mix.exs` for umbrella-app layouts (2+ nested mix.exs), which is not representable",
+	},
+	expert = {
+		markers = { "mix.exs" },
+		warn = "workspaceMarkers approximated to the nearest `mix.exs`; source preferred the higher `mix.exs` for umbrella-app layouts (2+ nested mix.exs), which is not representable",
+	},
+	gopls = {
+		markers = { "go.work", "go.mod", ".git" },
+		warn = "workspaceMarkers approximated; source additionally reused an existing gopls client's root for files under the Go module cache or GOROOT so opening a dependency doesn't spawn a second instance, which kakehashi has no equivalent for",
+	},
+	omnisharp = {
+		markers = { "*.slnx", "*.sln", "*.csproj", "omnisharp.json", "function.json" },
+		warn = "workspaceMarkers approximated as a flat priority list; source tried each pattern as an independent full upward search in this order, which a flat list can only approximate",
+	},
+	oxlint = {
+		markers = { ".oxlintrc.json", ".oxlintrc.jsonc", "oxlint.config.ts", "package.json", "vite.config.ts" },
+		warn = "workspaceMarkers approximated; source only matched package.json/vite.config.ts when they actually declared an oxlint/vite-plus field, which kakehashi's workspaceMarkers can't check, so an unrelated package.json or vite.config.ts could now match",
+	},
+	oxfmt = {
+		markers = { ".oxfmtrc.json", ".oxfmtrc.jsonc", "oxfmt.config.ts", "package.json", "vite.config.ts" },
+		warn = "workspaceMarkers approximated; source only matched package.json/vite.config.ts when they actually declared an oxfmt/vite-plus field, which kakehashi's workspaceMarkers can't check, so an unrelated package.json or vite.config.ts could now match",
+	},
+	tailwindcss = {
+		markers = {
+			"tailwind.config.js",
+			"tailwind.config.cjs",
+			"tailwind.config.mjs",
+			"tailwind.config.ts",
+			"postcss.config.js",
+			"postcss.config.cjs",
+			"postcss.config.mjs",
+			"postcss.config.ts",
+			"theme/static_src/tailwind.config.js",
+			"theme/static_src/tailwind.config.cjs",
+			"theme/static_src/tailwind.config.mjs",
+			"theme/static_src/tailwind.config.ts",
+			"theme/static_src/postcss.config.js",
+			"package.json",
+			"mix.lock",
+			"Gemfile.lock",
+			".git",
+		},
+		warn = "workspaceMarkers approximated; source only matched package.json/mix.lock/Gemfile.lock when they actually declared a tailwindcss dependency/field, which kakehashi's workspaceMarkers can't check",
+	},
+	phptools = {
+		markers = { "composer.json", ".git" },
+		warn = "workspaceMarkers approximated; source actually attached at the editor's cwd whenever composer.json/.git was found upward (not the marker's own directory), which is not representable",
+	},
+	phan = {
+		markers = { "composer.json", ".git" },
+		warn = "workspaceMarkers approximated; source actually attached at the editor's cwd whenever composer.json/.git was found upward (not the marker's own directory), which is not representable",
+	},
+	["smarty_ls"] = {
+		markers = { "composer.json", ".git" },
+		warn = "workspaceMarkers approximated; source actually attached at the editor's cwd whenever composer.json/.git was found upward (not the marker's own directory), which is not representable",
+	},
+}
+
+-- ---------------------------------------------------------------------------
 -- Convert one config table to a TOML document string.
 -- ---------------------------------------------------------------------------
 
@@ -375,15 +511,26 @@ local function convert(name, cfg)
 	end
 
 	-- workspaceMarkers (from root_markers; .git stripped). root_dir function -> warn.
-	if cfg.root_markers ~= nil and type(cfg.root_markers) == "table" then
-		local entries = serialize_root_markers(cfg.root_markers)
+	if WORKSPACE_MARKERS_OVERRIDES[name] then
+		local ov = WORKSPACE_MARKERS_OVERRIDES[name]
+		local entries = serialize_root_markers(ov.markers)
 		if #entries > 0 then
 			body[#body + 1] = "workspaceMarkers = [" .. table.concat(entries, ", ") .. "]"
 		end
-	end
-	if cfg.root_dir ~= nil then
-		warns[#warns + 1] =
-			"root_dir was a dynamic Lua function (dynamic root detection); approximate with `workspaceMarkers` if the default (client root) is wrong"
+		if ov.warn then
+			warns[#warns + 1] = ov.warn
+		end
+	else
+		if cfg.root_markers ~= nil and type(cfg.root_markers) == "table" then
+			local entries = serialize_root_markers(cfg.root_markers)
+			if #entries > 0 then
+				body[#body + 1] = "workspaceMarkers = [" .. table.concat(entries, ", ") .. "]"
+			end
+		end
+		if cfg.root_dir ~= nil then
+			warns[#warns + 1] =
+				"root_dir was a dynamic Lua function (dynamic root detection); approximate with `workspaceMarkers` if the default (client root) is wrong"
+		end
 	end
 
 	-- initializationOptions (from nvim `init_options`; consumed once at

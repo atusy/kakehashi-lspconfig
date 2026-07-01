@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["move-analyzer"]
 languages = ["move"]
-rootMarkers = ["Move.toml"]
+workspaceMarkers = ["Move.toml"]

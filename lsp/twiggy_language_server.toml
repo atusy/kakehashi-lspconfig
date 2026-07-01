@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["twiggy-language-server", "--stdio"]
 languages = ["twig"]
-rootMarkers = ["composer.json", ".git"]
+workspaceMarkers = ["composer.json", ".git"]

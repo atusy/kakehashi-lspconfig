@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["zls"]
 languages = ["zig", "zir"]
-rootMarkers = ["zls.json", "build.zig", ".git"]
+workspaceMarkers = ["zls.json", "build.zig", ".git"]

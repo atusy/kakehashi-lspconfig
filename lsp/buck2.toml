@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["buck2", "lsp"]
 languages = ["bzl"]
-rootMarkers = [".buckconfig"]
+workspaceMarkers = [".buckconfig"]

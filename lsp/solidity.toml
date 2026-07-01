@@ -2,5 +2,5 @@
 enabled = false
 cmd = ["solidity-ls", "--stdio"]
 languages = ["solidity"]
-rootMarkers = [".git", "package.json"]
+workspaceMarkers = [".git", "package.json"]
 settings = { solidity = { includePath = "", remapping = {} } }

@@ -1,7 +1,7 @@
-# WARN: unhandled field `message_level` (number) was dropped
+# WARN: message_level (client-side window/logMessage threshold) was dropped; not applicable to kakehashi
 [languageServers.smithy_ls]
 enabled = false
 cmd = ["cs", "launch", "--contrib", "smithy-language-server:0.8.0"]
 languages = ["smithy"]
-rootMarkers = ["smithy-build.json", "build.gradle", "build.gradle.kts", ".git"]
+workspaceMarkers = ["smithy-build.json", "build.gradle", "build.gradle.kts", ".git"]
 initializationOptions = { compilerOptions = { snippetAutoIndent = false }, isHttpEnabled = true, statusBarProvider = "show-message" }

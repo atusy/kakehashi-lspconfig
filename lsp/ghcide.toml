@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["ghcide", "--lsp"]
 languages = ["haskell", "lhaskell"]
-rootMarkers = ["stack.yaml", "hie-bios", "BUILD.bazel", "cabal.config", "package.yaml"]
+workspaceMarkers = ["stack.yaml", "hie-bios", "BUILD.bazel", "cabal.config", "package.yaml"]

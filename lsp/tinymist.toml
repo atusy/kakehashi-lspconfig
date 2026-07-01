@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["tinymist"]
 languages = ["typst"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

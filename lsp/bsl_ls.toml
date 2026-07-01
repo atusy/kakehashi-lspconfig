@@ -2,4 +2,4 @@
 [languageServers.bsl_ls]
 enabled = false
 languages = ["bsl", "os"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

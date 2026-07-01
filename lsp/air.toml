@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["air", "language-server"]
 languages = ["r"]
-rootMarkers = ["air.toml", ".air.toml", ".git"]
+workspaceMarkers = ["air.toml", ".air.toml", ".git"]

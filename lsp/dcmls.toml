@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["dcm", "start-server", "--client=neovim"]
 languages = ["dart"]
-rootMarkers = ["pubspec.yaml"]
+workspaceMarkers = ["pubspec.yaml"]

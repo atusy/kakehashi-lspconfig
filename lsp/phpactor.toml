@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["phpactor", "language-server"]
 languages = ["php"]
-rootMarkers = [".git", "composer.json", ".phpactor.json", ".phpactor.yml"]
+workspaceMarkers = [".git", "composer.json", ".phpactor.json", ".phpactor.yml"]

@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["buf", "lsp", "serve", "--log-format=text"]
 languages = ["proto", "buf-config"]
-rootMarkers = ["buf.yaml", ".git"]
+workspaceMarkers = ["buf.yaml", ".git"]

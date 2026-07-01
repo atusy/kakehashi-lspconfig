@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["glsl_analyzer"]
 languages = ["glsl", "vert", "tesc", "tese", "frag", "geom", "comp"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

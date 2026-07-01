@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["neocmakelsp", "stdio"]
 languages = ["cmake"]
-rootMarkers = [".neocmake.toml", ".git", "build", "cmake"]
+workspaceMarkers = [".neocmake.toml", ".git", "build", "cmake"]

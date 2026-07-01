@@ -3,4 +3,4 @@
 enabled = false
 cmd = ["glslls", "--stdin"]
 languages = ["glsl", "vert", "tesc", "tese", "frag", "geom", "comp"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

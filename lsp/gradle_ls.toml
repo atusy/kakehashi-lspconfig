@@ -2,5 +2,5 @@
 enabled = false
 cmd = ["gradle-language-server"]
 languages = ["groovy"]
-rootMarkers = ["settings.gradle", "build.gradle"]
+workspaceMarkers = ["settings.gradle", "build.gradle"]
 initializationOptions = { settings = { gradleWrapperEnabled = true } }

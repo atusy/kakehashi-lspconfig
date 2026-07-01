@@ -4,5 +4,5 @@
 enabled = false
 cmd = ["astro-ls", "--stdio"]
 languages = ["astro"]
-rootMarkers = ["package.json", "tsconfig.json", "jsconfig.json", ".git"]
+workspaceMarkers = ["package.json", "tsconfig.json", "jsconfig.json", ".git"]
 initializationOptions = { typescript = {} }

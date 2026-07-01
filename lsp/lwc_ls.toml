@@ -2,5 +2,5 @@
 enabled = false
 cmd = ["lwc-language-server", "--stdio"]
 languages = ["javascript", "html"]
-rootMarkers = ["sfdx-project.json"]
+workspaceMarkers = ["sfdx-project.json"]
 initializationOptions = { embeddedLanguages = { javascript = true } }

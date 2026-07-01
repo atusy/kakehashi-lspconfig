@@ -2,4 +2,4 @@
 [languageServers.tabby_ml]
 enabled = false
 cmd = ["tabby-agent", "--lsp", "--stdio"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]

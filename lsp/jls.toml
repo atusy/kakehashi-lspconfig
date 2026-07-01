@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["jls"]
 languages = ["java"]
-rootMarkers = ["pom.xml", "build.gradle", "build.gradle.kts", "settings.gradle", "settings.gradle.kts", "WORKSPACE", "WORKSPACE.bazel", ".java-version"]
+workspaceMarkers = ["pom.xml", "build.gradle", "build.gradle.kts", "settings.gradle", "settings.gradle.kts", "WORKSPACE", "WORKSPACE.bazel", ".java-version"]

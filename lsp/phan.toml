@@ -1,5 +1,6 @@
-# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
+# WARN: workspaceMarkers approximated; source actually attached at the editor's cwd whenever composer.json/.git was found upward (not the marker's own directory), which is not representable
 [languageServers.phan]
 enabled = false
 cmd = ["phan", "-m", "json", "--no-color", "--no-progress-bar", "-x", "-u", "-S", "--language-server-on-stdin", "--allow-polyfill-parser"]
 languages = ["php"]
+workspaceMarkers = ["composer.json", ".git"]

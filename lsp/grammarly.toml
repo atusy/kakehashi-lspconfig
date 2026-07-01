@@ -3,5 +3,5 @@
 enabled = false
 cmd = ["grammarly-languageserver", "--stdio"]
 languages = ["markdown"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]
 initializationOptions = { clientId = "client_BaDkMgx4X19X9UxxYRCXZo" }

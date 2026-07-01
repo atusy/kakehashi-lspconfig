@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["srb", "tc", "--lsp"]
 languages = ["ruby"]
-rootMarkers = ["Gemfile", ".git"]
+workspaceMarkers = ["Gemfile", ".git"]

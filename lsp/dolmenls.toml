@@ -2,4 +2,4 @@
 enabled = false
 cmd = ["dolmenls"]
 languages = ["smt2", "tptp", "p", "cnf", "icnf", "zf"]
-rootMarkers = [".git"]
+workspaceMarkers = [".git"]
