@@ -1,5 +1,6 @@
-# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: cmd hardcoded to `ngserver`; source computed --tsProbeLocations/--ngProbeLocations/--angularCoreVersion from node_modules at runtime, left empty here
 [languageServers.angularls]
 enabled = false
+cmd = ["ngserver", "--stdio", "--tsProbeLocations", "", "--ngProbeLocations", "", "--angularCoreVersion", ""]
 languages = ["typescript", "html", "typescriptreact", "htmlangular"]
 rootMarkers = ["angular.json", "nx.json"]

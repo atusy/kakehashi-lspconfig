@@ -1,4 +1,4 @@
-# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: cmd hardcoded to the global `vscode-eslint-language-server`; source preferred node_modules/.bin when present
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 # WARN: before_init (editor-side hook) was dropped; not applicable to kakehashi
 # WARN: handlers (client-side LSP handlers) were dropped
@@ -6,5 +6,6 @@
 # WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.eslint]
 enabled = false
+cmd = ["vscode-eslint-language-server", "--stdio"]
 languages = ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte", "astro", "htmlangular"]
 settings = { codeAction = { disableRuleComment = { enable = true, location = "separateLine" }, showDocumentation = { enable = true } }, codeActionOnSave = { enable = false, mode = "all" }, experimental = {}, format = true, nodePath = "", onIgnoredFiles = "off", problems = { shortenToSingleLine = false }, quiet = false, rulesCustomizations = {}, run = "onType", useESLintClass = false, validate = "on", workingDirectory = { mode = "auto" } }

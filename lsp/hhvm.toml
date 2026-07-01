@@ -1,5 +1,6 @@
-# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: cmd hardcoded to `hh_client lsp --from neovim`; source only added cwd, which kakehashi has no per-server option for
 [languageServers.hhvm]
 enabled = false
+cmd = ["hh_client", "lsp", "--from", "neovim"]
 languages = ["php", "hack"]
 rootMarkers = [".hhconfig"]

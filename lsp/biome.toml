@@ -1,6 +1,7 @@
-# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: cmd hardcoded to the global `biome`; source preferred node_modules/.bin/biome when present
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 # WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.biome]
 enabled = false
+cmd = ["biome", "lsp-proxy"]
 languages = ["astro", "css", "graphql", "html", "javascript", "javascriptreact", "json", "jsonc", "svelte", "typescript", "typescriptreact", "vue"]

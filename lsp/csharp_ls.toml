@@ -1,7 +1,8 @@
-# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: cmd hardcoded to `csharp-ls`; source only added cwd/env, which kakehashi has no per-server option for
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 # WARN: get_language_id (Lua function) was dropped
 [languageServers.csharp_ls]
 enabled = false
+cmd = ["csharp-ls"]
 languages = ["cs"]
 initializationOptions = { AutomaticWorkspaceInit = true }

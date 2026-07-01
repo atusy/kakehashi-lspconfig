@@ -1,9 +1,10 @@
-# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: cmd hardcoded to the global `tailwindcss-language-server`; source preferred node_modules/.bin when present
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 # WARN: before_init (editor-side hook) was dropped; not applicable to kakehashi
 # WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
 # WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.tailwindcss]
 enabled = false
+cmd = ["tailwindcss-language-server", "--stdio"]
 languages = ["aspnetcorerazor", "astro", "astro-markdown", "blade", "clojure", "django-html", "htmldjango", "edge", "eelixir", "elixir", "ejs", "erb", "eruby", "gohtml", "gohtmltmpl", "haml", "handlebars", "hbs", "html", "htmlangular", "html-eex", "heex", "jade", "leaf", "liquid", "markdown", "mdx", "mustache", "njk", "nunjucks", "php", "razor", "slim", "twig", "css", "less", "postcss", "sass", "scss", "stylus", "sugarss", "javascript", "javascriptreact", "reason", "rescript", "typescript", "typescriptreact", "vue", "svelte", "templ"]
 settings = { tailwindCSS = { classAttributes = ["class", "className", "class:list", "classList", "ngClass"], includeLanguages = { eelixir = "html-eex", elixir = "phoenix-heex", eruby = "erb", heex = "phoenix-heex", htmlangular = "html", templ = "html" }, lint = { cssConflict = "warning", invalidApply = "error", invalidConfigPath = "error", invalidScreen = "error", invalidTailwindDirective = "error", invalidVariant = "error", recommendedVariantOrder = "warning" }, validate = true } }

@@ -1,7 +1,8 @@
-# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: cmd hardcoded to the global `astro-ls`; source preferred node_modules/.bin/astro-ls when present
 # WARN: before_init (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.astro]
 enabled = false
+cmd = ["astro-ls", "--stdio"]
 languages = ["astro"]
 rootMarkers = ["package.json", "tsconfig.json", "jsconfig.json", ".git"]
 initializationOptions = { typescript = {} }

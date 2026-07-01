@@ -1,5 +1,6 @@
-# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: cmd hardcoded to `jdtls` (assumes a launcher script, e.g. jdtls-launcher, on PATH); source computed a per-project -data workspace dir and JDTLS_JVM_ARGS, which are lost
 [languageServers.jdtls]
 enabled = false
+cmd = ["jdtls"]
 languages = ["java"]
 rootMarkers = [["mvnw", "gradlew", "settings.gradle", "settings.gradle.kts", ".git"], ["build.xml", "pom.xml", "build.gradle", "build.gradle.kts"]]

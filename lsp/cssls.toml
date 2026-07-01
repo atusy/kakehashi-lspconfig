@@ -1,6 +1,7 @@
-# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: cmd hardcoded to the global `vscode-css-language-server`; source preferred node_modules/.bin when present
 [languageServers.cssls]
 enabled = false
+cmd = ["vscode-css-language-server", "--stdio"]
 languages = ["css", "scss", "less"]
 rootMarkers = ["package.json", ".git"]
 initializationOptions = { provideFormatter = true }

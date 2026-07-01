@@ -1,9 +1,10 @@
-# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: cmd hardcoded to the global `typescript-language-server`; source preferred node_modules/.bin when present
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 # WARN: commands (client-side user commands) were dropped
 # WARN: handlers (client-side LSP handlers) were dropped
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 [languageServers.ts_ls]
 enabled = false
+cmd = ["typescript-language-server", "--stdio"]
 languages = ["javascript", "javascriptreact", "typescript", "typescriptreact"]
 initializationOptions = { hostInfo = "neovim" }

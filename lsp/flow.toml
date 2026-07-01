@@ -1,5 +1,6 @@
-# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: cmd hardcoded to the global `flow lsp`; source preferred a local node_modules/.bin/flow or npx fallback when `flow` was not on PATH
 [languageServers.flow]
 enabled = false
+cmd = ["flow", "lsp"]
 languages = ["javascript", "javascriptreact"]
 rootMarkers = [".flowconfig"]

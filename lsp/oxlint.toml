@@ -1,8 +1,9 @@
-# WARN: cmd was a Lua function (dynamic command resolution); set `cmd` manually or kakehashi will skip this server
+# WARN: cmd hardcoded to the global `oxlint`; source preferred node_modules/.bin/oxlint when present
 # WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `rootMarkers` if the default (client root) is wrong
 # WARN: before_init (editor-side hook) was dropped; not applicable to kakehashi
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
 # WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.oxlint]
 enabled = false
+cmd = ["oxlint", "--lsp"]
 languages = ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte", "astro"]

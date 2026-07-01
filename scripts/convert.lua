@@ -218,6 +218,58 @@ local IGNORE = { name = true, filetypes = true, cmd = true, root_markers = true,
                  root_dir = true, settings = true, init_options = true }
 
 -- ---------------------------------------------------------------------------
+-- cmd overrides: hand-picked static `cmd` for servers whose source `cmd` is a
+-- Lua function (dynamic resolution) but which resolve to a fixed binary in
+-- the common case. Each entry documents what the source function actually
+-- did and what part of that is lost by hardcoding.
+-- ---------------------------------------------------------------------------
+
+local CMD_OVERRIDES = {
+  astro = { cmd = { 'astro-ls', '--stdio' },
+    warn = 'cmd hardcoded to the global `astro-ls`; source preferred node_modules/.bin/astro-ls when present' },
+  biome = { cmd = { 'biome', 'lsp-proxy' },
+    warn = 'cmd hardcoded to the global `biome`; source preferred node_modules/.bin/biome when present' },
+  cssls = { cmd = { 'vscode-css-language-server', '--stdio' },
+    warn = 'cmd hardcoded to the global `vscode-css-language-server`; source preferred node_modules/.bin when present' },
+  ['csharp_ls'] = { cmd = { 'csharp-ls' },
+    warn = 'cmd hardcoded to `csharp-ls`; source only added cwd/env, which kakehashi has no per-server option for' },
+  eslint = { cmd = { 'vscode-eslint-language-server', '--stdio' },
+    warn = 'cmd hardcoded to the global `vscode-eslint-language-server`; source preferred node_modules/.bin when present' },
+  fallow = { cmd = { 'fallow-lsp' },
+    warn = 'cmd hardcoded to the global `fallow-lsp`; source preferred node_modules/.bin/fallow-lsp when present' },
+  html = { cmd = { 'vscode-html-language-server', '--stdio' },
+    warn = 'cmd hardcoded to the global `vscode-html-language-server`; source preferred node_modules/.bin when present' },
+  jsonls = { cmd = { 'vscode-json-language-server', '--stdio' },
+    warn = 'cmd hardcoded to the global `vscode-json-language-server`; source preferred node_modules/.bin when present' },
+  oxlint = { cmd = { 'oxlint', '--lsp' },
+    warn = 'cmd hardcoded to the global `oxlint`; source preferred node_modules/.bin/oxlint when present' },
+  oxfmt = { cmd = { 'oxfmt', '--lsp' },
+    warn = 'cmd hardcoded to the global `oxfmt`; source preferred node_modules/.bin/oxfmt when present' },
+  rome = { cmd = { 'rome', 'lsp-proxy' },
+    warn = 'cmd hardcoded to the global `rome`; source preferred node_modules/.bin/rome when present' },
+  tailwindcss = { cmd = { 'tailwindcss-language-server', '--stdio' },
+    warn = 'cmd hardcoded to the global `tailwindcss-language-server`; source preferred node_modules/.bin when present' },
+  tsgo = { cmd = { 'tsgo', '--lsp', '--stdio' },
+    warn = 'cmd hardcoded to the global `tsgo`; source preferred node_modules/.bin/tsgo when present' },
+  ['ts_ls'] = { cmd = { 'typescript-language-server', '--stdio' },
+    warn = 'cmd hardcoded to the global `typescript-language-server`; source preferred node_modules/.bin when present' },
+  yamlls = { cmd = { 'yaml-language-server', '--stdio' },
+    warn = 'cmd hardcoded to the global `yaml-language-server`; source preferred node_modules/.bin when present' },
+  ['ruby_lsp'] = { cmd = { 'ruby-lsp' },
+    warn = 'cmd hardcoded to `ruby-lsp`; source only added cwd, which kakehashi has no per-server option for' },
+  hhvm = { cmd = { 'hh_client', 'lsp', '--from', 'neovim' },
+    warn = 'cmd hardcoded to `hh_client lsp --from neovim`; source only added cwd, which kakehashi has no per-server option for' },
+  glint = { cmd = { 'glint-language-server' },
+    warn = 'cmd hardcoded to the global `glint-language-server`; source preferred node_modules/.bin when init_options.glint.useGlobal is false (the default)' },
+  angularls = { cmd = { 'ngserver', '--stdio', '--tsProbeLocations', '', '--ngProbeLocations', '', '--angularCoreVersion', '' },
+    warn = 'cmd hardcoded to `ngserver`; source computed --tsProbeLocations/--ngProbeLocations/--angularCoreVersion from node_modules at runtime, left empty here' },
+  flow = { cmd = { 'flow', 'lsp' },
+    warn = 'cmd hardcoded to the global `flow lsp`; source preferred a local node_modules/.bin/flow or npx fallback when `flow` was not on PATH' },
+  jdtls = { cmd = { 'jdtls' },
+    warn = 'cmd hardcoded to `jdtls` (assumes a launcher script, e.g. jdtls-launcher, on PATH); source computed a per-project -data workspace dir and JDTLS_JVM_ARGS, which are lost' },
+}
+
+-- ---------------------------------------------------------------------------
 -- Convert one config table to a TOML document string.
 -- ---------------------------------------------------------------------------
 
@@ -226,7 +278,15 @@ local function convert(name, cfg)
   local body = {}
 
   -- cmd (build the string array directly so an empty cmd -> WARN, not `{}`)
-  if type(cfg.cmd) == 'table' then
+  if CMD_OVERRIDES[name] then
+    local ov = CMD_OVERRIDES[name]
+    local parts = {}
+    for _, v in ipairs(ov.cmd) do
+      parts[#parts + 1] = esc_string(v)
+    end
+    body[#body + 1] = 'cmd = [' .. table.concat(parts, ', ') .. ']'
+    warns[#warns + 1] = ov.warn
+  elseif type(cfg.cmd) == 'table' then
     local parts = {}
     for _, v in ipairs(cfg.cmd) do
       if type(v) == 'string' then
