@@ -1,3 +1,5 @@
+**🚧EXPERIMENTAL🚧**
+
 # kakehashi-lspconfig
 
 [kakehashi](https://github.com/atusy/kakehashi) language-server configurations,
