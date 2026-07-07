@@ -400,6 +400,10 @@ local WORKSPACE_MARKERS_OVERRIDES = {
 	["matlab_ls"] = { markers = { ".git" } },
 	["r_language_server"] = { markers = { ".git" } },
 	rnix = { markers = { ".git" } },
+	rust_analyzer = {
+		markers = { "Cargo.toml", "rust-project.json", ".git" },
+		warn = "workspaceMarkers approximated; source (1) reused an existing rust_analyzer client's root for files under the toolchains/cargo registry/git-checkouts/sysroot src so opening a dependency doesn't spawn a second instance, and (2) ran `cargo metadata` to bump the root up to the Cargo *workspace* root for workspace members — a flat marker list stops at the nearest Cargo.toml instead. Neither is representable.",
+	},
 	nushell = { markers = { ".git" } },
 	["fennel_ls"] = { markers = { "flsproject.fnl", ".git" } },
 	nim_langserver = { markers = { "*.nimble", ".git" } },

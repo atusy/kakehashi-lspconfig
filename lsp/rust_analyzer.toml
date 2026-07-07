@@ -1,4 +1,4 @@
-# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `workspaceMarkers` if the default (client root) is wrong
+# WARN: workspaceMarkers approximated; source (1) reused an existing rust_analyzer client's root for files under the toolchains/cargo registry/git-checkouts/sysroot src so opening a dependency doesn't spawn a second instance, and (2) ran `cargo metadata` to bump the root up to the Cargo *workspace* root for workspace members — a flat marker list stops at the nearest Cargo.toml instead. Neither is representable.
 # WARN: before_init (editor-side hook) was dropped; not applicable to kakehashi
 # WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
@@ -6,4 +6,5 @@
 enabled = false
 cmd = ["rust-analyzer"]
 languages = ["rust"]
+workspaceMarkers = ["Cargo.toml", "rust-project.json", ".git"]
 settings = { rust-analyzer = { lens = { debug = { enable = true }, enable = true, implementations = { enable = true }, references = { adt = { enable = true }, enumVariant = { enable = true }, method = { enable = true }, trait = { enable = true } }, run = { enable = true }, updateTest = { enable = true } } } }
