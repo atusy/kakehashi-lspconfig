@@ -276,9 +276,8 @@ local IGNORE = {
 
 -- ---------------------------------------------------------------------------
 -- cmd overrides: hand-picked static `cmd` for servers whose source `cmd` is a
--- Lua function (dynamic resolution) but which resolve to a fixed binary in
--- the common case. Each entry documents what the source function actually
--- did and what part of that is lost by hardcoding.
+-- Lua function (dynamic resolution) or embeds generation-time state. Each
+-- entry documents what the source did and what is lost by hardcoding.
 -- ---------------------------------------------------------------------------
 
 local CMD_OVERRIDES = {
@@ -313,6 +312,10 @@ local CMD_OVERRIDES = {
 	jsonls = {
 		cmd = { "vscode-json-language-server", "--stdio" },
 		warn = "cmd hardcoded to the global `vscode-json-language-server`; source preferred node_modules/.bin when present",
+	},
+	omnisharp = {
+		cmd = { "omnisharp", "-z", "DotNet:enablePackageRestore=false", "--encoding", "utf-8", "--languageserver" },
+		warn = "cmd hardcoded to `omnisharp`; source also probed for `OmniSharp`. --hostPID was omitted because the converter's Neovim PID is not the runtime host PID; parent-process monitoring via this argument is lost",
 	},
 	oxlint = {
 		cmd = { "oxlint", "--lsp" },

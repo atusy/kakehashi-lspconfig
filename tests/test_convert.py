@@ -59,6 +59,16 @@ class ConvertTest(unittest.TestCase):
         self.assertEqual(configs['svelte']['cmd'], ['svelteserver', '--stdio'])
         self.assertIn('node_modules/.bin', documents['svelte'])
 
+    def test_omnisharp_does_not_embed_the_converter_pid(self):
+        configs, documents, _ = self.convert({
+            'omnisharp': "return {cmd = {'omnisharp', '-z', '--hostPID', tostring(vim.fn.getpid()), 'DotNet:enablePackageRestore=false', '--encoding', 'utf-8', '--languageserver'}}",
+        })
+        self.assertEqual(configs['omnisharp']['cmd'], [
+            'omnisharp', '-z', 'DotNet:enablePackageRestore=false',
+            '--encoding', 'utf-8', '--languageserver',
+        ])
+        self.assertIn('--hostPID', documents['omnisharp'])
+
     def test_tsc_uses_native_compiler_without_executing_dynamic_command(self):
         configs, documents, _ = self.convert({
             'tsc': "return {cmd = function() error('must not execute') end, filetypes = {'typescript'}}",

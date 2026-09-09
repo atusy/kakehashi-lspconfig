@@ -65,6 +65,12 @@ These overrides do not prefer project-local executables. The `tsc` override
 requires TypeScript 7.0+ with LSP support; it does not check the version or
 fall back to `tsgo` as the source does.
 
+`omnisharp` also uses a static command: the source's `--hostPID` embeds the
+generator's Neovim PID, which is unrelated to the runtime host. The override
+omits it and uses the lowercase `omnisharp` executable; adjust it if your
+installation provides only `OmniSharp`. Parent-process monitoring through
+`--hostPID` is not preserved.
+
 The following eight configs still require manual command configuration:
 
 | Config | Reason |
