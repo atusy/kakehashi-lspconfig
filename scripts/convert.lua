@@ -521,6 +521,7 @@ local WORKSPACE_MARKERS_OVERRIDES = {
 local function convert(name, cfg)
 	local warns = {}
 	local body = {}
+	local has_cmd = false
 
 	-- cmd (build the string array directly so an empty cmd -> WARN, not `{}`)
 	if CMD_OVERRIDES[name] then
@@ -530,6 +531,7 @@ local function convert(name, cfg)
 			parts[#parts + 1] = esc_string(v)
 		end
 		body[#body + 1] = "cmd = [" .. table.concat(parts, ", ") .. "]"
+		has_cmd = true
 		warns[#warns + 1] = ov.warn
 	elseif type(cfg.cmd) == "table" then
 		local parts = {}
@@ -540,6 +542,7 @@ local function convert(name, cfg)
 		end
 		if #parts > 0 then
 			body[#body + 1] = "cmd = [" .. table.concat(parts, ", ") .. "]"
+			has_cmd = true
 		else
 			warns[#warns + 1] = "cmd was empty in source; set `cmd` manually or kakehashi will skip this server"
 		end
@@ -649,7 +652,7 @@ local function convert(name, cfg)
 	for _, b in ipairs(body) do
 		lines[#lines + 1] = b
 	end
-	return table.concat(lines, "\n") .. "\n", warns
+	return table.concat(lines, "\n") .. "\n", warns, has_cmd
 end
 
 -- ---------------------------------------------------------------------------
@@ -662,13 +665,17 @@ table.sort(files)
 local ok_count, fail_count = 0, 0
 local failures = {}
 local with_warns = {}
+local without_cmd = {}
 
 for _, file in ipairs(files) do
 	local name = vim.fn.fnamemodify(file, ":t:r")
 	local ok, cfg = pcall(dofile, file)
 	local out_path = OUT .. "/" .. name .. ".toml"
 	if ok and type(cfg) == "table" then
-		local doc, warns = convert(name, cfg)
+		local doc, warns, has_cmd = convert(name, cfg)
+		if not has_cmd then
+			without_cmd[#without_cmd + 1] = name
+		end
 		local fh = io.open(out_path, "w")
 		fh:write(doc)
 		fh:close()
@@ -678,6 +685,7 @@ for _, file in ipairs(files) do
 		end
 	else
 		fail_count = fail_count + 1
+		without_cmd[#without_cmd + 1] = name
 		failures[#failures + 1] = name .. ": " .. tostring(cfg)
 		local fh = io.open(out_path, "w")
 		fh:write("# WARN: failed to evaluate source config: " .. tostring(cfg):gsub("\n", " ") .. "\n")
@@ -691,6 +699,13 @@ end
 local report = {}
 report[#report + 1] = string.format("converted=%d failed=%d total=%d", ok_count, fail_count, #files)
 report[#report + 1] = "files_with_warnings=" .. #with_warns
+report[#report + 1] = "files_without_cmd=" .. #without_cmd
+if #without_cmd > 0 then
+	report[#report + 1] = "--- MISSING CMD ---"
+	for _, name in ipairs(without_cmd) do
+		report[#report + 1] = name
+	end
+end
 if #failures > 0 then
 	report[#report + 1] = "--- FAILURES ---"
 	for _, f in ipairs(failures) do

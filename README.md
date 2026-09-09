@@ -21,7 +21,7 @@ settings = { Lua = { codeLens = { enable = true }, hint = { enable = true, semic
 
 | nvim-lspconfig | kakehashi | Notes |
 | --- | --- | --- |
-| `cmd` (table) | `cmd` | Lua-function `cmd` cannot be converted — see WARN. |
+| `cmd` (table) | `cmd` | Selected dynamic commands use explicit static overrides; other functions are omitted — see WARN. |
 | `filetypes` | `languages` | Direct mapping; verify against Tree-sitter grammar names. |
 | `root_markers` | `workspaceMarkers` | Preserved as-is, including `.git`. |
 | `settings` | `settings` | Workspace config; propagated via `didChangeConfiguration` / `workspace/configuration`. |
@@ -53,6 +53,39 @@ NVIM_LSPCONFIG=/path/to/nvim-lspconfig nvim --headless -l scripts/convert.lua
 
 The script evaluates each config with the real `vim` API via headless Neovim,
 then serializes the resulting table to TOML.
+The report lists `files_without_cmd` and their server names, including configs
+that failed to evaluate, so new command-resolution cases are easy to spot.
+
+### Command conversion edge cases
+
+An audit of all 413 configs in nvim-lspconfig
+`3928e638fdedf195b23ae5a18f024afa487982bc` found two missing commands that
+can use global launchers: `tsc --lsp --stdio` and `svelteserver --stdio`.
+These overrides do not prefer project-local executables. The `tsc` override
+requires TypeScript 7.0+ with LSP support; it does not check the version or
+fall back to `tsgo` as the source does.
+
+The following eight configs still require manual command configuration:
+
+| Config | Reason |
+| --- | --- |
+| `apex_ls` | Needs the installed Apex JAR path and Java launch arguments. |
+| `bicep` | Needs the installed `Bicep.LangServer.dll` path. |
+| `bsl_ls` | Upstream supplies no command. |
+| `gdscript` | Connects to Godot over TCP instead of spawning a stdio server; needs a suitable stdio-to-TCP bridge. |
+| `nelua_lsp` | Needs the nelua-lsp script and library paths. |
+| `powershell_es` | Needs the PowerShellEditorServices bundle and runtime paths. |
+| `raku_navigator` | Needs the installed `server/out/server.js` path. |
+| `visualforce_ls` | Needs the installed `visualforceServer.js` path. |
+
+### Testing the converter
+
+Requires Python 3.11+ and Neovim on `PATH`. Tests use temporary directories and
+synthetic source configs without modifying `lsp/` or launching language servers.
+
+```sh
+python3 -m unittest discover -s tests -v
+```
 
 ## License
 
