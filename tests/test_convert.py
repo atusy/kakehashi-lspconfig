@@ -37,6 +37,13 @@ class ConvertTest(unittest.TestCase):
             }
             return configs, documents, result.stdout + result.stderr
 
+    def test_svelte_uses_global_stdio_command(self):
+        configs, documents, _ = self.convert({
+            'svelte': "return {cmd = function() error('must not execute') end}",
+        })
+        self.assertEqual(configs['svelte']['cmd'], ['svelteserver', '--stdio'])
+        self.assertIn('node_modules/.bin', documents['svelte'])
+
     def test_tsc_uses_native_compiler_without_executing_dynamic_command(self):
         configs, documents, _ = self.convert({
             'tsc': "return {cmd = function() error('must not execute') end, filetypes = {'typescript'}}",

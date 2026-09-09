@@ -326,6 +326,10 @@ local CMD_OVERRIDES = {
 		cmd = { "rome", "lsp-proxy" },
 		warn = "cmd hardcoded to the global `rome`; source preferred node_modules/.bin/rome when present",
 	},
+	svelte = {
+		cmd = { "svelteserver", "--stdio" },
+		warn = "cmd hardcoded to the global `svelteserver`; source preferred node_modules/.bin/svelteserver when present",
+	},
 	tailwindcss = {
 		cmd = { "tailwindcss-language-server", "--stdio" },
 		warn = "cmd hardcoded to the global `tailwindcss-language-server`; source preferred node_modules/.bin when present",
