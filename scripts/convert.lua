@@ -334,6 +334,10 @@ local CMD_OVERRIDES = {
 		cmd = { "tsgo", "--lsp", "--stdio" },
 		warn = "cmd hardcoded to the global `tsgo`; source preferred node_modules/.bin/tsgo when present",
 	},
+	tsc = {
+		cmd = { "tsc", "--lsp", "--stdio" },
+		warn = "cmd hardcoded to the global `tsc` (requires TypeScript 7.0+ with --lsp support); source checked versions and selected a project-local or PATH tsc/tsgo, which is not reproduced",
+	},
 	["ts_ls"] = {
 		cmd = { "typescript-language-server", "--stdio" },
 		warn = "cmd hardcoded to the global `typescript-language-server`; source preferred node_modules/.bin when present",

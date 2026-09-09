@@ -1,0 +1,7 @@
+# WARN: cmd hardcoded to the global `tsc` (requires TypeScript 7.0+ with --lsp support); source checked versions and selected a project-local or PATH tsc/tsgo, which is not reproduced
+# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `workspaceMarkers` if the default (client root) is wrong
+[languageServers.tsc]
+enabled = false
+cmd = ["tsc", "--lsp", "--stdio"]
+languages = ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+settings = { "js/ts" = { implementationsCodeLens = { enabled = true, showOnAllClassMethods = true, showOnInterfaceMethods = true }, inlayHints = { enumMemberValues = { enabled = true }, functionLikeReturnTypes = { enabled = true }, parameterNames = { enabled = "literals", suppressWhenArgumentMatchesName = true }, parameterTypes = { enabled = true }, propertyDeclarationTypes = { enabled = true }, variableTypes = { enabled = true } }, referencesCodeLens = { enabled = true, showOnAllFunctions = true } } }
