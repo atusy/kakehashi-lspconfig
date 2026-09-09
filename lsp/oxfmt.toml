@@ -1,8 +1,7 @@
 # WARN: cmd hardcoded to the global `oxfmt`; source preferred node_modules/.bin/oxfmt when present
 # WARN: workspaceMarkers approximated; source only matched package.json/vite.config.ts when they actually declared an oxfmt/vite-plus field, which kakehashi's workspaceMarkers can't check, so an unrelated package.json or vite.config.ts could now match
-# WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.oxfmt]
 enabled = false
 cmd = ["oxfmt", "--lsp"]
-languages = ["javascript", "javascriptreact", "typescript", "typescriptreact", "toml", "json", "jsonc", "json5", "yaml", "html", "vue", "handlebars", "css", "scss", "less", "graphql", "markdown"]
+languages = ["javascript", "javascriptreact", "typescript", "typescriptreact", "toml", "json", "jsonc", "json5", "yaml", "html", "vue", "handlebars", "css", "scss", "less", "graphql", "markdown", "svelte"]
 workspaceMarkers = [".oxfmtrc.json", ".oxfmtrc.jsonc", "oxfmt.config.ts", "package.json", "vite.config.ts"]

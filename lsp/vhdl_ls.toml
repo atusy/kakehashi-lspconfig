@@ -1,5 +1,6 @@
+# WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.vhdl_ls]
 enabled = false
 cmd = ["vhdl_ls"]
 languages = ["vhd", "vhdl"]
-workspaceMarkers = ["vhdl_ls.toml", ".vhdl_ls.toml"]
+workspaceMarkers = ["vhdl_ls.toml"]

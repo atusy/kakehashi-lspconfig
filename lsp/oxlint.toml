@@ -2,7 +2,6 @@
 # WARN: workspaceMarkers approximated; source only matched package.json/vite.config.ts when they actually declared an oxlint/vite-plus field, which kakehashi's workspaceMarkers can't check, so an unrelated package.json or vite.config.ts could now match
 # WARN: before_init (editor-side hook) was dropped; not applicable to kakehashi
 # WARN: on_attach (editor-side hook) was dropped; not applicable to kakehashi
-# WARN: workspace_required was dropped; not applicable to kakehashi
 [languageServers.oxlint]
 enabled = false
 cmd = ["oxlint", "--lsp"]

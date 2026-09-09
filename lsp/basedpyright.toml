@@ -4,4 +4,4 @@ enabled = false
 cmd = ["basedpyright-langserver", "--stdio"]
 languages = ["python"]
 workspaceMarkers = ["pyrightconfig.json", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]
-settings = { basedpyright = { analysis = { autoSearchPaths = true, diagnosticMode = "openFilesOnly" } } }
+settings = { basedpyright = { analysis = { autoSearchPaths = true, diagnosticMode = "openFilesOnly" }, disableTaggedHints = true } }

@@ -3,7 +3,7 @@
 # WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
 [languageServers.omnisharp]
 enabled = false
-cmd = ["omnisharp", "-z", "--hostPID", "28273", "DotNet:enablePackageRestore=false", "--encoding", "utf-8", "--languageserver"]
+cmd = ["omnisharp", "-z", "--hostPID", "34200", "DotNet:enablePackageRestore=false", "--encoding", "utf-8", "--languageserver"]
 languages = ["cs", "vb"]
 workspaceMarkers = ["omnisharp.json", "function.json"]
 settings = { FormattingOptions = { EnableEditorConfigSupport = true }, MsBuild = {}, RenameOptions = {}, RoslynExtensionsOptions = {}, Sdk = { IncludePrereleases = true } }
