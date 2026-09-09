@@ -1,0 +1,5 @@
+[languageServers.ms_terraform_lsp]
+enabled = false
+cmd = ["ms-terraform-lsp", "serve"]
+languages = ["terraform"]
+workspaceMarkers = [".terraform", ".git"]

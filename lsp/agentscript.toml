@@ -1,0 +1,5 @@
+[languageServers.agentscript]
+enabled = false
+cmd = ["agentscript-lsp", "--stdio"]
+languages = ["agentscript"]
+workspaceMarkers = ["package.json", ".git"]

@@ -1,0 +1,5 @@
+[languageServers.kdl_lsp]
+enabled = false
+cmd = ["kdl-lsp"]
+languages = ["kdl"]
+workspaceMarkers = [".git"]

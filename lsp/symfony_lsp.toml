@@ -1,0 +1,10 @@
+# WARN: capabilities was dropped; kakehashi negotiates client capabilities itself
+# WARN: commands (client-side user commands) were dropped
+# WARN: workspace_required was dropped; not applicable to kakehashi
+[languageServers.symfony_lsp]
+enabled = false
+cmd = ["symfony-lsp"]
+languages = ["php", "twig", "yaml", "json", "xml", "javascript", "typescript", "env"]
+workspaceMarkers = ["composer.json", ".git"]
+initializationOptions = { consolePath = "bin/console", containerProjectRoot = "", debug = true, environment = "dev", phpCommand = ["php"], projectRoots = {}, runtimeIndexing = true, trace = "off" }
+settings = { symfonyLsp = { consolePath = "bin/console", containerProjectRoot = "", debug = true, environment = "dev", phpCommand = ["php"], projectRoots = {}, runtimeIndexing = true, translationDiagnostics = false } }

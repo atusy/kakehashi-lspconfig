@@ -1,0 +1,5 @@
+[languageServers.terragrunt_ls]
+enabled = false
+cmd = ["terragrunt-ls"]
+languages = ["hcl"]
+workspaceMarkers = ["terragrunt.hcl", ".git"]

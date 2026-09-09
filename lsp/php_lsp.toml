@@ -1,0 +1,6 @@
+# WARN: workspace_required was dropped; not applicable to kakehashi
+[languageServers.php_lsp]
+enabled = false
+cmd = ["php-lsp"]
+languages = ["php"]
+workspaceMarkers = ["composer.json", ".git"]

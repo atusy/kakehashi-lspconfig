@@ -1,0 +1,5 @@
+[languageServers.pytest_language_server]
+enabled = false
+cmd = ["pytest-language-server"]
+languages = ["python"]
+workspaceMarkers = ["pytest.ini", "pyproject.toml", "setup.py", "setup.cfg", ".git"]

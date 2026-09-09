@@ -1,0 +1,5 @@
+[languageServers.pkl]
+enabled = false
+cmd = ["pkl-lsp"]
+languages = ["pkl", "pcf"]
+workspaceMarkers = ["PklProject", ".git"]

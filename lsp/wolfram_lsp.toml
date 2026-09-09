@@ -1,0 +1,6 @@
+[languageServers.wolfram_lsp]
+enabled = false
+cmd = ["WolframKernel", "-noinit", "-noprompt", "-nopaclet", "-noicon", "-nostartuppaclets", "-run", "Needs[\"LSPServer`\"];LSPServer`StartServer[]"]
+languages = ["mma"]
+workspaceMarkers = [".git"]
+initializationOptions = { semanticTokens = true }

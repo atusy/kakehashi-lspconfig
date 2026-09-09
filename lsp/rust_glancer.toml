@@ -1,0 +1,5 @@
+# WARN: root_dir was a dynamic Lua function (dynamic root detection); approximate with `workspaceMarkers` if the default (client root) is wrong
+[languageServers.rust_glancer]
+enabled = false
+cmd = ["rust-glancer", "lsp"]
+languages = ["rust"]
